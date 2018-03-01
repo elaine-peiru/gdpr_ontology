@@ -14,6 +14,7 @@ import org.semanticweb.kaon2.api.OntologyManager;
 import org.semanticweb.kaon2.api.formatting.OntologyFileFormat;
 import org.semanticweb.kaon2.api.owl.elements.Individual;
 import org.semanticweb.kaon2.api.owl.elements.OWLClass;
+import org.semanticweb.kaon2.api.owl.elements.ObjectProperty;
 
 public class AddProcess {
 	private String sProcessName;
@@ -56,22 +57,40 @@ public class AddProcess {
 		try {
 			List<OntologyChangeEvent> changes = new ArrayList<OntologyChangeEvent>();
 			// TODO add individuals of processing, firstprocessingdate, data
-			Individual process = KAON2Manager.factory().individual(URI + "#" + this.sProcessName);
+			OWLClass process = KAON2Manager.factory().owlClass(URI + "#process");
+			OWLClass processing = KAON2Manager.factory().owlClass(URI + "#processing");
+			OWLClass firstProcessingDate = KAON2Manager.factory().owlClass(URI + "#firstProcessingDate");
+			Individual processIndividual = KAON2Manager.factory().individual(URI + "#" + this.sProcessName);
 			Individual processingIndividual = KAON2Manager.factory().individual(URI + "#" + this.sProcessing);
 			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + this.iFirstProcessingDate);
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(process, processIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(processing, processingIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(firstProcessingDate, firstProcessingDateIndividual),
+					OntologyChangeEvent.ChangeType.ADD));
 			// TODO for data -> create individuals directly of the subclass
-			Individual data = KAON2Manager.factory().individual(URI + "#" + this.sData);
+			Individual dataIndividual = KAON2Manager.factory().individual(URI + "#" + this.sData);
 			OWLClass ethnicData;
+			OWLClass data;
 			switch (sDatatype) {
 			// TODO create cases for all subclasses of data
 			case sEthnicData:
-				ethnicData = KAON2Manager.factory().owlClass(URI + "#" + "ethnicData");
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(ethnicData, data), OntologyChangeEvent.ChangeType.ADD));
+				ethnicData = KAON2Manager.factory().owlClass(URI + "#ethnicData");
+				data = ethnicData;
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(ethnicData, dataIndividual), OntologyChangeEvent.ChangeType.ADD));
 				break;
 			default:
 				break;
 
 			}
+			// TODO add relationships between individuals
+			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
+			// process has processing, process has data and process has first processing date
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, firstProcessingDate), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, data), OntologyChangeEvent.ChangeType.ADD));
 			// TODO for processing add individuals for the things that are related to processing (...)
 
 			onto.applyChanges(changes);
