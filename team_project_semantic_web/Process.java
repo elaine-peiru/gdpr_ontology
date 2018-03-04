@@ -70,30 +70,106 @@ public class Process {
 			OWLClass racialOrigin;
 			OWLClass politicalOpinion;
 			OWLClass religiousBelief;
+			OWLClass philosophicalBelief;
+			OWLClass tradeUnionMembership;
+			OWLClass geneticData;
+			OWLClass biometricData;
+			OWLClass health;
+			OWLClass sexLife;
+			OWLClass sexualOrientation;
+			OWLClass criminalOffense;
+			OWLClass criminalConviction;
 			OWLClass data;
 			if (json.getString("ethnicOrigin")) {
 				ethnicOrigin = KAON2Manager.factory().owlClass(URI + "#ethnicData");
 				Individual ethnicOriginIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("ethnicOrigin"));
 				changes.add(
 						new OntologyChangeEvent(KAON2Manager.factory().classMember(ethnicOrigin, ethnicOriginIndividual), OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(ethnicOrigin, data), OntologyChangeEvent.ChangeType.ADD));
 			}
 			if (json.getString("racialOrigin")) {
 				racialOrigin = KAON2Manager.factory().owlClass(URI + "#racialOrigin");
 				Individual racialOriginIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("racialOrigin"));
 				changes.add(
 						new OntologyChangeEvent(KAON2Manager.factory().classMember(racialOrigin, racialOriginIndividual), OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(racialOrigin, data), OntologyChangeEvent.ChangeType.ADD));
 			}
 			if (json.getString("politicalOpinion")) {
 				politicalOpinion = KAON2Manager.factory().owlClass(URI + "#politicalOpinion");
 				Individual politicalOpinionIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("politicalOpinion"));
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(politicalOpinion, politicalOpinionIndividual),
 						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(politicalOpinion, data), OntologyChangeEvent.ChangeType.ADD));
 			}
 			if (json.getString("religiousBelief")) {
 				religiousBelief = KAON2Manager.factory().owlClass(URI + "#religiousBelief");
 				Individual religiousBeliefIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("religiousBelief"));
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(religiousBelief, religiousBeliefIndividual),
 						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(religiousBelief, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("philosophicalBelief")) {
+				philosophicalBelief = KAON2Manager.factory().owlClass(URI + "#philosophicalBelief");
+				Individual philosophicalBeliefIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("philosophicalBelief"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(philosophicalBelief, philosophicalBeliefIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(philosophicalBelief, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("tradeUnionMembership")) {
+				tradeUnionMembership = KAON2Manager.factory().owlClass(URI + "#tradeUnionMembership");
+				Individual tradeUnionMembershipIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("tradeUnionMembership"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(tradeUnionMembership, tradeUnionMembershipIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(tradeUnionMembership, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("geneticData")) {
+				geneticData = KAON2Manager.factory().owlClass(URI + "#geneticData");
+				Individual geneticDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("geneticData"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(geneticData, geneticDataIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(geneticData, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("biometricData")) {
+				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
+				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(biometricData, biometricDataIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(biometricData, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("health")) {
+				health = KAON2Manager.factory().owlClass(URI + "#health");
+				Individual healthIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("health"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(health, healthIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("sexLife")) {
+				sexLife = KAON2Manager.factory().owlClass(URI + "#sexLife");
+				Individual sexLifeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexLife"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexLife, sexLifeIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexLife, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("sexualOrientation")) {
+				sexualOrientation = KAON2Manager.factory().owlClass(URI + "#sexualOrientation");
+				Individual sexualOrientationIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexualOrientation"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexualOrientation, sexualOrientationIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexualOrientation, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("criminalOffense")) {
+				criminalOffense = KAON2Manager.factory().owlClass(URI + "#criminalOffense");
+				Individual criminalOffenseIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalOffense"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalOffense, criminalOffenseIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalOffense, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("criminalConviction")) {
+				criminalConviction = KAON2Manager.factory().owlClass(URI + "#criminalConviction");
+				Individual criminalConvictionIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalConviction"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalConviction, criminalConvictionIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalConviction, data), OntologyChangeEvent.ChangeType.ADD));
 			}
 
 			// TODO add relationships between individuals
