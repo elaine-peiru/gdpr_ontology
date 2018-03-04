@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+import org.json.simple.JSONObject;
 import org.semanticweb.kaon2.api.DefaultOntologyResolver;
 import org.semanticweb.kaon2.api.KAON2Manager;
 import org.semanticweb.kaon2.api.Ontology;
@@ -26,17 +27,18 @@ public class Process {
 	public Process() {
 	}
 
-	public void createIndividualOfProcess() {// TODO add arguments that continue all necessary information that is needed for creating an
-												// individual of the process
+	public void createIndividualOfProcess(JSONObject json) {// TODO add arguments that continue all necessary information that is needed for
+															// creating an
+		// individual of the process
 		try {
 			OntologyManager ontologyManager = KAON2Manager.newOntologyManager();
 			DefaultOntologyResolver resolver = new DefaultOntologyResolver();
 			String physicalAdress = "";
-			resolver.registerReplacement(URI, physicalAdress); // TODO specify the right URI //TODO specify the right physical address
+			resolver.registerReplacement(URI, physicalAdress); // TODO specify the right physical address
 			ontologyManager.setOntologyResolver(resolver);
 
 			Ontology onto = ontologyManager.openOntology(URI, new HashMap<String, Object>());
-			Ontology changedOnto = this.makeChangeToProcess(onto);
+			Ontology changedOnto = this.makeChangeToProcess(onto, json);
 			String filename = "";// TODO change the file name to the file and location that we need
 			String secondString = ""; // TODO rename it and find out what this string is used for
 			changedOnto.saveOntology(OntologyFileFormat.OWL_XML, new File(filename), secondString);// TODO check if this is the file format
@@ -48,7 +50,7 @@ public class Process {
 
 	}
 
-	private Ontology makeChangeToProcess(Ontology onto) {
+	private Ontology makeChangeToProcess(Ontology onto, JSONObject json) {
 		try {
 			List<OntologyChangeEvent> changes = new ArrayList<OntologyChangeEvent>();
 			// TODO add individuals of processing, firstprocessingdate, data
