@@ -1,4 +1,4 @@
-package team_project_semantic_web.src.addIndividuals;
+package team_project_semantic_web;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -16,19 +16,14 @@ import org.semanticweb.kaon2.api.owl.elements.Individual;
 import org.semanticweb.kaon2.api.owl.elements.OWLClass;
 import org.semanticweb.kaon2.api.owl.elements.ObjectProperty;
 
-public class AddProcess {
+public class Process {
 	private String sProcessName;
 	private String sProcessing;
 	private String sData;
 	private Date iFirstProcessingDate;
 	private final String URI = "http://kaon2.semanticweb.org/gdprcheck";
 
-	public AddProcess(String sProcessName, String sProcessing, String sData, Date iFirstProcessingDate) {
-		// TODO Auto-generated constructor stub
-		this.sProcessName = sProcessName;
-		this.sProcessing = sProcessing;
-		this.sData = sData;
-		this.iFirstProcessingDate = iFirstProcessingDate;
+	public Process() {
 	}
 
 	public void createIndividualOfProcess() {// TODO add arguments that continue all necessary information that is needed for creating an
