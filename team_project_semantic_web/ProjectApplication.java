@@ -8,7 +8,6 @@ public class ProjectApplication {
 				.showInputDialog(
 						"To add a new process type in the name of the process file. To check existing processes type in their names and separate them with a semicolon.");
 
-		System.out.println(userInput);
 		if (userInput != null) {
 			if (userInput.indexOf(".txt") > 0) {
 				Input input = new Input();

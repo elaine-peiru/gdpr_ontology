@@ -66,19 +66,36 @@ public class Process {
 					OntologyChangeEvent.ChangeType.ADD));
 			// TODO for data -> create individuals directly of the subclass
 			Individual dataIndividual = KAON2Manager.factory().individual(URI + "#" + this.sData);
-			OWLClass ethnicData;
+			OWLClass ethnicOrigin;
+			OWLClass racialOrigin;
+			OWLClass politicalOpinion;
+			OWLClass religiousBelief;
 			OWLClass data;
-			switch (sDatatype) {
-			// TODO create cases for all subclasses of data
-			case sEthnicData:
-				ethnicData = KAON2Manager.factory().owlClass(URI + "#ethnicData");
-				data = ethnicData;
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(ethnicData, dataIndividual), OntologyChangeEvent.ChangeType.ADD));
-				break;
-			default:
-				break;
-
+			if (json.getString("ethnicOrigin")) {
+				ethnicOrigin = KAON2Manager.factory().owlClass(URI + "#ethnicData");
+				Individual ethnicOriginIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("ethnicOrigin"));
+				changes.add(
+						new OntologyChangeEvent(KAON2Manager.factory().classMember(ethnicOrigin, ethnicOriginIndividual), OntologyChangeEvent.ChangeType.ADD));
 			}
+			if (json.getString("racialOrigin")) {
+				racialOrigin = KAON2Manager.factory().owlClass(URI + "#racialOrigin");
+				Individual racialOriginIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("racialOrigin"));
+				changes.add(
+						new OntologyChangeEvent(KAON2Manager.factory().classMember(racialOrigin, racialOriginIndividual), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("politicalOpinion")) {
+				politicalOpinion = KAON2Manager.factory().owlClass(URI + "#politicalOpinion");
+				Individual politicalOpinionIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("politicalOpinion"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(politicalOpinion, politicalOpinionIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("religiousBelief")) {
+				religiousBelief = KAON2Manager.factory().owlClass(URI + "#religiousBelief");
+				Individual religiousBeliefIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("religiousBelief"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(religiousBelief, religiousBeliefIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+			}
+
 			// TODO add relationships between individuals
 			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
 			// process has processing, process has data and process has first processing date
