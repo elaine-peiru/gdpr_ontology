@@ -48,16 +48,16 @@ public class Process {
 
 	}
 
-	private Ontology makeChangeToProcess(Ontology onto) {
+	private Ontology makeChangeToProcess(Ontology onto, JSONObject json) {
 		try {
 			List<OntologyChangeEvent> changes = new ArrayList<OntologyChangeEvent>();
 			// TODO add individuals of processing, firstprocessingdate, data
 			OWLClass process = KAON2Manager.factory().owlClass(URI + "#process");
 			OWLClass processing = KAON2Manager.factory().owlClass(URI + "#processing");
 			OWLClass firstProcessingDate = KAON2Manager.factory().owlClass(URI + "#firstProcessingDate");
-			Individual processIndividual = KAON2Manager.factory().individual(URI + "#" + this.sProcessName);
-			Individual processingIndividual = KAON2Manager.factory().individual(URI + "#" + this.sProcessing);
-			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + this.iFirstProcessingDate);
+			Individual processIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("process"));
+			Individual processingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("processing"));
+			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingData"));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(process, processIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(processing, processingIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(firstProcessingDate, firstProcessingDateIndividual),
@@ -77,8 +77,29 @@ public class Process {
 				break;
 
 			}
+			
+			//add individual of Evaluation 
+			
+			OWLClass evaluation = KAON2Manager.factory().owlClass(URI + "#evaluation");
+			OWLClass automatedProcessing = KAON2Manager.factory().owlClass(URI + "#automatedProcessing");
+			OWLClass profiling = KAON2Manager.factory().owlClass(URI + "#profiling");
+			OWLClass legalEffect = KAON2Manager.factory().owlClass(URI + "#legalEffect");
+			Individual evaluationIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("evaluation"));
+			Individual automatedProcessingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("automatedProcessing"));
+			Individual profilingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("profiling"));
+			Individual legalEffectIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("legalEffect"));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(evaluation, evaluationIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(automatedProcessing, automatedProcessingIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(profiling, profilingIndividual),
+					OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(legalEffect, legalEffectIndividual), OntologyChangeEvent.ChangeType.ADD));
+			
+			
 			// TODO add relationships between individuals
 			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
+			ObjectProperty evaluationHasProcessing=KAON2Manager.factory().objectProperty(URI + "#evaluationHasProcessing");
+			ObjectProperty evaluationHasLegalEffect=KAON2Manager.factory().objectProperty(URI + "#evaluationHasLegalEffect");
+			
 			// process has processing, process has data and process has first processing date
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
@@ -86,9 +107,22 @@ public class Process {
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, firstProcessingDate), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, data), OntologyChangeEvent.ChangeType.ADD));
+			
+			//subclass of evaluation
+			 changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(automatedProcessing,evaluation),OntologyChangeEvent.ChangeType.ADD));
+			 changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(profiling,evaluation),OntologyChangeEvent.ChangeType.ADD));
+			 
+			//evaluation has processing, evaluation has legal effect
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(evaluationHasProcessing,evaluation),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(evaluationHasProcessing,processing),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(evaluationHasLegalEffect,evaluation),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(evaluationHasLegalEffect,legalEffect),OntologyChangeEvent.ChangeType.ADD));
+		
 			// TODO for processing add individuals for the things that are related to processing (...)
 
 			onto.applyChanges(changes);
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
