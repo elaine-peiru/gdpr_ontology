@@ -128,6 +128,7 @@ public class Process {
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(geneticData, geneticDataIndividual),
 						OntologyChangeEvent.ChangeType.ADD));
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(geneticData, data), OntologyChangeEvent.ChangeType.ADD));
+<<<<<<< HEAD
 			}
 <<<<<<< HEAD
 			
@@ -225,6 +226,23 @@ public class Process {
 						OntologyChangeEvent.ChangeType.ADD));
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
 			}
+=======
+			}
+			if (json.getString("biometricData")) {
+				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
+				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(biometricData, biometricDataIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(biometricData, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("health")) {
+				health = KAON2Manager.factory().owlClass(URI + "#health");
+				Individual healthIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("health"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(health, healthIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+>>>>>>> 6df4766d39a504344a090d713af448c76044851c
 			if (json.getString("sexLife")) {
 				sexLife = KAON2Manager.factory().owlClass(URI + "#sexLife");
 				Individual sexLifeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexLife"));
@@ -254,6 +272,9 @@ public class Process {
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalConviction, data), OntologyChangeEvent.ChangeType.ADD));
 			}
 
+<<<<<<< HEAD
+>>>>>>> 6df4766d39a504344a090d713af448c76044851c
+=======
 >>>>>>> 6df4766d39a504344a090d713af448c76044851c
 			// TODO add relationships between individuals
 			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
