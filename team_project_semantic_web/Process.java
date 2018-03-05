@@ -59,7 +59,7 @@ public class Process {
 			OWLClass firstProcessingDate = KAON2Manager.factory().owlClass(URI + "#firstProcessingDate");
 			Individual processIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("process"));
 			Individual processingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("processing"));
-			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingData"));
+			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingDate"));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(process, processIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(processing, processingIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(firstProcessingDate, firstProcessingDateIndividual),
@@ -128,11 +128,62 @@ public class Process {
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(geneticData, geneticDataIndividual),
 						OntologyChangeEvent.ChangeType.ADD));
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(geneticData, data), OntologyChangeEvent.ChangeType.ADD));
-<<<<<<< HEAD
 			}
-<<<<<<< HEAD
-			
-			//add individual of Evaluation 
+			if (json.getString("biometricData")) {
+				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
+				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(biometricData, biometricDataIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(biometricData, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("health")) {
+				health = KAON2Manager.factory().owlClass(URI + "#health");
+				Individual healthIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("health"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(health, healthIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("sexLife")) {
+				sexLife = KAON2Manager.factory().owlClass(URI + "#sexLife");
+				Individual sexLifeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexLife"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexLife, sexLifeIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexLife, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("sexualOrientation")) {
+				sexualOrientation = KAON2Manager.factory().owlClass(URI + "#sexualOrientation");
+				Individual sexualOrientationIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexualOrientation"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexualOrientation, sexualOrientationIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexualOrientation, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("criminalOffense")) {
+				criminalOffense = KAON2Manager.factory().owlClass(URI + "#criminalOffense");
+				Individual criminalOffenseIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalOffense"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalOffense, criminalOffenseIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalOffense, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("criminalConviction")) {
+				criminalConviction = KAON2Manager.factory().owlClass(URI + "#criminalConviction");
+				Individual criminalConvictionIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalConviction"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalConviction, criminalConvictionIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalConviction, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+
+			// TODO add relationships between individuals
+			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
+			// process has processing, process has data and process has first processing date
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, firstProcessingDate), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, data), OntologyChangeEvent.ChangeType.ADD));
+			// TODO for processing add individuals for the things that are related to processing (...)
+
+//add individual of Evaluation 
 			
 			OWLClass evaluation = KAON2Manager.factory().owlClass(URI + "#evaluation");
 			OWLClass automatedProcessing = KAON2Manager.factory().owlClass(URI + "#automatedProcessing");
@@ -211,71 +262,6 @@ public class Process {
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(assessmentOfRisksAndRightsToFreedom, assessmentOfRisksAndRightsToFreedomIndividual),
 					OntologyChangeEvent.ChangeType.ADD));
 			
-=======
-			if (json.getString("biometricData")) {
-				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
-				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(biometricData, biometricDataIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(biometricData, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-			if (json.getString("health")) {
-				health = KAON2Manager.factory().owlClass(URI + "#health");
-				Individual healthIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("health"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(health, healthIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-=======
-			}
-			if (json.getString("biometricData")) {
-				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
-				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(biometricData, biometricDataIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(biometricData, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-			if (json.getString("health")) {
-				health = KAON2Manager.factory().owlClass(URI + "#health");
-				Individual healthIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("health"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(health, healthIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
-			}
->>>>>>> 6df4766d39a504344a090d713af448c76044851c
-			if (json.getString("sexLife")) {
-				sexLife = KAON2Manager.factory().owlClass(URI + "#sexLife");
-				Individual sexLifeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexLife"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexLife, sexLifeIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexLife, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-			if (json.getString("sexualOrientation")) {
-				sexualOrientation = KAON2Manager.factory().owlClass(URI + "#sexualOrientation");
-				Individual sexualOrientationIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexualOrientation"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexualOrientation, sexualOrientationIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexualOrientation, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-			if (json.getString("criminalOffense")) {
-				criminalOffense = KAON2Manager.factory().owlClass(URI + "#criminalOffense");
-				Individual criminalOffenseIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalOffense"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalOffense, criminalOffenseIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalOffense, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-			if (json.getString("criminalConviction")) {
-				criminalConviction = KAON2Manager.factory().owlClass(URI + "#criminalConviction");
-				Individual criminalConvictionIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalConviction"));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalConviction, criminalConvictionIndividual),
-						OntologyChangeEvent.ChangeType.ADD));
-				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalConviction, data), OntologyChangeEvent.ChangeType.ADD));
-			}
-
-<<<<<<< HEAD
->>>>>>> 6df4766d39a504344a090d713af448c76044851c
-=======
->>>>>>> 6df4766d39a504344a090d713af448c76044851c
 			// TODO add relationships between individuals
 			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
 			ObjectProperty evaluationHasProcessing=KAON2Manager.factory().objectProperty(URI + "#evaluationHasProcessing");
@@ -359,11 +345,7 @@ public class Process {
 	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(DPIAHasAssessmentOfRisksAndRightsToFreedom,assessmentOfRisksAndRightsToFreedom),OntologyChangeEvent.ChangeType.ADD));
 	        
 	        
-	        // TODO for processing add individuals for the things that are related to processing (...)
-
 			onto.applyChanges(changes);
-			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
