@@ -361,7 +361,7 @@ public class Process {
 		return processAlreadyExists;
 	}
 	
-	public boolean checkPersonAlreadyExists(String name) {
+	public boolean checkPersonAlreadyExists(String personsName, String className) {
 		boolean personAlreadyExists = false;
 		//TODO write check
 		return personAlreadyExists;
