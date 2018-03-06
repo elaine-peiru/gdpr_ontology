@@ -3,6 +3,8 @@
 	<classpathentry kind="src" path=""/>
 	<classpathentry kind="lib" path="C:/Users/Nele/Documents/Master/TeamProject/KAON2/kaon2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nele/Documents/Master/TeamProject/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/xiaqian/Downloads/kaon2-bin-2008-06-29/kaon2.jar"/>
+	<classpathentry kind="lib" path="/Users/xiaqian/Downloads/json-simple-1.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
