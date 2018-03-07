@@ -33,9 +33,9 @@ public class Process {
 	public Process() throws Exception {
 		this.ontologyManager = KAON2Manager.newOntologyManager();
 		this.resolver = new DefaultOntologyResolver();
-		URI uri = new File("src/root-ontology.owx").toURI();
+		URI uri = new File("src/root-ontology.owl").toURI();
 		this.uriString = uri.toString();
-		this.resolver.registerReplacement("http://webprotege.stanford.edu/", "src/root-ontology.owx");
+		this.resolver.registerReplacement("http://purl.org/net/team_project_semantic_web", "src/root-ontology.owl");
 		this.ontologyManager.setOntologyResolver(this.resolver);
 	}
 
@@ -46,31 +46,30 @@ public class Process {
 
 			// System.out.println(this.uriString);
 
-			String replacement = this.resolver.getReplacement("http://webprotege.stanford.edu/");
+			String replacement = this.resolver.getReplacement("http://purl.org/net/team_project_semantic_web");
 			System.out.println(replacement);
 			HashMap<String, Object> parameters = new HashMap<String, Object>();
 			// parameters.put(OntologyManager.USE_FORMAT_NAME, OntologyFileFormat.OWL_XML);
-			// Ontology onto = this.ontologyManager.openOntology(this.uriString, parameters);
-			Ontology onto = this.ontologyManager.createOntology(this.uriString, parameters);
+			Ontology onto = this.ontologyManager.openOntology("http://purl.org/net/team_project_semantic_web", parameters);
+			// Ontology onto = this.ontologyManager.createOntology(this.uriString, parameters);
 
-			OWLClass data = KAON2Manager.factory().owlClass(this.uriString + "R7H4bmcf6rOqPHpkWrWU0iA");
+			OWLClass data = KAON2Manager.factory().owlClass("http://purl.org/net/team_project_semantic_web" + "#data");
 
 			// We can now ask the document object to return all subclasses. In fact, we get a set of
 			// Description objects. Remember that in OWL, apart from classes, you can build complex description classes.
 			Set<Description> subDescriptions = data.getSubDescriptions(onto);
+			int i = subDescriptions.size();
+			System.out.println("Length:" + i);
 
 			// We can now iterate over this set. We filter out atomic classes by checking for
 			// each description if it is an instance of OWLClass.
 			// Note that this will include subclasses defined in 'example01', as well as in 'example01-inc' ontology.
 			// System.out.println("The subclasses of '" + data.getthis.uriString() + "' are:");
 			for (Description subDescription : subDescriptions)
-				/*
-				 * if (subDescription instanceof OWLClass) {
-				 * OWLClass subClass = (OWLClass) subDescription;
-				 * System.out.println("    " + subClass.getthis.uriString());
-				 * }
-				 */
-				System.out.println(subDescription);
+				if (subDescription instanceof OWLClass) {
+					OWLClass subClass = (OWLClass) subDescription;
+					System.out.println("    " + subClass.getURI());
+				}
 		} catch (KAON2Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
