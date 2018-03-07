@@ -1,4 +1,4 @@
-package team_project_semantic_web;
+package src;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -21,6 +21,7 @@ public class Input {
 				switch (inputParts[0]) {
 				case "0.":
 					json.put("process", inputParts[2]);
+					//TODO call check if process is alreday existing
 					break;
 				case "1.":
 					json.put("dipaName", inputParts[2]);

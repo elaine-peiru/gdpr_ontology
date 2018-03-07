@@ -1,9 +1,14 @@
-package team_project_semantic_web;
+package src;
 
 import javax.swing.JOptionPane;
 
-public class ProjectApplication {
+public class TestApplication {
+
 	public static void main(String[] args) throws Exception {
+		Process process = new Process();
+		process.test();
+		// TODO Auto-generated method stub
+
 		String userInput = JOptionPane
 				.showInputDialog(
 						"To add a new process type in the name of the process file. To check existing processes type in their names and separate them with a semicolon.");
@@ -22,5 +27,7 @@ public class ProjectApplication {
 				}
 			}
 		}
+
 	}
+
 }
