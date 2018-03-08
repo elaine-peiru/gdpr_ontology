@@ -868,11 +868,11 @@ public class Process {
 	}
 	
 >>>>>>> c0cbf08d0f6f639abea0958657ee9f431d350adf
-	public boolean checkProcessAlreadyExists(String processName) {
+	public boolean checkProcessAlreadyExists(String processName, Ontology ontology) {
 		boolean processAlreadyExists = false;
 		//TODO write check
 		OWLClass process = KAON2Manager.factory().owlClass(URI + "#process");
-		List<Individual> listIndividuals = process.getMemberIndividuals(onto);
+		List<Individual> listIndividuals = process.getMemberIndividuals(ontology);
 		
 		for(Individual individual: listIndividuals) {
 			
