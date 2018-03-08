@@ -78,6 +78,12 @@ public class Process {
 			Individual profilingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("profiling"));
 			Individual legalEffectIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("legalEffect"));
 			Individual dpiaIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("dpia"));
+			Boolean exists = this.checkPersonAlreadyExists(json.getString("controller"), "controller", onto);
+			
+			Boolean exists = this.checkPersonAlreadyExists(json.getString("processor"), "processor", onto);
+			Boolean exists = this.checkPersonAlreadyExists(json.getString("supervisoryAuthority"), "supervisoryAuthority", onto);
+			Boolean exists = this.checkPersonAlreadyExists(json.getString("dataProtectionOfficer"), "dataProtectionOfficer", onto);
+			
 			Individual controllerIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("controller"));
 			Individual processorIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("processor"));
 			//下面这几个的relationship没有创建完
@@ -880,9 +886,25 @@ public class Process {
 		return processAlreadyExists;
 	}
 	
-	public boolean checkPersonAlreadyExists(String personsName, String className) {
+	public boolean checkPersonAlreadyExists(String personsName, String className, Ontology ontology) {
 		boolean personAlreadyExists = false;
 		//TODO write check
-		return personAlreadyExists;
+        //从这里开始改动的
+		
+		OWLClass personClass = KAON2Manager.factory().owlClass(URI + "#" + className);
+		
+		List<Individual> listIndividuals = personClass.getMemberIndividuals(ontology);
+		
+		for(Individual individual: listIndividuals) {
+			
+			String personsName = individual.toString();
+			if(individualName.equals(personsName)) {
+				personAlreadyExists = true;
+				break;
+			}
+		}
+		
+			
+		return personAlreadyExists;	
 	}
 }
