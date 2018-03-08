@@ -49,15 +49,43 @@ public class Process {
 
 	private Ontology makeChangeToProcess(Ontology onto, JSONObject json) {
 		try {
-			JSONObject = 
-			List<OntologyChangeEvent> changes = new ArrayList<OntologyChangeEvent>();
 			// TODO add individuals of processing, firstprocessingdate, data
+			List<OntologyChangeEvent> changes = new ArrayList<OntologyChangeEvent>();
 			OWLClass process = KAON2Manager.factory().owlClass(URI + "#process");
 			OWLClass processing = KAON2Manager.factory().owlClass(URI + "#processing");
 			OWLClass firstProcessingDate = KAON2Manager.factory().owlClass(URI + "#firstProcessingDate");
 			Individual processIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("process"));
 			Individual processingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("processing"));
-			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingDate"));
+
+			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingData"));
+			OWLClass automatedProcessing = KAON2Manager.factory().owlClass(URI + "#automatedprocessing");
+			OWLClass evaluation = KAON2Manager.factory().owlClass(URI + "#evaluation");
+			OWLClass profiling = KAON2Manager.factory().owlClass(URI + "#profiling");
+			OWLClass legalEffect = KAON2Manager.factory().owlClass(URI + "#legalEffect");
+			OWLClass dpia = KAON2Manager.factory().owlClass(URI + "#dpia");
+			//DPIA别人肯定也创建了，重复了怎么办？
+			OWLClass controller = KAON2Manager.factory().owlClass(URI + "#controller");
+			OWLClass processor = KAON2Manager.factory().owlClass(URI + "#processor");
+			
+			OWLClass supervisoryAuthoriy = KAON2Manager.factory().owlClass(URI + "#supervisoryAuthoriy");
+			OWLClass listOfProcessesThatRequireDpia = KAON2Manager.factory().owlClass(URI + "#listOfProcessesThatRequireDpia");			
+			OWLClass listOfProcessesThatDoNotRequireDpia = KAON2Manager.factory().owlClass(URI + "#listOfProcessesThatDoNotRequireDpia");				
+			OWLClass europeanDataProtectionBoard = KAON2Manager.factory().owlClass(URI + "#europeanDataProtectionBoard");				
+		   
+			//为什么都报错了？上面例子的i和s都是什么意思？
+			Individual automatedProcessingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("automatedProcessing"));
+			Individual evaluationIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("evaluation"));
+			Individual profilingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("profiling"));
+			Individual legalEffectIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("legalEffect"));
+			Individual dpiaIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("dpia"));
+			Individual controllerIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("controller"));
+			Individual processorIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("processor"));
+			//下面这几个的relationship没有创建完
+			Individual supervisoryAuthoriyIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("supervisoryAuthoriy"));
+			Individual listOfProcessesThatRequireDpiaIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("listOfProcessesThatRequireDpia"));
+			Individual listOfProcessesThatDoNotRequireDpiaIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("listOfProcessesThatDoNotRequireDpia"));
+			Individual europeanDataProtectionBoardIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("europeanDataProtectionBoard"));			
+			
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(process, processIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(processing, processingIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(firstProcessingDate, firstProcessingDateIndividual),
@@ -449,6 +477,8 @@ public class Process {
 			// process has processing, process has data and process has first processing date
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			//objectPropertyDomain这是主语subject
+			//objectPropertyRange这是宾语object 所以整句话是process has processing. 所以每两句是一对
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, firstProcessingDate), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
@@ -559,10 +589,45 @@ public class Process {
 	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(DPIAHasAssessmentOfRisksAndRightsToFreedom, DPIA),OntologyChangeEvent.ChangeType.ADD));
 	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(DPIAHasAssessmentOfRisksAndRightsToFreedom,assessmentOfRisksAndRightsToFreedom),OntologyChangeEvent.ChangeType.ADD));
 
-	        
-	        
-			onto.applyChanges(changes);
-		} catch (Exception e) {
+
+
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, data), OntologyChangeEvent.ChangeType.ADD));			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, evaluation), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, evaluation), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, legalEffect), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, DPIA), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, legalEffect), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, evaluation), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, automatedProcessing), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, evaluation), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, profiling), OntologyChangeEvent.ChangeType.ADD));			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, Controller), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, Processor), OntologyChangeEvent.ChangeType.ADD));
+				
+			//这种没有标注是什么关系的，该如何定义关系
+		    //
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(creates, supervisoryAuthoriy), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(creates, listOfProcessesThatDoNotRequireDpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(isPartOf, listOfProcessesThatDoNotRequireDpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(isPartOf, Process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(receives, europeanDataProtectionBoard), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(receives, listOfProcessesThatDoNotRequireDpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(creates, supervisoryAuthoriy), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(creates, listOfProcessesThatRequireDpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(isPartOf, listOfProcessesThatRequireDpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(isPartOf, Process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(receives, europeanDataProtectionBoard), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(receives, listOfProcessesThatRequireDpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(checks, supervisoryAuthoriy), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(checks, sensitiveData), OntologyChangeEvent.ChangeType.ADD));
+						
+			
+			
+			// TODO for processing add individuals for the things that are related to processing (...)
 
 
 
