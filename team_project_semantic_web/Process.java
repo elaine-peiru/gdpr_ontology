@@ -57,12 +57,81 @@ public class Process {
 			OWLClass firstProcessingDate = KAON2Manager.factory().owlClass(URI + "#firstProcessingDate");
 			Individual processIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("process"));
 			Individual processingIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("processing"));
-			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingData"));
+			Individual firstProcessingDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("firstProcessingDate"));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(process, processIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(processing, processingIndividual), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(firstProcessingDate, firstProcessingDateIndividual),
 					OntologyChangeEvent.ChangeType.ADD));
 			
+
+			// added new classes for risk, content, purpose, scope, technology, consistencyMechanism, dataProtectionOffier, creationDate
+			OWLClass risk = KAON2Manager.factory().owlClass(URI + "#risk");
+			OWLClass content = KAON2Manager.factory().owlClass(URI + "#content");
+			OWLClass purpose = KAON2Manager.factory().owlClass(URI + "#purpose");
+			OWLClass scope = KAON2Manager.factory().owlClass(URI + "#scope");
+			OWLClass technology = KAON2Manager.factory().owlClass(URI + "#technology");
+			
+			OWLClass consistencyMechanism = KAON2Manager.factory().owlClass(URI + "#consistenyMechanism");
+			
+			OWLClass dataProtectionOfficer = KAON2Manager.factory().owlClass(URI + "#dataProtectionOfficer");
+			
+			OWLClass creationDate = KAON2Manager.factory().owlClass(URI + "#creationDate");
+			
+			// added new individuals for risk, content, purpose, scope, technology, consistencyMechanism, dataProtectionOffier, creationDate
+			Individual riskIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("risk"));
+			Individual contentIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("content"));
+			Individual purposeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("purpose"));
+			Individual scopeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("scope"));
+			Individual technologyIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("technology"));
+			
+			Individual consistencyMechanismIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("consistencyMechanism"));
+			
+			Individual dataProtectionOfficerIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("dataProtectionOfficer"));
+			
+			Individual creationDateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("creationDate"));
+			
+			// mapping
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(risk, riskIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(content, contentIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(purpose, purposeIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(scope, scopeIndividual), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(technology, technologyIndividual), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(consistencyMechanism, consistencyMechanismIndividual), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(dataProtectionOfficer, dataProtectionOfficerIndividual), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(creationDate, creationDateIndividual), OntologyChangeEvent.ChangeType.ADD));
+			
+			// subclass tradingData of Content?
+			
+			// subclasses of TradingData
+			Individual tradingDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("tradingData"));
+			OWLClass tradingData;
+			OWLClass offeringOfGoods;
+			OWLClass offeringOfServices;
+			OWLClass behaviorInAtLeastOneMemberstate;
+			
+			if (json.getString("offeringOfGoods")) {
+				offeringOfGoods = KAON2Manager.factory().owlClass(URI + "#offeringOfGoods");
+				Individual offeringOfGoodsIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("offeringOfGoods"));
+				changes.add(
+						new OntologyChangeEvent(KAON2Manager.factory().classMember(offeringOfGoods, offeringOfGoodsIndividual), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("offeringOfServices")) {
+				offeringOfServices = KAON2Manager.factory().owlClass(URI + "#offeringOfServices");
+				Individual offeringOfServicesIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("offeringOfServices"));
+				changes.add(
+						new OntologyChangeEvent(KAON2Manager.factory().classMember(offeringOfServices, offeringOfServicesIndividual), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("behaviorInAtLeastOneMemberstate")) {
+				behaviorInAtLeastOneMemberstate = KAON2Manager.factory().owlClass(URI + "#behaviorInAtLeastOneMemberstate");
+				Individual behaviorInAtLeastOneMemberstateIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("behaviorInAtLeastOneMemberstate"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(behaviorInAtLeastOneMemberstate, behaviorInAtLeastOneMemberstateIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+			}
+			
+
 			OWLClass nameOfPublicAreaWhereDataWasMonitored = KAON2Manager.factory().owlClass(URI + "#nameOfPublicAreaWhereDataWasMonitored");
 			Individual nameOfPublicAreaWhereDataWasMonitoredIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("nameOfPublicAreaWhereDataWasMonitored"));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(MonitoredInPublicArea, nameOfPublicAreaWhereDataWasMonitoredIndividual), OntologyChangeEvent.ChangeType.ADD));
@@ -84,6 +153,7 @@ public class Process {
 			OWLClass representativeOfNaturalPerson = KAON2Manager.factory().owlClass(URI + "#representativeOfNaturalPerson");
 			Individual representativeOfNaturalPersonIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("representativeOfNaturalPerson"));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(representativeOfNaturalPerson, representativeOfNaturalPersonIndividual), OntologyChangeEvent.ChangeType.ADD));
+
 			
 			// TODO for data -> create individuals directly of the subclass
 			Individual dataIndividual = KAON2Manager.factory().individual(URI + "#" + this.sData);
@@ -150,8 +220,66 @@ public class Process {
 						OntologyChangeEvent.ChangeType.ADD));
 				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(geneticData, data), OntologyChangeEvent.ChangeType.ADD));
 			}
+
+			if (json.getString("biometricData")) {
+				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
+				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(biometricData, biometricDataIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(biometricData, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("health")) {
+				health = KAON2Manager.factory().owlClass(URI + "#health");
+				Individual healthIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("health"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(health, healthIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(health, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("sexLife")) {
+				sexLife = KAON2Manager.factory().owlClass(URI + "#sexLife");
+				Individual sexLifeIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexLife"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexLife, sexLifeIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexLife, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("sexualOrientation")) {
+				sexualOrientation = KAON2Manager.factory().owlClass(URI + "#sexualOrientation");
+				Individual sexualOrientationIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("sexualOrientation"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(sexualOrientation, sexualOrientationIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(sexualOrientation, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("criminalOffense")) {
+				criminalOffense = KAON2Manager.factory().owlClass(URI + "#criminalOffense");
+				Individual criminalOffenseIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalOffense"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalOffense, criminalOffenseIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalOffense, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+			if (json.getString("criminalConviction")) {
+				criminalConviction = KAON2Manager.factory().owlClass(URI + "#criminalConviction");
+				Individual criminalConvictionIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("criminalConviction"));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(criminalConviction, criminalConvictionIndividual),
+						OntologyChangeEvent.ChangeType.ADD));
+				changes.add(new OntologyChangeEvent(KAON2Manager.factory().subClassOf(criminalConviction, data), OntologyChangeEvent.ChangeType.ADD));
+			}
+
+			// TODO add relationships between individuals
+			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
+			// process has processing, process has data and process has first processing date
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, firstProcessingDate), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, process), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, data), OntologyChangeEvent.ChangeType.ADD));
+			// TODO for processing add individuals for the things that are related to processing (...)
+
+//add individual of Evaluation 
+
 			
 			//add individual of Evaluation 
+
 			
 			OWLClass evaluation = KAON2Manager.factory().owlClass(URI + "#evaluation");
 			OWLClass automatedProcessing = KAON2Manager.factory().owlClass(URI + "#automatedProcessing");
@@ -230,6 +358,8 @@ public class Process {
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().classMember(assessmentOfRisksAndRightsToFreedom, assessmentOfRisksAndRightsToFreedomIndividual),
 					OntologyChangeEvent.ChangeType.ADD));
 			
+
+
 			if (json.getString("biometricData")) {
 				biometricData = KAON2Manager.factory().owlClass(URI + "#biometricData");
 				Individual biometricDataIndividual = KAON2Manager.factory().individual(URI + "#" + json.getString("biometricData"));
@@ -290,6 +420,7 @@ public class Process {
 			
 			
 
+
 			// TODO add relationships between individuals
 			ObjectProperty has = KAON2Manager.factory().objectProperty(URI + "#has");
 			ObjectProperty evaluationHasProcessing=KAON2Manager.factory().objectProperty(URI + "#evaluationHasProcessing");
@@ -324,6 +455,47 @@ public class Process {
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, data), OntologyChangeEvent.ChangeType.ADD));
 			
 
+			//relationships
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, content), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, risk), OntologyChangeEvent.ChangeType.ADD));
+
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, purpose), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, risk), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, scope), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, risk), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, technology), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, risk), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, content), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, purpose), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, scope), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has, technology), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has, processing), OntologyChangeEvent.ChangeType.ADD));
+			
+			ObjectProperty isAppliedTo = KAON2Manager.factory().objectProperty(URI + "#isAppliedTo");
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(isAppliedTo, consistencyMechanism), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(isAppliedTo, tradingData), OntologyChangeEvent.ChangeType.ADD));
+			
+			ObjectProperty checks = KAON2Manager.factory().objectProperty(URI + "#checks");
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(checks, dataProtectionOfficer), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(checks, dpia), OntologyChangeEvent.ChangeType.ADD));
+			
+			ObjectProperty requires = KAON2Manager.factory().objectProperty(URI + "#requires");
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(requires, dpia), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(requires, creationDate), OntologyChangeEvent.ChangeType.ADD));
+			
+			ObjectProperty laterThan = KAON2Manager.factory().objectProperty(URI + "#laterThan");
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(laterThan, firstProcessingDate), OntologyChangeEvent.ChangeType.ADD));
+			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(laterThan, creationDate), OntologyChangeEvent.ChangeType.ADD));
+
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(monitoring,nameOfPublicAreaWhereDataWasMonitored), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(monitoring,data), OntologyChangeEvent.ChangeType.ADD));
 			
@@ -335,6 +507,7 @@ public class Process {
 			
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(has,naturalPerson), OntologyChangeEvent.ChangeType.ADD));
 			changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(has,representativeOfNaturalPerson), OntologyChangeEvent.ChangeType.ADD));
+
 			// TODO for processing add individuals for the things that are related to processing (...)
 
 			//subclass of evaluation
@@ -386,18 +559,154 @@ public class Process {
 	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(DPIAHasAssessmentOfRisksAndRightsToFreedom, DPIA),OntologyChangeEvent.ChangeType.ADD));
 	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(DPIAHasAssessmentOfRisksAndRightsToFreedom,assessmentOfRisksAndRightsToFreedom),OntologyChangeEvent.ChangeType.ADD));
 
+	        
+	        
+			onto.applyChanges(changes);
+		} catch (Exception e) {
+
+
 
 			onto.applyChanges(changes);
 			
 			
 		}catch(Exception e){
+
 			e.printStackTrace();
 		}
 		return onto;
 	}
 	
+<<<<<<< HEAD
 	
             
+=======
+	public void createIndividualOfVerbConcept(JSONObject json) {// TODO add arguments that continue all necessary information that is needed for
+		// creating an
+		// individual of the verb concept
+		try {
+	        //Define the domain of verb concept
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, AssessmentOfRisksToRightsAndFreedoms_TakesIntoAccount_Freedom),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, assessmentOfRisksAndRightsToFreedomIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, AssessmentOfRisksAndRightsToFreedoms_TakesIntoAccount_Freedom),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, freedomIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+		// verbconcepts
+	        
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_Assesses_Purpose),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_Assesses_Purpose),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, purposeIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_Controls_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_Controls_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, processIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_Evaluates_PersonalData),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_Evaluates_PersonalData),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, personalDataIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_Has_Authorization),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_Has_Authorization),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, authorizationIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_IsAuthorizedBy_MemberStateLaw),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_IsAuthorizedBy_MemberStateLaw),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, memberStateLawIndividual),OntologyChangeEvent.ChangeType.ADD));
+
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_IsAuthorizedBy_UnionLaw),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_IsAuthorizedBy_UnionLaw),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, unionLawIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_IsCompliantWith_ApprovedCodeOfConduct),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_IsCompliantWith_ApprovedCodeOfConduct),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, approvedCodeOfConductIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_SeeksViewOf_DataSubject),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_SeeksViewOf_DataSubject),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, dataSubjectIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Processor_SeeksViewOf_RepresentativeOfDataSubject),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, processorIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Processor_SeeksViewOf_RepresentativeOfDataSubject),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, representativeOfDataSubjectIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, RepresentativeOfDataSubject_HasViewOf_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, representativeOfDataSubjectIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, RepresentativeOfDataSubject_HasViewOf_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, processIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Review_Checks_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, reviewIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Review_Checks_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, processIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, Right_Has_Risk),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, rightIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, Right_Has_Risk),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, riskIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, SupervisoryAuthority_Applies_ConsistencyMechanism),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, supervisoryAuthorityIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, SupervisoryAuthority_Applies_ConsistencyMechanism),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, consistencyMechanismIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, SupervisoryAuthority_Controls_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, supervisoryAuthorityIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, SupervisoryAuthority_Controls_Process),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, processIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, SupervisoryAuthority_Establishes_ListOfProcessesThatDoNotRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, supervisoryAuthorityIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, SupervisoryAuthority_Establishes_ListOfProcessesThatDoNotRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, listOfProcessesThatDoNotRequireAssessmentIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, SupervisoryAuthority_Establishes_ListOfProcessesThatRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, supervisoryAuthorityIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, SupervisoryAuthority_Establishes_ListOfProcessesThatRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, listOfProcessesThatRequireAssessmentIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, supervisoryAuthorityIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, listOfProcessesThatDoNotRequireAssessmentIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, supervisoryAuthorityIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, listOfProcessesThatRequireAssessmentIndividual),OntologyChangeEvent.ChangeType.ADD));
+
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, TypeOfProcessing_IsLikelyToResultIn_Risk),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, typeOfProcessingIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, TypeOfProcessing_IsLikelyToResultIn_Risk),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, riskIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, View_Respects_CommercialInterest),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, viewIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, View_Respects_CommercialInterest),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, commercialInterestIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, View_Respects_PublicInterest),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, viewIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, View_Respects_PublicInterest),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, publicInterestIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasSubject, View_Respects_SecurityOfProcessingOperation),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasSubject, viewIndividual),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyDomain(hasObject, View_Respects_SecurityOfProcessingOperation),OntologyChangeEvent.ChangeType.ADD));
+	        changes.add(new OntologyChangeEvent(KAON2Manager.factory().objectPropertyRange(hasObject, securityOfProcessingOperationIndividual),OntologyChangeEvent.ChangeType.ADD));
+		
+	        
+		}
+	}
+	
+>>>>>>> c0cbf08d0f6f639abea0958657ee9f431d350adf
 	public boolean checkProcessAlreadyExists(String processName) {
 		boolean processAlreadyExists = false;
 		//TODO write check

@@ -1,4 +1,4 @@
-package team_project_semantic_web;
+package src;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
