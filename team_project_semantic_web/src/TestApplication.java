@@ -22,6 +22,11 @@ public class TestApplication {
 		 * 
 		 * for (int i = 0; i < processNames.length; i++) {
 		 * String processName = processNames[i];
+		 * 
+		 * if(checkProcessAlreadyExists(processName) {
+		 *    do something, error
+		 * }
+		 * 
 		 * // TODO check rules for each process
 		 * // TODO write all errors in a file. If no error occurs for a process write, that the process complies to all rules
 		 * }
