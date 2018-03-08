@@ -800,7 +800,7 @@ public class Process {
 	public boolean checkProcessAlreadyExists(String processName) {
 		boolean processAlreadyExists = false;
 		//TODO write check
-		
+		OWLClass process = KAON2Manager.factory().owlClass(URI + "#process");
 		List<Individual> listIndividuals = process.getMemberIndividuals(onto);
 		
 		for(Individual individual: listIndividuals) {
