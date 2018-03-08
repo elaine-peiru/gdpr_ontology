@@ -641,6 +641,10 @@ public class Process {
 		return onto;
 	}
 	
+<<<<<<< HEAD
+	
+            
+=======
 	public void createIndividualOfVerbConcept(JSONObject json) {// TODO add arguments that continue all necessary information that is needed for
 		// creating an
 		// individual of the verb concept
@@ -767,9 +771,12 @@ public class Process {
 		}
 	}
 	
+>>>>>>> c0cbf08d0f6f639abea0958657ee9f431d350adf
 	public boolean checkProcessAlreadyExists(String processName) {
 		boolean processAlreadyExists = false;
 		//TODO write check
+		
+		
 		return processAlreadyExists;
 	}
 	

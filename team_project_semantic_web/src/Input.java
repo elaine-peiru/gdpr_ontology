@@ -21,7 +21,6 @@ public class Input {
 				switch (inputParts[0]) {
 				case "0.":
 					json.put("process", inputParts[2]);
-					//TODO call check if process is alreday existing
 					break;
 				case "1.":
 					json.put("dipaName", inputParts[2]);
@@ -223,7 +222,7 @@ public class Input {
 					json.put("riskToRepresentativesViewToSecurityOfProcessing", inputParts[2]);
 					break;
 				case "14.":
-					json.put("NameOfPublicAreaWhereDataWasMonitored", inputParts[2]);
+					json.put("nameOfPublicAreaWhereDataWasMonitored", inputParts[2]);
 					break;
 				case "15.":
 					json.put("firstProcessingDate", inputParts[2]);
