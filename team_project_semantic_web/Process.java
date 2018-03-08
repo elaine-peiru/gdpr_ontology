@@ -711,6 +711,16 @@ public class Process {
 		boolean processAlreadyExists = false;
 		//TODO write check
 		
+		List<Individual> listIndividuals = process.getMemberIndividuals(onto);
+		
+		for(Individual individual: listIndividuals) {
+			
+			String individualName = individual.toString();
+			if(individualName.equals(processName)) {
+				processAlreadyExists = true;
+				break;
+			}
+		}
 		
 		return processAlreadyExists;
 	}
