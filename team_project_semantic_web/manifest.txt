@@ -1,0 +1,4 @@
+echo Main-Class: src.TestApplication>myManifest
+md ..\bin\jar\TestApplication.jar
+jar cfm ..\bin\jar\TestApplication.jar myManifest -C ..\bin\src .
+java -jar ..\bin\jar\TestApplication.jar

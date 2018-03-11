@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="teamProjectSemanticWeb" default="compile" basedir=".">
+
+    <!-- LOCATIONS OF VARIOUS DIRECTORIES -->
+    <property name="kaon2jar" value="./lib/kaon2.jar"/>
+	<property name="jsonSimpleJar" value="./lib/json-simple-1.1.jar"/>
+    <property name="classdir" value="../bin"/>
+
+
+    <!-- SOURCE PATH -->
+    <path id="sourcepath">
+        <pathelement path="./src"/>
+    </path>
+
+
+    <!-- CLASS PATH -->
+    <path id="classpath">
+        <pathelement path="${kaon2jar}"/>
+        <pathelement path="${classdir}"/>
+		<pathelement path="${jsonSimpleJar}"/>
+    </path>
+
+
+    <!-- BUILD TARGETS  -->
+    <target name="compile">
+        <mkdir dir="${classdir}"/>
+        <javac destdir="${classdir}/src" deprecation="yes" source="1.8">
+            <src refid="sourcepath"/>
+            <classpath refid="classpath"/>
+        </javac>
+    </target>
+
+    <target name="clean">
+        <delete dir="${classdir}"/>
+    </target>
+	
+	<target name="jar">
+        <mkdir dir="${classdir}"/>
+        <jar destfile="${classdir}/jar/TestApplication.jar" basedir="${classdir}/src">
+		    <manifest>
+                <attribute name="Main-Class" value="src.TestApplication"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="${classdir}/jar/TestApplication.jar" fork="true"/>
+    </target>
+
+    <target name="testApplication">
+        <java classname="TestApplication" fork="yes">
+            <classpath refid="classpath"/>
+       </java>
+    </target>
+
+</project>

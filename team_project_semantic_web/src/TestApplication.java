@@ -1,11 +1,13 @@
 package src;
 
+import org.semanticweb.owlapi.model.OWLOntology;
+
 public class TestApplication {
 
 	public static void main(String[] args) throws Exception {
-		Process process = new Process();
-		process.test();
 		// TODO Auto-generated method stub
+		OurOntology onto = new OurOntology();
+		OWLOntology o = onto.getOurOntology();
 
 		/*
 		 * String userInput = JOptionPane
@@ -24,7 +26,7 @@ public class TestApplication {
 		 * String processName = processNames[i];
 		 * 
 		 * if(checkProcessAlreadyExists(processName) {
-		 *    do something, error
+		 * do something, error
 		 * }
 		 * 
 		 * // TODO check rules for each process
