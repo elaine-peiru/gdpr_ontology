@@ -95,6 +95,36 @@ public class Process {
 		OWLClass europeanDataProtectionBoard = factory.getOWLClass(ontologyIRI + "europeanDataProtectionBoard");
 		OWLClass unionLaw = factory.getOWLClass(ontologyIRI + "unionLaw");
 
+		//rule_deontic classes
+		OWLClass rule1_deontic = factory.getOWLClass(ontologyIRI + "rule1_deontic");
+		OWLClass rule3_deontic = factory.getOWLClass(ontologyIRI + "rule3_deontic");
+		OWLClass rule4_deontic = factory.getOWLClass(ontologyIRI + "rule4_deontic");
+		OWLClass rule5_deontic = factory.getOWLClass(ontologyIRI + "rule5_deontic");
+		
+		OWLClass rule7_deontic = factory.getOWLClass(ontologyIRI + "rule7_deontic");
+		OWLClass rule8_deontic = factory.getOWLClass(ontologyIRI + "rule8_deontic");
+		OWLClass rule9_deontic = factory.getOWLClass(ontologyIRI + "rule9_deontic");
+		OWLClass rule10_deontic = factory.getOWLClass(ontologyIRI + "rule10_deontic");
+		OWLClass rule12_deontic = factory.getOWLClass(ontologyIRI + "rule12_deontic");
+		OWLClass rule13_deontic = factory.getOWLClass(ontologyIRI + "rule13_deontic");
+		OWLClass rule15_deontic = factory.getOWLClass(ontologyIRI + "rule15_deontic");
+		OWLClass rule18_deontic = factory.getOWLClass(ontologyIRI + "rule8_deontic");
+		OWLClass rule20_deontic = factory.getOWLClass(ontologyIRI + "rule20_deontic");
+		OWLClass rule22_deontic = factory.getOWLClass(ontologyIRI + "rule22_deontic");
+		OWLClass rule23_deontic = factory.getOWLClass(ontologyIRI + "rule23_deontic");
+		OWLClass rule24_deontic = factory.getOWLClass(ontologyIRI + "rule24_deontic");
+		OWLClass rule241_deontic = factory.getOWLClass(ontologyIRI + "rule241_deontic");
+		OWLClass rule25_deontic = factory.getOWLClass(ontologyIRI + "rule25_deontic");
+		OWLClass rule251_deontic = factory.getOWLClass(ontologyIRI + "rule251_deontic");
+		OWLClass rule26_deontic = factory.getOWLClass(ontologyIRI + "rule26_deontic");
+		OWLClass rule21_deontic = factory.getOWLClass(ontologyIRI + "rule21_deontic");
+		OWLClass rule16_deontic = factory.getOWLClass(ontologyIRI + "rule16_deontic");
+		
+		//verb concept class
+		
+		
+		
+		
 		// create Individuals Factor -> like example line 1479
 		OWLIndividual approvedCodeOfConductIndividual = factory.getOWLNamedIndividual(ontologyIRI + "approvedCodeOfConductIndividual");
 		OWLIndividual assessmentOfNecessityOfProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "assessmentOfNecessityOfProcessingIndividual");
