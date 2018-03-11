@@ -340,11 +340,11 @@ public class Process {
 		
 		OWLObjectPropertyAssertionAxiom View_Respects_PublicInterest = factory.getOWLObjectPropertyAssertionAxiom(respects, viewIndividual, publicInterestIndividual);
 		OWLObjectPropertyAssertionAxiom View_Respects_SecurityOfProcessingOperation = factory.getOWLObjectPropertyAssertionAxiom(respects, viewIndividual, securityOfProcessingOperationIndividual);
-<<<<<<< HEAD
+
 		
 		OWLObjectPropertyAssertionAxiom Processor_SeeksViewOf_DataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf, processorIndividual, dataSubjectIndividual);
 		OWLObjectPropertyAssertionAxiom MeasureToAddressRisk_Contains_MechanismToEnsureProtectionOfData = factory.getOWLObjectPropertyAssertionAxiom(contains, measureToAddressRiskIndividual, mechanismsToEnsureProtectionOfDataIndividual);
-=======
+
 		OWLObjectPropertyAssertionAxiom Process_Has_DataProtectionImpactAssessment = factory.getOWLObjectPropertyAssertionAxiom(has, processIndividual, dataProtectionImpactAssessmentIndividual);
 		OWLObjectPropertyAssertionAxiom Process_Has_Processing = factory.getOWLObjectPropertyAssertionAxiom(has, processIndividual, processingIndividual);
 		OWLObjectPropertyAssertionAxiom Processing_Has_ContextOfProcessing = factory.getOWLObjectPropertyAssertionAxiom(has, processIndividual, contextOfProcessingIndividual);
@@ -364,8 +364,7 @@ public class Process {
 		
 		
 		
-		
->>>>>>> bbe4e448e10433187b0fa7f1148db3a1a1a4735a
+
 		// save changes to Ontology
 		OurOntology.saveOntology(onto);
 	}
