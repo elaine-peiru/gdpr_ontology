@@ -676,6 +676,13 @@ public class Process {
 		OWLObjectPropertyAssertionAxiom ContextOfProcessing_Has_Activity = factory.getOWLObjectPropertyAssertionAxiom(has, contextOfProcessingIndividual,
 				activityIndividual);
 
+		// OWLObjectPropertyAssertionAxiom Consistencymechanism_IsAppliedTo_Processing =
+		// factory.getOWLObjectPropertyAssertionAxiom(isAppliedTo,
+		// consistencymechanismIndividual, processingIndividual);
+		// OWLObjectPropertyAssertionAxiom ContextOfProcessing_Has_Activity = factory.getOWLObjectPropertyAssertionAxiom(has,
+		// contextOfProcessingIndividual,
+		// activityIndividual);
+
 		// save changes to Ontology
 		OurOntology.saveOntology(onto);
 	}
