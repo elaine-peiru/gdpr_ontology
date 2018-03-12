@@ -6,8 +6,7 @@ public class TestApplication {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		OurOntology onto = new OurOntology();
-		OWLOntology o = onto.getOurOntology();
+		OWLOntology o = OurOntology.getOurOntology();
 
 		/*
 		 * String userInput = JOptionPane
