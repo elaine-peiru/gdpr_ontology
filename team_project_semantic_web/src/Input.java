@@ -5,6 +5,11 @@ import java.io.FileReader;
 
 import org.json.simple.JSONObject;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+
 public class Input {
 
 	public Input() {
@@ -17,7 +22,7 @@ public class Input {
 			JSONObject json = new JSONObject();
 
 			while (line != null) {
-				String[] inputParts = line.split(":");
+				String[] inputParts = line.split(":", -1);
 				switch (inputParts[0]) {
 				case "0.":
 					json.put("process", inputParts[2]);
@@ -47,7 +52,7 @@ public class Input {
 					json.put("assessmentOfNecessity", inputParts[2]);
 					break;
 				case "4.5":
-					json.put("assessmentOfProportionaliry", inputParts[2]);
+					json.put("assessmentOfProportionality", inputParts[2]);
 					break;
 				case "4.6":
 					json.put("assessmentOfRisks", inputParts[2]);
@@ -147,7 +152,7 @@ public class Input {
 					json.put("nameSupervisoryAuthorityThatCreatedListNoDpia", inputParts[2]);
 					break;
 				case "10.":
-					json.put("dataRelatesToNatrualPerson", inputParts[2]);
+					json.put("dataRelatesToNaturalPerson", inputParts[2]);
 					break;
 				case "11.":
 					json.put("dataUsedForProcessing", inputParts[2]);
@@ -177,7 +182,7 @@ public class Input {
 					json.put("biometricData", inputParts[2]);
 					break;
 				case "11.9":
-					json.put("Health", inputParts[2]);
+					json.put("health", inputParts[2]);
 					break;
 				case "11.10":
 					json.put("sexLife", inputParts[2]);
@@ -186,7 +191,7 @@ public class Input {
 					json.put("sexualOrientation", inputParts[2]);
 					break;
 				case "11.12":
-					json.put("criminalConvication", inputParts[2]);
+					json.put("criminalConviction", inputParts[2]);
 					break;
 				case "11.12.1":
 					json.put("nameOfSupervisoryAuthorityThatControlsProcessCriminalConviction", inputParts[2]);
@@ -245,6 +250,7 @@ public class Input {
 
 				line = input.readLine();
 			}
+			this.printJSON(json);
 
 			Process process = new Process();
 			process.createIndividualOfProcess(json);
@@ -252,5 +258,13 @@ public class Input {
 			e.printStackTrace();
 		}
 
+	}
+
+	public void printJSON(JSONObject json) {
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		JsonParser jp = new JsonParser();
+		JsonElement je = jp.parse(json.toString());
+		String prettyJsonString = gson.toJson(je);
+		System.out.println(prettyJsonString);
 	}
 }

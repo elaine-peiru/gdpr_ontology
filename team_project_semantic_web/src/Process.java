@@ -1,10 +1,15 @@
 package src;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 import org.json.simple.JSONObject;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
@@ -19,11 +24,12 @@ public class Process {
 	public OWLOntology onto;
 	public OWLOntologyManager manager;
 	public final String ontologyIRI = "http://purl.org/net/team_project_semantic_web/";
-	public OWLDataFactory factory = manager.getOWLDataFactory();
+	public OWLDataFactory factory;
 
 	public Process() {
 		this.onto = OurOntology.getOurOntology();
 		this.manager = OWLManager.createOWLOntologyManager();
+		this.factory = this.manager.getOWLDataFactory();
 	}
 
 	@SuppressWarnings("deprecation")
@@ -226,79 +232,128 @@ public class Process {
 		OWLClass view_Respects_SecurityOfProcessingOperation = factory.getOWLClass(ontologyIRI + "view_Respects_SecurityOfProcessingOperation");
 
 		// create Individuals Factor -> like example line 1479
-		OWLIndividual approvedCodeOfConductIndividual = factory.getOWLNamedIndividual(ontologyIRI + "approvedCodeOfConductIndividual");
-		OWLIndividual assessmentOfNecessityOfProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "assessmentOfNecessityOfProcessingIndividual");
+		String approvedCodeOfConductControllerString = json.get("controllerAppliedApprovedCodeOfConduct").toString();
+		ArrayList<OWLIndividual> approvedCodeOfConductControllerIndividuals = new ArrayList<OWLIndividual>();
+		String[] approvedCodeOfCoductInformationController = approvedCodeOfConductControllerString.split(";");
+		for (int i = 0; i < approvedCodeOfCoductInformationController.length; i++) {
+			OWLIndividual approvedCodeOfConductIndividual = factory
+					.getOWLNamedIndividual(IRI.create(ontologyIRI + approvedCodeOfCoductInformationController[i]));
+			approvedCodeOfConductControllerIndividuals.add(approvedCodeOfConductIndividual);
+		}
+
+		String approvedCodeOfConductProcessorString = json.get("processorAppliedAppovedCodeOfConduct").toString();
+		ArrayList<OWLIndividual> approvedCodeOfConductProcessorIndividuals = new ArrayList<OWLIndividual>();
+		String[] approvedCodeOfCoductInformationProcessor = approvedCodeOfConductProcessorString.split(";");
+		for (int i = 0; i < approvedCodeOfCoductInformationController.length; i++) {
+			OWLIndividual approvedCodeOfConductIndividual = factory
+					.getOWLNamedIndividual(IRI.create(ontologyIRI + approvedCodeOfCoductInformationProcessor[i]));
+			approvedCodeOfConductProcessorIndividuals.add(approvedCodeOfConductIndividual);
+		}
+
+		String controllerString = json.get("nameOfController").toString();
+		ArrayList<OWLIndividual> controllerIndividuals = new ArrayList<OWLIndividual>();
+		String[] controllerInformation = controllerString.split(";");
+		for (int i = 0; i < controllerInformation.length; i++) {
+			OWLIndividual controllerIndividual = factory
+					.getOWLNamedIndividual(IRI.create(ontologyIRI + controllerInformation[i]));
+			controllerIndividuals.add(controllerIndividual);
+		}
+		String processorString = json.get("nameOfProcessor").toString();
+		ArrayList<OWLIndividual> processorIndividuals = new ArrayList<OWLIndividual>();
+		String[] processorInformation = processorString.split(";");
+		for (int i = 0; i < processorInformation.length; i++) {
+			OWLIndividual processorIndividual = factory
+					.getOWLNamedIndividual(IRI.create(ontologyIRI + processorInformation[i]));
+			processorIndividuals.add(processorIndividual);
+		}
+
+		OWLIndividual assessmentOfNecessityOfProcessingIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("assessmentOfNecessity")));
 		OWLIndividual assessmentOfProportionalityOfProcessingIndividual = factory
-				.getOWLNamedIndividual(ontologyIRI + "assessmentOfProportionalityOfProcessingIndividual");
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("assessmentOfProportionality")));
 		OWLIndividual assessmentOfRisksToRightsAndFreedomsIndividual = factory
-				.getOWLNamedIndividual(ontologyIRI + "assessmentOfRisksToRightsAndFreedomsIndividual");
-		OWLIndividual automatedProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "automatedProcessingIndividual");
-		OWLIndividual biometricDataIndividual = factory.getOWLNamedIndividual(ontologyIRI + "biometricDataIndividual");
-		OWLIndividual commercialInterestIndividual = factory.getOWLNamedIndividual(ontologyIRI + "commercialInterestIndividual");
-		OWLIndividual consistencymechanismIndividual = factory.getOWLNamedIndividual(ontologyIRI + "consistencymechanismIndividual");
-		OWLIndividual contextOfProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "contextOfProcessingIndividual");
-		OWLIndividual controllerIndividual = factory.getOWLNamedIndividual(ontologyIRI + "controllerIndividual");
-		OWLIndividual creationDateIndividual = factory.getOWLNamedIndividual(ontologyIRI + "creationDateIndividual");
-		OWLIndividual criminalConvictionIndividual = factory.getOWLNamedIndividual(ontologyIRI + "criminalConvictionIndividual");
-		OWLIndividual criminalOffenseIndividual = factory.getOWLNamedIndividual(ontologyIRI + "criminalOffenseIndividual");
-		OWLIndividual dataIndividual = factory.getOWLNamedIndividual(ontologyIRI + "dataIndividual");
-		OWLIndividual dataProtectionImpactAssessmentIndividual = factory.getOWLNamedIndividual(ontologyIRI + "dataProtectionImpactAssessmentIndividual");
-		OWLIndividual dataProtectionOfficerIndividual = factory.getOWLNamedIndividual(ontologyIRI + "dataProtectionOfficerIndividual");
-		OWLIndividual dataSubjectIndividual = factory.getOWLNamedIndividual(ontologyIRI + "dataSubjectIndividual");
-		OWLIndividual ethnicOriginIndividual = factory.getOWLNamedIndividual(ontologyIRI + "ethnicOriginIndividual");
-		OWLIndividual evaluationIndividual = factory.getOWLNamedIndividual(ontologyIRI + "evaluationIndividual");
-		OWLIndividual firstProcessingDateIndividual = factory.getOWLNamedIndividual(ontologyIRI + "firstProcessingDateIndividual");
-		OWLIndividual freeMovementOfDataIndividual = factory.getOWLNamedIndividual(ontologyIRI + "freeMovementOfDataIndividual");
-		OWLIndividual gdprIndividual = factory.getOWLNamedIndividual(ontologyIRI + "gdprIndividual");
-		OWLIndividual geneticDataIndividual = factory.getOWLNamedIndividual(ontologyIRI + "geneticDataIndividual");
-		OWLIndividual healthIndividual = factory.getOWLNamedIndividual(ontologyIRI + "healthIndividual");
-		OWLIndividual legalEffectIndividual = factory.getOWLNamedIndividual(ontologyIRI + "legalEffectIndividual");
-		OWLIndividual legitimateInterestOfProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "legitimateInterestOfProcessingIndividual");
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("assessmentOfRisks")));
+		OWLIndividual automatedProcessingIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("automatedProcessing")));
+		OWLIndividual biometricDataIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("biometricData")));
+		OWLIndividual commercialInterestIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual consistencymechanismIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("consistencyMechanism")));
+		OWLIndividual contextOfProcessingIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual creationDateIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("dpiaCreationDate")));
+		OWLIndividual criminalConvictionIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("criminalConviction")));
+		OWLIndividual criminalOffenseIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("criminalOffense")));
+		OWLIndividual dataIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual dataProtectionImpactAssessmentIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("dpiaName")));
+		OWLIndividual dataProtectionOfficerIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameDataProtectionOfficer")));
+		OWLIndividual dataSubjectIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual ethnicOriginIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("ethnicOrigin")));
+		OWLIndividual evaluationIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("evaluation")));
+		OWLIndividual firstProcessingDateIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("firstProcessingDate")));
+		OWLIndividual freeMovementOfDataIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual gdprIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual geneticDataIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("geneticData")));
+		OWLIndividual healthIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("health")));
+		OWLIndividual legalEffectIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("legalEffect")));
+		OWLIndividual legitimateInterestOfProcessingIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("legitimateInterestOfProcessing")));
 		OWLIndividual listWithProcessesThatDoNotNeedDpiaIndividual = factory
-				.getOWLNamedIndividual(ontologyIRI + "listWithProcessesThatDoNotNeedDpiaIndividual");
-		OWLIndividual listWithProcessesThatNeedDpiaIndividual = factory.getOWLNamedIndividual(ontologyIRI + "listWithProcessesThatNeedDpiaIndividual");
-		OWLIndividual measureToAddressRiskIndividual = factory.getOWLNamedIndividual(ontologyIRI + "measureToAddressRiskIndividual");
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameOfListwithAllProcessesThatDoNotNeedDpia")));
+		OWLIndividual listWithProcessesThatNeedDpiaIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameOfListWithAllProcessesThatNeedDpia")));
+		OWLIndividual measureToAddressRiskIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
 		OWLIndividual mechanismsToEnsureProtectionOfDataIndividual = factory
-				.getOWLNamedIndividual(ontologyIRI + "mechanismsToEnsureProtectionOfDataIndividual");
-		OWLIndividual memberStateLawIndividual = factory.getOWLNamedIndividual(ontologyIRI + "memberStateLawIndividual");
-		OWLIndividual monitoringOfDataInMemberstateIndividual = factory.getOWLNamedIndividual(ontologyIRI + "monitoringOfDataInMemberstateIndividual");
-		OWLIndividual offeringOfGoodsIndividual = factory.getOWLNamedIndividual(ontologyIRI + "offeringOfGoodsIndividual");
-		OWLIndividual offeringOfServicesIndividual = factory.getOWLNamedIndividual(ontologyIRI + "offeringOfServicesIndividual");
-		OWLIndividual personalDataIndividual = factory.getOWLNamedIndividual(ontologyIRI + "personalDataIndividual");
-		OWLIndividual personalInterestIndividual = factory.getOWLNamedIndividual(ontologyIRI + "personalInterestIndividual");
-		OWLIndividual philosophicalBeliefIndividual = factory.getOWLNamedIndividual(ontologyIRI + "philosophicalBeliefIndividual");
-		OWLIndividual politicalOpinionIndividual = factory.getOWLNamedIndividual(ontologyIRI + "politicalOpinionIndividual");
-		OWLIndividual processIndividual = factory.getOWLNamedIndividual(ontologyIRI + "processIndividual");
-		OWLIndividual processorIndividual = factory.getOWLNamedIndividual(ontologyIRI + "processorIndividual");
-		OWLIndividual profilingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "profilingIndividual");
-		OWLIndividual publicAreaIndividual = factory.getOWLNamedIndividual(ontologyIRI + "publicAreaIndividual");
-		OWLIndividual publicInterestIndividual = factory.getOWLNamedIndividual(ontologyIRI + "publicInterestIndividual");
-		OWLIndividual purposeOfProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "purposeOfProcessingIndividual");
-		OWLIndividual racialOriginIndividual = factory.getOWLNamedIndividual(ontologyIRI + "racialOriginIndividual");
-		OWLIndividual religiousBeliefIndividual = factory.getOWLNamedIndividual(ontologyIRI + "religiousBeliefIndividual");
-		OWLIndividual representativeOfDataSubjectIndividual = factory.getOWLNamedIndividual(ontologyIRI + "representativeOfDataSubjectIndividual");
-		OWLIndividual reviewIndividual = factory.getOWLNamedIndividual(ontologyIRI + "reviewIndividual");
-		OWLIndividual rightsIndividual = factory.getOWLNamedIndividual(ontologyIRI + "rightsIndividual");
-		OWLIndividual riskIndividual = factory.getOWLNamedIndividual(ontologyIRI + "riskIndividual");
-		OWLIndividual safeguardIndividual = factory.getOWLNamedIndividual(ontologyIRI + "safeguardIndividual");
-		OWLIndividual scopeIndividual = factory.getOWLNamedIndividual(ontologyIRI + "scopeIndividual");
-		OWLIndividual securityMeasureIndividual = factory.getOWLNamedIndividual(ontologyIRI + "securityMeasureIndividual");
-		OWLIndividual securityOfProcessingOperationIndividual = factory.getOWLNamedIndividual(ontologyIRI + "securityOfProcessingOperationIndividual");
-		OWLIndividual sexLifeIndividual = factory.getOWLNamedIndividual(ontologyIRI + "sexLifeIndividual");
-		OWLIndividual sexualOrientationIndividual = factory.getOWLNamedIndividual(ontologyIRI + "sexualOrientationIndividual");
-		OWLIndividual supervisoryAuthorityIndividual = factory.getOWLNamedIndividual(ontologyIRI + "supervisoryAuthorityIndividual");
-		OWLIndividual systematicDescriptionOfProcessingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "systematicDescriptionOfProcessingIndividual");
-		OWLIndividual technologyIndividual = factory.getOWLNamedIndividual(ontologyIRI + "technologyIndividual");
-		OWLIndividual tradeUnionMembershipIndividual = factory.getOWLNamedIndividual(ontologyIRI + "tradeUnionMembershipIndividual");
-		OWLIndividual viewIndividual = factory.getOWLNamedIndividual(ontologyIRI + "viewIndividual");
-		OWLIndividual europeanDataProtectionBoardIndividual = factory.getOWLNamedIndividual(ontologyIRI + "europeanDataProtectionBoardIndividual");
-		OWLIndividual unionLawIndividual = factory.getOWLNamedIndividual(ontologyIRI + "unionLawIndividual");
-		OWLIndividual processingIndividual = factory.getOWLNamedIndividual(ontologyIRI + "processing");
-		OWLIndividual monitoringIndividual = factory.getOWLNamedIndividual(ontologyIRI + "monitoring");
-		OWLIndividual activityIndividual = factory.getOWLNamedIndividual(ontologyIRI + "activity");
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("mechanismsToEnsureProtectionOfData")));
+		OWLIndividual memberStateLawIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual monitoringOfDataInMemberstateIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("monitoringBehaviorInMemberstate")));
+		OWLIndividual offeringOfGoodsIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("offeringOfGoods")));
+		OWLIndividual offeringOfServicesIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("offeringOfServices")));
+		OWLIndividual personalDataIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual personalInterestIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual philosophicalBeliefIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("philosophicalBelief")));
+		OWLIndividual politicalOpinionIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("politicalOpinion")));
+		OWLIndividual processIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("process")));
+		OWLIndividual profilingIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("profiling")));
+		OWLIndividual publicAreaIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameOfPublicAreaWhereDataWasMonitored")));
+		OWLIndividual publicInterestIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual purposeOfProcessingIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("purposeOfProcessing")));
+		OWLIndividual racialOriginIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("racialOrigin")));
+		OWLIndividual religiousBeliefIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("religiousBelief")));
+		OWLIndividual representativeOfDataSubjectIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual reviewIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual rightsIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual riskOfContextIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("riskRelatedToContent")));
+		OWLIndividual riskOfPurposeIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("riskRelatedToPurpose")));
+		OWLIndividual riskOfTechnologyIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("riskRelatedToTechnology")));
+		OWLIndividual riskOfScopeIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("riskRelatedToScope")));
+		OWLIndividual safeguardIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("safeguard")));
+		OWLIndividual scopeIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("scopeOfProcessing")));
+		OWLIndividual securityMeasureIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("securityMeasure")));
+		OWLIndividual securityOfProcessingOperationIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual sexLifeIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("sexLife")));
+		OWLIndividual sexualOrientationIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("sexualOrientation")));
+		OWLIndividual supervisoryAuthorityCriminalConvictionIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameOfSupervisoryAuthorityThatControlsProcessCriminalConviction")));
+		OWLIndividual supervisoryAuthorityCriminalOffensiveIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameOfSupervisoryAuthorityThatControlsProcessCriminalOffense")));
+		OWLIndividual supervisoryAuthorityListNeedDPIAIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameSupervisoryAuthotityThatCreatedListDpia")));
+		OWLIndividual supervisoryAuthorityListNoDPIAIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameSupervisoryAuthorityThatCreatedListNoDpia")));
+		OWLIndividual systematicDescriptionOfProcessingIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("systematicDescriptionOfProcessing")));
+		OWLIndividual technologyIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("technologyOfProcessing")));
+		OWLIndividual tradeUnionMembershipIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("tradeUnionMembership")));
+		OWLIndividual viewDataSubjectIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("viewOfPerson")));
+		OWLIndividual viewRepresenativeDataSubjectIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("viewOfRepresentativeOfPerson")));
+		OWLIndividual europeanDataProtectionBoardIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual unionLawIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual processingIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual monitoringIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
+		OWLIndividual activityIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("")));
 
 		// specify class of individual -> like example line 1593
-		OWLClassAssertionAxiom classAssertionApprovedCodeOfConduct = factory.getOWLClassAssertionAxiom(approvedCodeOfConduct, approvedCodeOfConductIndividual);
+		// OWLClassAssertionAxiom classAssertionApprovedCodeOfConduct = factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
+		// approvedCodeOfConductIndividual);
 		OWLClassAssertionAxiom classAssertionAssessmentOfNecessityOfProcessing = factory.getOWLClassAssertionAxiom(assessmentOfNecessityOfProcessing,
 				assessmentOfNecessityOfProcessingIndividual);
 		OWLClassAssertionAxiom classAssertionAssessmentOfProportionalityOfProcessing = factory
@@ -310,7 +365,7 @@ public class Process {
 		OWLClassAssertionAxiom classAssertionCommercialInterest = factory.getOWLClassAssertionAxiom(commercialInterest, commercialInterestIndividual);
 		OWLClassAssertionAxiom classAssertionConsistencymechanism = factory.getOWLClassAssertionAxiom(consistencymechanism, consistencymechanismIndividual);
 		OWLClassAssertionAxiom classAssertionContextOfProcessing = factory.getOWLClassAssertionAxiom(contextOfProcessing, contextOfProcessingIndividual);
-		OWLClassAssertionAxiom classAssertionController = factory.getOWLClassAssertionAxiom(controller, controllerIndividual);
+		// OWLClassAssertionAxiom classAssertionController = factory.getOWLClassAssertionAxiom(controller, controllerIndividual);
 		OWLClassAssertionAxiom classAssertionCreationDate = factory.getOWLClassAssertionAxiom(creationDate, creationDateIndividual);
 		OWLClassAssertionAxiom classAssertionCriminalConviction = factory.getOWLClassAssertionAxiom(criminalConviction, criminalConvictionIndividual);
 		OWLClassAssertionAxiom classAssertionCriminalOffense = factory.getOWLClassAssertionAxiom(criminalOffense, criminalOffenseIndividual);
@@ -346,7 +401,7 @@ public class Process {
 		OWLClassAssertionAxiom classAssertionPhilosophicalBelief = factory.getOWLClassAssertionAxiom(philosophicalBelief, philosophicalBeliefIndividual);
 		OWLClassAssertionAxiom classAssertionPoliticalOpinion = factory.getOWLClassAssertionAxiom(politicalOpinion, politicalOpinionIndividual);
 		OWLClassAssertionAxiom classAssertionProcess = factory.getOWLClassAssertionAxiom(process, processIndividual);
-		OWLClassAssertionAxiom classAssertionProcessor = factory.getOWLClassAssertionAxiom(processor, processorIndividual);
+		// OWLClassAssertionAxiom classAssertionProcessor = factory.getOWLClassAssertionAxiom(processor, processorIndividual);
 		OWLClassAssertionAxiom classAssertionProfiling = factory.getOWLClassAssertionAxiom(profiling, profilingIndividual);
 		OWLClassAssertionAxiom classAssertionPublicArea = factory.getOWLClassAssertionAxiom(publicArea, publicAreaIndividual);
 		OWLClassAssertionAxiom classAssertionPublicInterest = factory.getOWLClassAssertionAxiom(publicInterest, publicInterestIndividual);
@@ -357,7 +412,7 @@ public class Process {
 				representativeOfDataSubjectIndividual);
 		OWLClassAssertionAxiom classAssertionReview = factory.getOWLClassAssertionAxiom(review, reviewIndividual);
 		OWLClassAssertionAxiom classAssertionRights = factory.getOWLClassAssertionAxiom(rights, rightsIndividual);
-		OWLClassAssertionAxiom classAssertionRisk = factory.getOWLClassAssertionAxiom(risk, riskIndividual);
+		// OWLClassAssertionAxiom classAssertionRisk = factory.getOWLClassAssertionAxiom(risk, riskIndividual);
 		OWLClassAssertionAxiom classAssertionSafeguard = factory.getOWLClassAssertionAxiom(safeguard, safeguardIndividual);
 		OWLClassAssertionAxiom classAssertionScope = factory.getOWLClassAssertionAxiom(scope, scopeIndividual);
 		OWLClassAssertionAxiom classAssertionSecurityMeasure = factory.getOWLClassAssertionAxiom(securityMeasure, securityMeasureIndividual);
@@ -365,12 +420,13 @@ public class Process {
 				securityOfProcessingOperationIndividual);
 		OWLClassAssertionAxiom classAssertionSexLife = factory.getOWLClassAssertionAxiom(sexLife, sexLifeIndividual);
 		OWLClassAssertionAxiom classAssertionSexualOrientation = factory.getOWLClassAssertionAxiom(sexualOrientation, sexualOrientationIndividual);
-		OWLClassAssertionAxiom classAssertionSupervisoryAuthority = factory.getOWLClassAssertionAxiom(supervisoryAuthority, supervisoryAuthorityIndividual);
+		// OWLClassAssertionAxiom classAssertionSupervisoryAuthority = factory.getOWLClassAssertionAxiom(supervisoryAuthority,
+		// supervisoryAuthorityIndividual);
 		OWLClassAssertionAxiom classAssertionSystematicDescriptionOfProcessing = factory.getOWLClassAssertionAxiom(systematicDescriptionOfProcessing,
 				systematicDescriptionOfProcessingIndividual);
 		OWLClassAssertionAxiom classAssertionTechnology = factory.getOWLClassAssertionAxiom(technology, technologyIndividual);
 		OWLClassAssertionAxiom classAssertionTradeUnionMembership = factory.getOWLClassAssertionAxiom(tradeUnionMembership, tradeUnionMembershipIndividual);
-		OWLClassAssertionAxiom classAssertionView = factory.getOWLClassAssertionAxiom(view, viewIndividual);
+		// OWLClassAssertionAxiom classAssertionView = factory.getOWLClassAssertionAxiom(view, viewIndividual);
 		OWLClassAssertionAxiom classAssertionEuropeanDataProtectionBoard = factory.getOWLClassAssertionAxiom(europeanDataProtectionBoard,
 				europeanDataProtectionBoardIndividual);
 		OWLClassAssertionAxiom classAssertionUnionLaw = factory.getOWLClassAssertionAxiom(unionLaw, unionLawIndividual);
@@ -428,27 +484,37 @@ public class Process {
 				contextOfProcessingIndividual, offeringOfGoodsIndividual);
 		OWLObjectPropertyAssertionAxiom ContextOfProcessing_Involves_OfferingOfServices = factory.getOWLObjectPropertyAssertionAxiom(involves,
 				contextOfProcessingIndividual, offeringOfServicesIndividual);
-		OWLObjectPropertyAssertionAxiom ContextOfProcessing_IsLikelyToResultIn_Risk = factory.getOWLObjectPropertyAssertionAxiom(isLikelyToResultIn,
-				contextOfProcessingIndividual, riskIndividual);
-		OWLObjectPropertyAssertionAxiom Controller_Assesses_PurposeOfProcessing = factory.getOWLObjectPropertyAssertionAxiom(assesses, controllerIndividual,
-				purposeOfProcessingIndividual);
-		OWLObjectPropertyAssertionAxiom Controller_CarriesOut_Review = factory.getOWLObjectPropertyAssertionAxiom(carriesOut, controllerIndividual,
-				reviewIndividual);
-		OWLObjectPropertyAssertionAxiom Controller_Creates_DataProtectonImpactAssessment = factory.getOWLObjectPropertyAssertionAxiom(creates,
-				controllerIndividual, dataProtectionImpactAssessmentIndividual);
-		OWLObjectPropertyAssertionAxiom Controller_IsCompliantTo_ApprovedCodeOfConduct = factory.getOWLObjectPropertyAssertionAxiom(isCompliantTo,
-				controllerIndividual, approvedCodeOfConductIndividual);
-		OWLObjectPropertyAssertionAxiom Controller_SeeksAdviceOf_DataProtectionOfficer = factory.getOWLObjectPropertyAssertionAxiom(seeksAdviceOf,
-				controllerIndividual, dataProtectionOfficerIndividual);
+		// OWLObjectPropertyAssertionAxiom ContextOfProcessing_IsLikelyToResultIn_Risk =
+		// factory.getOWLObjectPropertyAssertionAxiom(isLikelyToResultIn,
+		// contextOfProcessingIndividual, riskIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_Assesses_PurposeOfProcessing = factory.getOWLObjectPropertyAssertionAxiom(assesses,
+		// controllerIndividual,
+		// purposeOfProcessingIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_CarriesOut_Review = factory.getOWLObjectPropertyAssertionAxiom(carriesOut,
+		// controllerIndividual,
+		// reviewIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_Creates_DataProtectonImpactAssessment =
+		// factory.getOWLObjectPropertyAssertionAxiom(creates,
+		// controllerIndividual, dataProtectionImpactAssessmentIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_IsCompliantTo_ApprovedCodeOfConduct =
+		// factory.getOWLObjectPropertyAssertionAxiom(isCompliantTo,
+		// controllerIndividual, approvedCodeOfConductIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_SeeksAdviceOf_DataProtectionOfficer =
+		// factory.getOWLObjectPropertyAssertionAxiom(seeksAdviceOf,
+		// controllerIndividual, dataProtectionOfficerIndividual);
 
-		OWLObjectPropertyAssertionAxiom Controller_SeeksViewOf_DataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf, controllerIndividual,
-				dataSubjectIndividual);
-		OWLObjectPropertyAssertionAxiom Controller_SeeksViewOf_RepresentativeOfDataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf,
-				controllerIndividual, representativeOfDataSubjectIndividual);
-		OWLObjectPropertyAssertionAxiom CreationDate_OccursBefore_FirstProcessingDate = factory.getOWLObjectPropertyAssertionAxiom(occursBefore,
-				creationDateIndividual, firstProcessingDateIndividual);
-		OWLObjectPropertyAssertionAxiom Data_Contains_BiometricData = factory.getOWLObjectPropertyAssertionAxiom(contains, dataIndividual,
-				biometricDataIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_SeeksViewOf_DataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf,
+		// controllerIndividual,
+		// dataSubjectIndividual);
+		// OWLObjectPropertyAssertionAxiom Controller_SeeksViewOf_RepresentativeOfDataSubject =
+		// factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf,
+		// controllerIndividual, representativeOfDataSubjectIndividual);
+		// OWLObjectPropertyAssertionAxiom CreationDate_OccursBefore_FirstProcessingDate =
+		// factory.getOWLObjectPropertyAssertionAxiom(occursBefore,
+		// creationDateIndividual, firstProcessingDateIndividual);
+		// OWLObjectPropertyAssertionAxiom Data_Contains_BiometricData = factory.getOWLObjectPropertyAssertionAxiom(contains,
+		// dataIndividual,
+		// biometricDataIndividual);
 		OWLObjectPropertyAssertionAxiom Data_IsMonitoredIn_PublicArea = factory.getOWLObjectPropertyAssertionAxiom(isMonitoredIn, dataIndividual,
 				publicAreaIndividual);
 		OWLObjectPropertyAssertionAxiom Data_Contains_GeneticData = factory.getOWLObjectPropertyAssertionAxiom(contains, dataIndividual, geneticDataIndividual);
@@ -490,8 +556,8 @@ public class Process {
 				dataProtectionImpactAssessmentIndividual, purposeOfProcessingIndividual);
 		OWLObjectPropertyAssertionAxiom DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing = factory
 				.getOWLObjectPropertyAssertionAxiom(contains, dataProtectionImpactAssessmentIndividual, systematicDescriptionOfProcessingIndividual);
-		OWLObjectPropertyAssertionAxiom DataProtectionOfficer_IsDesignated = factory.getOWLObjectPropertyAssertionAxiom(isDesignated,
-				dataProtectionOfficerIndividual, null);
+		// OWLObjectPropertyAssertionAxiom DataProtectionOfficer_IsDesignated = factory.getOWLObjectPropertyAssertionAxiom(isDesignated,
+		// dataProtectionOfficerIndividual, null);
 		OWLObjectPropertyAssertionAxiom EuropeanDataProtectionBoard_Receives_ListWithProcessesThatDoNotNeedDpiaIndividual = factory
 				.getOWLObjectPropertyAssertionAxiom(receives, europeanDataProtectionBoardIndividual, listWithProcessesThatDoNotNeedDpiaIndividual);
 		OWLObjectPropertyAssertionAxiom EuropeanDataProtectionBoard_Receives_ListWithProcessesThatDoNeedDpiaIndividual = factory
@@ -523,45 +589,61 @@ public class Process {
 
 		OWLObjectPropertyAssertionAxiom Process_IsPerformed_AccordingToDataProtectionImpactAssessment = factory
 				.getOWLObjectPropertyAssertionAxiom(isPerformedAccordingTo, processIndividual, dataProtectionImpactAssessmentIndividual);
-		OWLObjectPropertyAssertionAxiom Processor_Assesses_PurposeOfProcessing = factory.getOWLObjectPropertyAssertionAxiom(assesses, processorIndividual,
-				purposeOfProcessingIndividual);
-		OWLObjectPropertyAssertionAxiom Processor_Controls_Process = factory.getOWLObjectPropertyAssertionAxiom(controls, processorIndividual,
-				processIndividual);
-		OWLObjectPropertyAssertionAxiom Processor_IsAuthorizedBy_MemberStateLaw = factory.getOWLObjectPropertyAssertionAxiom(isAuthorizedBy,
-				processorIndividual, memberStateLawIndividual);
-		OWLObjectPropertyAssertionAxiom Processor_IsAuthorizedBy_UnionLaw = factory.getOWLObjectPropertyAssertionAxiom(isAuthorizedBy, processorIndividual,
-				unionLawIndividual);
-		OWLObjectPropertyAssertionAxiom Processor_IsCompliantTo_ApprovedCodeOfConduct = factory.getOWLObjectPropertyAssertionAxiom(isCompliantTo,
-				processorIndividual, approvedCodeOfConductIndividual);
-		OWLObjectPropertyAssertionAxiom Processor_SeeksViewOf_RepresentativeOfDataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf,
-				processorIndividual, representativeOfDataSubjectIndividual);
-		OWLObjectPropertyAssertionAxiom PurposeOfProcessing_IsLikelyToResultIn_Risk = factory.getOWLObjectPropertyAssertionAxiom(isLikelyToResultIn,
-				purposeOfProcessingIndividual, riskIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_Assesses_PurposeOfProcessing = factory.getOWLObjectPropertyAssertionAxiom(assesses,
+		// processorIndividual,
+		// purposeOfProcessingIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_Controls_Process = factory.getOWLObjectPropertyAssertionAxiom(controls,
+		// processorIndividual,
+		// processIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_IsAuthorizedBy_MemberStateLaw =
+		// factory.getOWLObjectPropertyAssertionAxiom(isAuthorizedBy,
+		// processorIndividual, memberStateLawIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_IsAuthorizedBy_UnionLaw = factory.getOWLObjectPropertyAssertionAxiom(isAuthorizedBy,
+		// processorIndividual,
+		// unionLawIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_IsCompliantTo_ApprovedCodeOfConduct =
+		// factory.getOWLObjectPropertyAssertionAxiom(isCompliantTo,
+		// processorIndividual, approvedCodeOfConductIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_SeeksViewOf_RepresentativeOfDataSubject =
+		// factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf,
+		// processorIndividual, representativeOfDataSubjectIndividual);
+		// OWLObjectPropertyAssertionAxiom PurposeOfProcessing_IsLikelyToResultIn_Risk =
+		// factory.getOWLObjectPropertyAssertionAxiom(isLikelyToResultIn,
+		// purposeOfProcessingIndividual, riskIndividual);
 		OWLObjectPropertyAssertionAxiom Review_Checks_Process = factory.getOWLObjectPropertyAssertionAxiom(checks, reviewIndividual, processIndividual);
 
-		OWLObjectPropertyAssertionAxiom Risk_Changes = factory.getOWLObjectPropertyAssertionAxiom(changes, riskIndividual, null);
-		OWLObjectPropertyAssertionAxiom TechnologyOfProcessing_IsLikelyToResultIn_Risk = factory.getOWLObjectPropertyAssertionAxiom(isLikelyToResultIn,
-				scopeIndividual, riskIndividual);
-		OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Applies_ConsistencyMechanism = factory.getOWLObjectPropertyAssertionAxiom(applies,
-				supervisoryAuthorityIndividual, consistencymechanismIndividual);
-		OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Controls_Process = factory.getOWLObjectPropertyAssertionAxiom(controls,
-				supervisoryAuthorityIndividual, processIndividual);
-		OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Creates_ListOfProcessesThatDoNotNeedDPIA = factory.getOWLObjectPropertyAssertionAxiom(creates,
-				supervisoryAuthorityIndividual, listWithProcessesThatDoNotNeedDpiaIndividual);
-		OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Creates_ListOfProcessesThatNeedDPIA = factory.getOWLObjectPropertyAssertionAxiom(creates,
-				supervisoryAuthorityIndividual, listWithProcessesThatNeedDpiaIndividual);
-		OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotNeedDPIA = factory.getOWLObjectPropertyAssertionAxiom(publishes,
-				supervisoryAuthorityIndividual, listWithProcessesThatDoNotNeedDpiaIndividual);
-		OWLObjectPropertyAssertionAxiom View_Respects_CommercialInterest = factory.getOWLObjectPropertyAssertionAxiom(respects, viewIndividual,
-				commercialInterestIndividual);
+		// OWLObjectPropertyAssertionAxiom Risk_Changes = factory.getOWLObjectPropertyAssertionAxiom(changes, riskIndividual, null);
+		// OWLObjectPropertyAssertionAxiom TechnologyOfProcessing_IsLikelyToResultIn_Risk =
+		// factory.getOWLObjectPropertyAssertionAxiom(isLikelyToResultIn,
+		// scopeIndividual, riskIndividual);
+		// OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Applies_ConsistencyMechanism =
+		// factory.getOWLObjectPropertyAssertionAxiom(applies,
+		// supervisoryAuthorityIndividual, consistencymechanismIndividual);
+		// OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Controls_Process = factory.getOWLObjectPropertyAssertionAxiom(controls,
+		// supervisoryAuthorityIndividual, processIndividual);
+		// OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Creates_ListOfProcessesThatDoNotNeedDPIA =
+		// factory.getOWLObjectPropertyAssertionAxiom(creates,
+		// supervisoryAuthorityIndividual, listWithProcessesThatDoNotNeedDpiaIndividual);
+		// OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Creates_ListOfProcessesThatNeedDPIA =
+		// factory.getOWLObjectPropertyAssertionAxiom(creates,
+		// supervisoryAuthorityIndividual, listWithProcessesThatNeedDpiaIndividual);
+		// OWLObjectPropertyAssertionAxiom SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotNeedDPIA =
+		// factory.getOWLObjectPropertyAssertionAxiom(publishes,
+		// supervisoryAuthorityIndividual, listWithProcessesThatDoNotNeedDpiaIndividual);
+		// OWLObjectPropertyAssertionAxiom View_Respects_CommercialInterest = factory.getOWLObjectPropertyAssertionAxiom(respects,
+		// viewIndividual,
+		// commercialInterestIndividual);
 
-		OWLObjectPropertyAssertionAxiom View_Respects_PublicInterest = factory.getOWLObjectPropertyAssertionAxiom(respects, viewIndividual,
-				publicInterestIndividual);
-		OWLObjectPropertyAssertionAxiom View_Respects_SecurityOfProcessingOperation = factory.getOWLObjectPropertyAssertionAxiom(respects, viewIndividual,
-				securityOfProcessingOperationIndividual);
+		// OWLObjectPropertyAssertionAxiom View_Respects_PublicInterest = factory.getOWLObjectPropertyAssertionAxiom(respects,
+		// viewIndividual,
+		// publicInterestIndividual);
+		// OWLObjectPropertyAssertionAxiom View_Respects_SecurityOfProcessingOperation =
+		// factory.getOWLObjectPropertyAssertionAxiom(respects, viewIndividual,
+		// securityOfProcessingOperationIndividual);
 
-		OWLObjectPropertyAssertionAxiom Processor_SeeksViewOf_DataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf, processorIndividual,
-				dataSubjectIndividual);
+		// OWLObjectPropertyAssertionAxiom Processor_SeeksViewOf_DataSubject = factory.getOWLObjectPropertyAssertionAxiom(seeksViewOf,
+		// processorIndividual,
+		// dataSubjectIndividual);
 		OWLObjectPropertyAssertionAxiom MeasureToAddressRisk_Contains_MechanismToEnsureProtectionOfData = factory.getOWLObjectPropertyAssertionAxiom(contains,
 				measureToAddressRiskIndividual, mechanismsToEnsureProtectionOfDataIndividual);
 
@@ -574,16 +656,21 @@ public class Process {
 				purposeOfProcessingIndividual);
 		OWLObjectPropertyAssertionAxiom Processing_Has_Scope = factory.getOWLObjectPropertyAssertionAxiom(has, processIndividual, scopeIndividual);
 		OWLObjectPropertyAssertionAxiom Processing_Has_Technology = factory.getOWLObjectPropertyAssertionAxiom(has, processingIndividual, technologyIndividual);
-		OWLObjectPropertyAssertionAxiom ContextOfProcessing_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has, contextOfProcessingIndividual,
-				riskIndividual);
-		OWLObjectPropertyAssertionAxiom PurposeOfProcessing_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has, purposeOfProcessingIndividual,
-				riskIndividual);
-		OWLObjectPropertyAssertionAxiom Scope_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has, scopeIndividual, riskIndividual);
-		OWLObjectPropertyAssertionAxiom Technology_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has, technologyIndividual, riskIndividual);
+		// OWLObjectPropertyAssertionAxiom ContextOfProcessing_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has,
+		// contextOfProcessingIndividual,
+		// riskIndividual);
+		// OWLObjectPropertyAssertionAxiom PurposeOfProcessing_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has,
+		// purposeOfProcessingIndividual,
+		// riskIndividual);
+		// OWLObjectPropertyAssertionAxiom Scope_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has, scopeIndividual,
+		// riskIndividual);
+		// OWLObjectPropertyAssertionAxiom Technology_Has_Risk = factory.getOWLObjectPropertyAssertionAxiom(has, technologyIndividual,
+		// riskIndividual);
 		OWLObjectPropertyAssertionAxiom Process_Has_Data = factory.getOWLObjectPropertyAssertionAxiom(has, processIndividual, dataIndividual);
 		OWLObjectPropertyAssertionAxiom Data_IsPartOf_Evaluation = factory.getOWLObjectPropertyAssertionAxiom(isPartOf, dataIndividual, evaluationIndividual);
 		OWLObjectPropertyAssertionAxiom Data_Has_Monitoring = factory.getOWLObjectPropertyAssertionAxiom(has, dataIndividual, monitoringIndividual);
-		OWLObjectPropertyAssertionAxiom DataSubject_Has_View = factory.getOWLObjectPropertyAssertionAxiom(has, dataSubjectIndividual, viewIndividual);
+		// OWLObjectPropertyAssertionAxiom DataSubject_Has_View = factory.getOWLObjectPropertyAssertionAxiom(has, dataSubjectIndividual,
+		// viewIndividual);
 		OWLObjectPropertyAssertionAxiom ConsistencyMechanism_IsAppliedTo_Processing = factory.getOWLObjectPropertyAssertionAxiom(isAppliedTo,
 				consistencymechanismIndividual, processingIndividual);
 		OWLObjectPropertyAssertionAxiom ContextOfProcessing_Has_Activity = factory.getOWLObjectPropertyAssertionAxiom(has, contextOfProcessingIndividual,
@@ -591,5 +678,20 @@ public class Process {
 
 		// save changes to Ontology
 		OurOntology.saveOntology(onto);
+	}
+
+	public boolean compareDates(String creationDate, String processingDate) {
+		boolean creationBeforeProcessing = false;
+		try {
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			Date dCreationDate = sdf.parse(creationDate);
+			Date dProcessingDate = sdf.parse(processingDate);
+			creationBeforeProcessing = dCreationDate.before(dProcessingDate);
+
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+
+		return creationBeforeProcessing;
 	}
 }
