@@ -3,7 +3,8 @@ package src;
 import java.io.File;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.io.StringDocumentTarget;
+import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
+import org.semanticweb.owlapi.io.StreamDocumentTarget;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -43,7 +44,8 @@ public class OurOntology {
 	public static void saveOntology(OWLOntology onto) {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		try {
-			manager.saveOntology(onto, new StringDocumentTarget());
+			RDFXMLDocumentFormat owlxmlFormat = new RDFXMLDocumentFormat();
+			manager.saveOntology(onto, owlxmlFormat, new StreamDocumentTarget(System.out));
 		} catch (OWLOntologyStorageException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

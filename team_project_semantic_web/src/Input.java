@@ -28,7 +28,7 @@ public class Input {
 					json.put("process", inputParts[2]);
 					break;
 				case "1.":
-					json.put("dipaName", inputParts[2]);
+					json.put("dpiaName", inputParts[2]);
 					break;
 				case "2.":
 					json.put("dpiaCreationDate", inputParts[2]);
