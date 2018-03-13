@@ -8,7 +8,7 @@ public enum ClassName {
 									"http://webprotege.stanford.edu/R7iQxBbiMUlN56nETEIJb5B"), automated_processing(
 											"http://webprotege.stanford.edu/ReonRyBcZTVPrLVQg7YQTa"), biometric_data(
 													"http://webprotege.stanford.edu/R8yPPUXESiNKkzdwObVgeFO"), commercial_interest(
-															"http://webprotege.stanford.edu/R9CjkrQzAxg34Zb2M7ozEQx"), consistencymechanism(
+															"http://webprotege.stanford.edu/R9CjkrQzAxg34Zb2M7ozEQx"), consistency_mechanism(
 																	"http://webprotege.stanford.edu/RCnmRF9UDt2HvT37vLcfomS"), context_of_processing(
 																			"http://purl.org/net/team_project_semantic_web/context_of_processing"), controller(
 																					"http://webprotege.stanford.edu/RBwHXWRoML4VcjKShUzMjCc"), creation_date(
@@ -55,7 +55,7 @@ public enum ClassName {
 																																																																																																							"http://webprotege.stanford.edu/RDhsF6OtTdrQPKXxaUWMdgT"), rights(
 																																																																																																									"http://webprotege.stanford.edu/RDmnKO2CwApE8IIXZygNSRG"), risk(
 																																																																																																											"http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"), safeguard(
-																																																																																																													"http://webprotege.stanford.edu/RDsh0wWuwwDAeRukaeZJBrM"), scope_of_prcoessing(
+																																																																																																													"http://webprotege.stanford.edu/RDsh0wWuwwDAeRukaeZJBrM"), scope_of_processing(
 																																																																																																															"http://webprotege.stanford.edu/Rr4m05mDKis6rLIGn0Fr9I"), security_measure(
 																																																																																																																	"http://webprotege.stanford.edu/RBCyBJylhrBB0lfJWRUld0u"), security_of_processing_operation(
 																																																																																																																			"http://webprotege.stanford.edu/R9bCmQn6y9W6WcXK3BgKH8B"), sensitive_data(
