@@ -725,48 +725,46 @@ public class Process {
 		 OWLIndividual View_Respects_SecurityOfProcessingOperationIndividual = factory
 					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "View_Respects_SecurityOfProcessingOperation -"+ processName));
 		 
+		 		 // reference to ObjectProperty -> like example line 1493
+		
+		 OWLObjectProperty affects = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a");
+		  OWLObjectProperty involves = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH");
+		  OWLObjectProperty isLikelyToResultIn = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d");
+		  OWLObjectProperty assesses = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RqNBSia6wh0aAzt0Arji9P");
+		  OWLObjectProperty carriesOut = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RDSdGrHXYl9Eu0s8r5IS5Oj");
+		  OWLObjectProperty creates = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7");
+		  OWLObjectProperty isCompliantTo = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV");
+		  OWLObjectProperty seeksAdviceOf = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RRtBczGxkl8IyzzoK7bmKd");
+		  OWLObjectProperty seeksViewOf = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A");
+		  OWLObjectProperty occursBefore = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R86mMcJndHzoTUpE4c4Y2vJ");
+		  OWLObjectProperty contains = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf");
+		  OWLObjectProperty isMonitoredIn = factory.getOWLObjectProperty(ontologyIRI + "http://purl.org/net/team_project_semantic_web/is_monitored_in");
+		  OWLObjectProperty relatesTo = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS");
+		  OWLObjectProperty revealsInformationAbout = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK");
+		  OWLObjectProperty isDesignated = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RV7kczTIRtjPdaLFeqbJio");
+		 OWLObjectProperty receives = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R87t7dgn6sgWrizmrIVVss6");
+		  OWLObjectProperty produces = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RBjc6dioKfLQXvdY6AOWJrg");
+		  OWLObjectProperty concerns = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RC1BTLj1hUpMHhqJcTjKqzm");
+		  OWLObjectProperty compliesTo = factory.getOWLObjectProperty(ontologyIRI + "http://purl.org/net/team_project_semantic_web/complies_to");
+		  OWLObjectProperty takesIntoAccount = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RBG7sVWc5jZZhT4N0sEdYTs");
+		  OWLObjectProperty basesOn = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RicP6oSkrmhtRFrztSkOt");
+		  OWLObjectProperty isPartOf = factory.getOWLObjectProperty(ontologyIRI + "http://purl.org/net/team_project_semantic_web/is_part_of");
+		  OWLObjectProperty isPerformedAccordingTo = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R9sgi5889wsvWlxuMvptCZ");
+		  OWLObjectProperty controls = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL");
+		  OWLObjectProperty isAuthorizedBy = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2");
+		  OWLObjectProperty checks = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RyaKJMMydAydlR8BS6Gi7I");
+		 OWLObjectProperty changes = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R8byyFZU9KweuTjs6z6rZLF");
+		  OWLObjectProperty applies = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RCf1IsHQ3nlxgPdbFez7gY1");
+		  OWLObjectProperty publishes = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RCdSDoXDS1NWnqJuIxLCAp4");
+		  OWLObjectProperty respects = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU");
 		 
-		 /* // reference to ObjectProperty -> like example line 1493
-		 * Set<OWLAxiom> axioms = new HashSet<OWLAxiom>();
-		 * 
-		 * OWLObjectProperty affects = factory.getOWLObjectProperty(ontologyIRI + "affects");
-		 * OWLObjectProperty involves = factory.getOWLObjectProperty(ontologyIRI + "involves");
-		 * OWLObjectProperty isLikelyToResultIn = factory.getOWLObjectProperty(ontologyIRI + "isLikelyToResultIn");
-		 * OWLObjectProperty assesses = factory.getOWLObjectProperty(ontologyIRI + "assesses");
-		 * OWLObjectProperty carriesOut = factory.getOWLObjectProperty(ontologyIRI + "carriesOut");
-		 * OWLObjectProperty creates = factory.getOWLObjectProperty(ontologyIRI + "creates");
-		 * OWLObjectProperty isCompliantTo = factory.getOWLObjectProperty(ontologyIRI + "isCompliantTo");
-		 * OWLObjectProperty seeksAdviceOf = factory.getOWLObjectProperty(ontologyIRI + "seeksAdviceOf");
-		 * OWLObjectProperty seeksViewOf = factory.getOWLObjectProperty(ontologyIRI + "seeksViewOf");
-		 * OWLObjectProperty occursBefore = factory.getOWLObjectProperty(ontologyIRI + "occursBefore");
-		 * OWLObjectProperty contains = factory.getOWLObjectProperty(ontologyIRI + "contains");
-		 * OWLObjectProperty isMonitoredIn = factory.getOWLObjectProperty(ontologyIRI + "isMonitoredIn");
-		 * OWLObjectProperty relatesTo = factory.getOWLObjectProperty(ontologyIRI + "relatesTo");
-		 * OWLObjectProperty revealsInformationAbout = factory.getOWLObjectProperty(ontologyIRI + "revealsInformationAbout");
-		 * OWLObjectProperty isDesignated = factory.getOWLObjectProperty(ontologyIRI + "isDesignated");
-		 * OWLObjectProperty receives = factory.getOWLObjectProperty(ontologyIRI + "receives");
-		 * OWLObjectProperty produces = factory.getOWLObjectProperty(ontologyIRI + "produces");
-		 * OWLObjectProperty concerns = factory.getOWLObjectProperty(ontologyIRI + "concerns");
-		 * OWLObjectProperty compliesTo = factory.getOWLObjectProperty(ontologyIRI + "compliesTo");
-		 * OWLObjectProperty takesIntoAccount = factory.getOWLObjectProperty(ontologyIRI + "takesIntoAccount");
-		 * OWLObjectProperty basesOn = factory.getOWLObjectProperty(ontologyIRI + "basesOn");
-		 * OWLObjectProperty isPartOf = factory.getOWLObjectProperty(ontologyIRI + "isPartOf");
-		 * OWLObjectProperty isPerformedAccordingTo = factory.getOWLObjectProperty(ontologyIRI + "isPerformedAccordingTo");
-		 * OWLObjectProperty controls = factory.getOWLObjectProperty(ontologyIRI + "controls");
-		 * OWLObjectProperty isAuthorizedBy = factory.getOWLObjectProperty(ontologyIRI + "isAuthorizedBy");
-		 * OWLObjectProperty checks = factory.getOWLObjectProperty(ontologyIRI + "checks");
-		 * OWLObjectProperty changes = factory.getOWLObjectProperty(ontologyIRI + "changes");
-		 * OWLObjectProperty applies = factory.getOWLObjectProperty(ontologyIRI + "applies");
-		 * OWLObjectProperty publishes = factory.getOWLObjectProperty(ontologyIRI + "publishes");
-		 * OWLObjectProperty respects = factory.getOWLObjectProperty(ontologyIRI + "respects");
-		 * 
-		 * OWLObjectProperty has = factory.getOWLObjectProperty(ontologyIRI + "has");
-		 * OWLObjectProperty isAppliedTo = factory.getOWLObjectProperty(ontologyIRI + "isAppliedTo");
-		 * 
-		 * // specify all changes in between here
-		 * 
-		 * manager.addAxioms(onto, axioms);
-		 * 
+		 OWLObjectProperty has = factory.getOWLObjectProperty(ontologyIRI + "http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK");
+		  OWLObjectProperty isAppliedTo = factory.getOWLObjectProperty(ontologyIRI + "http://purl.org/net/team_project_semantic_web/is_applied_to");
+		  
+		  // specify all changes in between here
+		 
+		// manager.addAxioms(onto, axioms);
+		 
 		  // specify relationships between Individuals -> like example line 1498
 		  OWLObjectPropertyAssertionAxiom ContextOfProcessing_Affects_FreeMovementOfData = factory.getOWLObjectPropertyAssertionAxiom(affects,contextOfProcessingIndividual, freeMovementOfDataIndividual);
 		 
