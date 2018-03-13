@@ -1,3 +1,4 @@
+package src;
 
 public enum VerbConceptNames {
 	ConsistencyMechanism_IsAppliedTo_Processing(

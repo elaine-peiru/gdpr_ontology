@@ -177,71 +177,77 @@ public class Process {
 		
 		
 		// verb concept class
-		
-		
-		OWLClass consistencyMechanism_IsAppliedTo_Processing = factory.getOWLClass(ontologyIRI + "consistencyMechanism_IsAppliedTo_Processing");
-		OWLClass contextOfProcessing_Affects_FreeMovementOfData = factory.getOWLClass(ontologyIRI + "contextOfProcessing_Affects_FreeMovementOfData");
-		OWLClass contextOfProcessing_Has_Activity = factory.getOWLClass(ontologyIRI + "contextOfProcessing_Has_Activity");
-		OWLClass contextOfProcessing_Has_Risk = factory.getOWLClass(ontologyIRI + "contextOfProcessing_Has_Risk");
+		OWLClass consistencyMechanism_IsAppliedTo_Processing = factory.getOWLClass(VerbConceptNames.ConsistencyMechanism_IsAppliedTo_Processing.getPath());
+		OWLClass contextOfProcessing_Affects_FreeMovementOfData = factory
+				.getOWLClass(VerbConceptNames.ContextOfProcessing_Affects_FreeMovementOfData.getPath());
+		OWLClass contextOfProcessing_Has_Activity = factory.getOWLClass(VerbConceptNames.ContextOfProcessing_Has_Activity.getPath());
+		OWLClass contextOfProcessing_Has_Risk = factory.getOWLClass(VerbConceptNames.ContextOfProcessing_Has_Risk.getPath());
 		OWLClass contextOfProcessing_Involves_MonitoringOfDataInMemberstate = factory
-				.getOWLClass(ontologyIRI + "contextOfProcessing_Involves_MonitoringOfDataInMemberstate");
-		OWLClass contextOfProcessing_Involves_OfferingOfGood = factory.getOWLClass(ontologyIRI + "contextOfProcessing_Involves_OfferingOfGood");
-		OWLClass contextOfProcessing_Involves_OfferingOfServices = factory.getOWLClass(ontologyIRI + "contextOfProcessing_Involves_OfferingOfServices");
-		OWLClass contextOfProcessing_IsLikelyToResultIn_Risk = factory.getOWLClass(ontologyIRI + "contextOfProcessing_IsLikelyToResultIn_Risk");
-		OWLClass controller_Assesses_PurposeOfProcessing = factory.getOWLClass(ontologyIRI + "controller_Assesses_PurposeOfProcessing");
-		OWLClass controller_CarriesOut_Review = factory.getOWLClass(ontologyIRI + "controller_CarriesOut_Review");
-		OWLClass controller_Creates_DataProtectionImpactAssessment = factory.getOWLClass(ontologyIRI + "controller_Creates_DataProtectionImpactAssessment");
-		OWLClass controller_IsCompliantWith_ApprovedCodeOfConduct = factory.getOWLClass(ontologyIRI + "controller_IsCompliantWith_ApprovedCodeOfConduct");
-		OWLClass controller_SeeksAdviceOf_DataProtectionOfficer = factory.getOWLClass(ontologyIRI + "controller_SeeksAdviceOf_DataProtectionOfficer");
-		OWLClass controller_SeeksViewOf_DataSubject = factory.getOWLClass(ontologyIRI + "controller_SeeksViewOf_DataSubject");
-		OWLClass controller_SeeksViewOf_RepresentativeOfDataSubject = factory.getOWLClass(ontologyIRI + "controller_SeeksViewOf_RepresentativeOfDataSubject");
-		OWLClass creationDate_OccursBefore_FirstProcessingDate = factory.getOWLClass(ontologyIRI + "creationDate_OccursBefore_FirstProcessingDate");
-		OWLClass data_Contains_BiometricData = factory.getOWLClass(ontologyIRI + "data_Contains_BiometricData");
-		OWLClass data_Contains_GeneticData = factory.getOWLClass(ontologyIRI + "data_Contains_GeneticData");
-		OWLClass data_Has_Monitoring = factory.getOWLClass(ontologyIRI + "data_Has_Monitoring");
-		OWLClass data_IsMonitoredIn_PublicArea = factory.getOWLClass(ontologyIRI + "data_IsMonitoredIn_PublicArea");
+				.getOWLClass(VerbConceptNames.ContextOfProcessing_Involves_MonitoringOfDataInMemberstate.getPath());
+		OWLClass contextOfProcessing_Involves_OfferingOfGood = factory.getOWLClass(VerbConceptNames.ContextOfProcessing_Involves_OfferingOfGood.getPath());
+		OWLClass contextOfProcessing_Involves_OfferingOfServices = factory
+				.getOWLClass(VerbConceptNames.ContextOfProcessing_Involves_OfferingOfServices.getPath());
+		OWLClass contextOfProcessing_IsLikelyToResultIn_Risk = factory.getOWLClass(VerbConceptNames.ContextOfProcessing_IsLikelyToResultIn_Risk.getPath());
+		OWLClass controller_Assesses_PurposeOfProcessing = factory.getOWLClass(VerbConceptNames.Controller_Assesses_PurposeOfProcessing.getPath());
+		OWLClass controller_CarriesOut_Review = factory.getOWLClass(VerbConceptNames.Controller_CarriesOut_Review.getPath());
+		OWLClass controller_Creates_DataProtectionImpactAssessment = factory
+				.getOWLClass(VerbConceptNames.Controller_Creates_DataProtectionImpactAssessment.getPath());
+		OWLClass controller_IsCompliantWith_ApprovedCodeOfConduct = factory
+				.getOWLClass(VerbConceptNames.Controller_IsCompliantWith_ApprovedCodeOfConduct.getPath());
+		OWLClass controller_SeeksAdviceOf_DataProtectionOfficer = factory
+				.getOWLClass(VerbConceptNames.Controller_SeeksAdviceOf_DataProtectionOfficer.getPath());
+		OWLClass controller_SeeksViewOf_DataSubject = factory.getOWLClass(VerbConceptNames.Controller_SeeksViewOf_DataSubject.getPath());
+		OWLClass controller_SeeksViewOf_RepresentativeOfDataSubject = factory
+				.getOWLClass(VerbConceptNames.Controller_SeeksViewOf_RepresentativeOfDataSubject.getPath());
+		OWLClass creationDate_OccursBefore_FirstProcessingDate = factory.getOWLClass(VerbConceptNames.CreationDate_OccursBefore_FirstProcessingDate.getPath());
+		OWLClass data_Contains_BiometricData = factory.getOWLClass(VerbConceptNames.Data_Contains_BiometricData.getPath());
+		OWLClass data_Contains_GeneticData = factory.getOWLClass(VerbConceptNames.Data_Contains_GeneticData.getPath());
+		OWLClass data_Has_Monitoring = factory.getOWLClass(VerbConceptNames.Data_Has_Monitoring.getPath());
+		OWLClass data_IsMonitoredIn_PublicArea = factory.getOWLClass(VerbConceptNames.Data_IsMonitoredIn_PublicArea.getPath());
 
-		OWLClass data_IsPartOf_Evaluation = factory.getOWLClass(ontologyIRI + "data_IsPartOf_Evaluation");
-		OWLClass data_RelatesTo_CriminalConviction = factory.getOWLClass(ontologyIRI + "data_RelatesTo_CriminalConviction");
-		OWLClass data_RelatesTo_CriminalOffense = factory.getOWLClass(ontologyIRI + "data_RelatesTo_CriminalOffense");
-		OWLClass data_RelatesTo_SecurityMeasure = factory.getOWLClass(ontologyIRI + "data_RelatesTo_SecurityMeasure");
-		OWLClass data_RevealsInformationAbout_EthnicOrigin = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_EthnicOrigin");
-		OWLClass data_RevealsInformationAbout_Health = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_Health");
-		OWLClass data_RevealsInformationAbout_PhilosophicalBelief = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_PhilosophicalBelief");
-		OWLClass data_RevealsInformationAbout_PoliticalOpinion = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_PoliticalOpinion");
-		OWLClass data_RevealsInformationAbout_RacialOrigin = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_RacialOrigin");
-		OWLClass data_RevealsInformationAbout_ReligiousBelief = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_ReligiousBelief");
-		OWLClass data_RevealsInformationAbout_SexLife = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_SexLife");
-		OWLClass data_RevealsInformationAbout_SexualOrientation = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_SexualOrientation");
-		OWLClass data_RevealsInformationAbout_TradeUnionMembership = factory.getOWLClass(ontologyIRI + "data_RevealsInformationAbout_TradeUnionMembership");
+		OWLClass data_IsPartOf_Evaluation = factory.getOWLClass(VerbConceptNames.Data_IsPartOf_Evaluation.getPath());
+		OWLClass data_RelatesTo_CriminalConviction = factory.getOWLClass(VerbConceptNames.Data_RelatesTo_CriminalConviction.getPath());
+		OWLClass data_RelatesTo_CriminalOffense = factory.getOWLClass(VerbConceptNames.Data_RelatesTo_CriminalOffense.getPath());
+		OWLClass data_RelatesTo_SecurityMeasure = factory.getOWLClass(VerbConceptNames.Data_RelatesTo_SecurityMeasure.getPath());
+		OWLClass data_RevealsInformationAbout_EthnicOrigin = factory.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_EthnicOrigin.getPath());
+		OWLClass data_RevealsInformationAbout_Health = factory.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_Health.getPath());
+		OWLClass data_RevealsInformationAbout_PhilosophicalBelief = factory
+				.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_PhilosophicalBelief.getPath());
+		OWLClass data_RevealsInformationAbout_PoliticalOpinion = factory.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_PoliticalOpinion.getPath());
+		OWLClass data_RevealsInformationAbout_RacialOrigin = factory.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_RacialOrigin.getPath());
+		OWLClass data_RevealsInformationAbout_ReligiousBelief = factory.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_ReligiousBelief.getPath());
+		OWLClass data_RevealsInformationAbout_SexLife = factory.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_SexLife.getPath());
+		OWLClass data_RevealsInformationAbout_SexualOrientation = factory
+				.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_SexualOrientation.getPath());
+		OWLClass data_RevealsInformationAbout_TradeUnionMembership = factory
+				.getOWLClass(VerbConceptNames.Data_RevealsInformationAbout_TradeUnionMembership.getPath());
 
 		OWLClass dataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing.getPath());
 		OWLClass dataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing.getPath());
 		OWLClass dataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms.getPath());
 		OWLClass dataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing.getPath());
 		OWLClass dataProtectionImpactAssessment_Contains_MeasureToAddressRisks = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_MeasureToAddressRisks");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_MeasureToAddressRisks.getPath());
 		OWLClass dataProtectionImpactAssessment_Contains_PurposeOfProcessing = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_PurposeOfProcessing");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_PurposeOfProcessing.getPath());
 		OWLClass dataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing = factory
-				.getOWLClass(ontologyIRI + "dataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing");
-		OWLClass dataProtectionOfficer_IsDesignated = factory.getOWLClass(ontologyIRI + "dataProtectionOfficer_IsDesignated");
-		OWLClass dataSubject_Has_View = factory.getOWLClass(ontologyIRI + "dataSubject_Has_View");
-		OWLClass measureToAddressRisks_TakesIntoAccount_PersonalInterest = factory
-				.getOWLClass(ontologyIRI + "measureToAddressRisks_TakesIntoAccount_PersonalInterest");
-		OWLClass evaluation_BasesOn_Profiling = factory.getOWLClass(ontologyIRI + "evaluation_BasesOn_Profiling");
-		OWLClass evaluation_Produces_LegalEffect = factory.getOWLClass(ontologyIRI + "evaluation_Produces_LegalEffect");
-		OWLClass legalEffect_Concerns_DataSubject = factory.getOWLClass(ontologyIRI + "legalEffect_Concerns_DataSubject");
-		OWLClass measureToAddressRisk_CompliesTo_GDPR = factory.getOWLClass(ontologyIRI + "measureToAddressRisk_CompliesTo_GDPR");
-		OWLClass measureToAddressRisk_TakesIntoAccount_Rights = factory.getOWLClass(ontologyIRI + "measureToAddressRisk_TakesIntoAccount_Rights");
+				.getOWLClass(VerbConceptNames.DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing.getPath());
+		OWLClass dataProtectionOfficer_IsDesignated = factory.getOWLClass(VerbConceptNames.DataProtectionOfficer_IsDesignated.getPath());
+		OWLClass dataSubject_Has_View = factory.getOWLClass(VerbConceptNames.DataSubject_Has_View.getPath());
+		OWLClass evaluation_BasesOn_Profiling = factory.getOWLClass(VerbConceptNames.Evaluation_BasesOn_Profiling.getPath());
+		OWLClass evaluation_Produces_LegalEffect = factory.getOWLClass(VerbConceptNames.Evaluation_BasesOn_AutomatedProcessing.getPath());
+		OWLClass legalEffect_Concerns_DataSubject = factory.getOWLClass(VerbConceptNames.LegalEffect_Concerns_DataSubject.getPath());
+		OWLClass measureToAddressRisk_CompliesTo_GDPR = factory.getOWLClass(VerbConceptNames.MeasureToAddressRisk_CompliesTo_GDPR.getPath());
+		OWLClass measureToAddressRisk_TakesIntoAccount_Rights = factory.getOWLClass(VerbConceptNames.MeasureToAddressRisk_TakesIntoAccount_Rights.getPath());
 		OWLClass measureToAddressRisks_Contains_MechanismToEnsureProtectionOfData = factory
-				.getOWLClass(ontologyIRI + "measureToAddressRisks_Contains_MechanismToEnsureProtectionOfData");
-		OWLClass measureToAddressRisks_Contains_Safeguard = factory.getOWLClass(ontologyIRI + "measureToAddressRisks_Contains_Safeguard");
-		OWLClass measureToAddressRisks_Contains_SecurityMeasure = factory.getOWLClass(ontologyIRI + "measureToAddressRisks_Contains_SecurityMeasure");
+				.getOWLClass(VerbConceptNames.MeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfData.getPath());
+		OWLClass measureToAddressRisks_Contains_Safeguard = factory.getOWLClass(VerbConceptNames.MeasureToAddressRisks_Contains_Safeguard.getPath());
+		OWLClass measureToAddressRisks_Contains_SecurityMeasure = factory
+				.getOWLClass(VerbConceptNames.MeasureToAddressRisks_Contains_SecurityMeasure.getPath());
 		OWLClass personalData_IsPartOf_Evaluation = factory.getOWLClass(ontologyIRI + "personalData_IsPartOf_Evaluation");
 		OWLClass personalData_RelatesTo_DataSubject = factory.getOWLClass(ontologyIRI + "personalData_RelatesTo_DataSubject");
 		OWLClass process_Has_Data = factory.getOWLClass(ontologyIRI + "process_Has_Data");
