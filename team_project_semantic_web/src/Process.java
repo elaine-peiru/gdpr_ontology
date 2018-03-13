@@ -35,6 +35,8 @@ public class Process {
 	@SuppressWarnings("deprecation")
 	public void createIndividualOfProcess(JSONObject json) {
 		// reference to OWL Class -> like example line 1569
+		
+		String processName = json.get("proess").toString();
 
 		OWLClass approvedCodeOfConduct = factory.getOWLClass(ontologyIRI + "approvedCodeOfConduct");
 		OWLClass assessmentOfNecessityOfProcessing = factory.getOWLClass(ontologyIRI + "assessmentOfNecessityOfProcessing");
@@ -493,7 +495,184 @@ public class Process {
 		 * OWLClassAssertionAxiom classAssertMonitoring = factory.getOWLClassAssertionAxiom(monitoring, monitoringIndividual);
 		 * OWLClassAssertionAxiom classAssertActivity = factory.getOWLClassAssertionAxiom(activity, activityIndividual);
 		 * 
-		 * // reference to ObjectProperty -> like example line 1493
+		 */
+		 OWLIndividual ConsistencyMechanism_IsAppliedTo_ProcessingIndividual = factory
+				.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ConsistencyMechanism_IsAppliedTo_Processing -"+ processName));
+		 OWLIndividual ContextOfProcessing_Affects_FreeMovementOfDataIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Affects_FreeMovementOfData -"+ processName));
+		 OWLIndividual ContextOfProcessing_Has_ActivityIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Has_Activity -"+ processName));
+		 OWLIndividual ContextOfProcessing_Has_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Has_Risk -"+ processName));
+		 OWLIndividual ContextOfProcessing_Involves_MonitoringOfDataInMemberstateIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Involves_MonitoringOfDataInMemberstate -"+ processName));
+		 OWLIndividual ContextOfProcessing_Involves_OfferingOfGoodIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Involves_OfferingOfGood -"+ processName));
+		 OWLIndividual ContextOfProcessing_Involves_OfferingOfServicesIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Involves_OfferingOfServices -"+ processName));
+		 OWLIndividual ContextOfProcessing_IsLikelyToResultIn_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_IsLikelyToResultIn_Risk -"+ processName));
+		 OWLIndividual Controller_Assesses_PurposeOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_Assesses_PurposeOfProcessing -"+ processName));
+		 OWLIndividual Controller_CarriesOut_ReviewIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_CarriesOut_Review -"+ processName));
+		 OWLIndividual Controller_Creates_DataProtectionImpactAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_Creates_DataProtectionImpactAssessment -"+ processName));
+		 OWLIndividual Controller_IsCompliantWith_ApprovedCodeOfConductIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_IsCompliantWith_ApprovedCodeOfConduct -"+ processName));
+		 OWLIndividual Controller_SeeksAdviceOf_DataProtectionOfficerIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_SeeksAdviceOf_DataProtectionOfficer -"+ processName));
+		 OWLIndividual Controller_SeeksViewOf_DataSubjectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_SeeksViewOf_DataSubject -"+ processName));
+		 OWLIndividual Controller_SeeksViewOf_RepresentativeOfDataSubjectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Controller_SeeksViewOf_RepresentativeOfDataSubject -"+ processName));
+		 OWLIndividual CreationDate_OccursBefore_FirstProcessingDateIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "CreationDate_OccursBefore_FirstProcessingDate -"+ processName));
+		 OWLIndividual Data_Contains_BiometricDataIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_Contains_BiometricData -"+ processName));
+		 OWLIndividual Data_Contains_GeneticDataIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_Contains_GeneticData -"+ processName));
+		 OWLIndividual Data_Has_MonitoringIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_Has_Monitoring -"+ processName));
+		 OWLIndividual Data_IsMonitoredIn_PublicAreaIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_IsMonitoredIn_PublicArea -"+ processName));
+		 OWLIndividual Data_IsPartOf_EvaluationIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_IsPartOf_Evaluation -"+ processName));
+		 OWLIndividual Data_RelatesTo_CriminalConvictionIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RelatesTo_CriminalConviction -"+ processName));
+		 OWLIndividual Data_RelatesTo_CriminalOffenseIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RelatesTo_CriminalOffense -"+ processName));
+		 OWLIndividual Data_RelatesTo_DataSubjectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RelatesTo_DataSubject -"+ processName));
+		 OWLIndividual Data_RelatesTo_SecurityMeasureIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RelatesTo_SecurityMeasure -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_EthnicOriginIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_EthnicOrigin -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_HealthIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_Health -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_PhilosophicalBeliefIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_PhilosophicalBelief -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_PoliticalOpinionIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_PoliticalOpinion -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_RacialOriginIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_RacialOrigin -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_ReligiousBeliefIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_ReligiousBelief -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_SexLifeIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_SexLife -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_SexualOrientationIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_SexualOrientation -"+ processName));
+		 OWLIndividual Data_RevealsInformationAbout_TradeUnionMembershipIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Data_RevealsInformationAbout_TradeUnionMembership -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedomsIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_MeasureToAddressRisksIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_MeasureToAddressRisks -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_PurposeOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_PurposeOfProcessing -"+ processName));
+		 OWLIndividual DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing -"+ processName));
+		 OWLIndividual DataProtectionOfficer_IsDesignatedIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataProtectionOfficer_IsDesignated -"+ processName));
+		 OWLIndividual DataSubject_Has_ViewIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "DataSubject_Has_View -"+ processName));
+		 OWLIndividual EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessment -"+ processName));
+		 OWLIndividual EuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "EuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment -"+ processName));
+		 OWLIndividual Evaluation_BasesOn_AutomatedProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Evaluation_BasesOn_AutomatedProcessing -"+ processName));
+		 OWLIndividual Evaluation_BasesOn_ProfilingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Evaluation_BasesOn_Profiling -"+ processName));
+		 OWLIndividual Evaluation_Produces_LegalEffectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Evaluation_Produces_LegalEffect -"+ processName));
+		 OWLIndividual LegalEffect_Concerns_DataSubjectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "LegalEffect_Concerns_DataSubject -"+ processName));
+		 OWLIndividual MeasureToAddressRisk_CompliesTo_GDPRIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "MeasureToAddressRisk_CompliesTo_GDPR -"+ processName));
+		 OWLIndividual MeasureToAddressRisk_TakesIntoAccount_RightsIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "MeasureToAddressRisk_TakesIntoAccount_Rights -"+ processName));
+		 OWLIndividual MeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfDataIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "MeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfData -"+ processName));
+		 OWLIndividual MeasureToAddressRisks_Contains_SafeguardIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "MeasureToAddressRisks_Contains_Safeguard -"+ processName));
+		 OWLIndividual MeasureToAddressRisks_Contains_SecurityMeasureIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "MeasureToAddressRisks_Contains_SecurityMeasure -"+ processName));
+		 OWLIndividual PersonalData_IsPartOf_EvaluationIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "PersonalData_IsPartOf_Evaluation -"+ processName));
+		 OWLIndividual Process_Has_DataIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Process_Has_Data -"+ processName));
+		 OWLIndividual Process_Has_DataProtectionImpactAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Process_Has_DataProtectionImpactAssessment -"+ processName));
+		 OWLIndividual Process_Has_ProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Process_Has_Processing -"+ processName));
+		 OWLIndividual Process_IsPerformedAccordingTo_DataProtectionImpactAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Process_IsPerformedAccordingTo_DataProtectionImpactAssessment -"+ processName));
+		 OWLIndividual Processing_Has_ContextOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processing_Has_ContextOfProcessing -"+ processName));
+		 OWLIndividual Processing_Has_PurposeOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processing_Has_PurposeOfProcessing -"+ processName));
+		 OWLIndividual Processing_Has_ScopeIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processing_Has_Scope -"+ processName));
+		 OWLIndividual Processing_Has_TechnologyIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processing_Has_Technology -"+ processName));
+		 OWLIndividual Processor_Assesses_PurposeOfProcessingIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_Assesses_PurposeOfProcessing -"+ processName));
+		 OWLIndividual Processor_Controls_ProcessIndividual = factory
+			.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_Controls_Process -"+ processName));
+		 OWLIndividual Processor_IsAuthorizedBy_MemberStatelawIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_IsAuthorizedBy_MemberStatelaw -"+ processName));
+		 OWLIndividual Processor_IsAuthorizedBy_UnionlawIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_IsAuthorizedBy_Unionlaw -"+ processName));
+		 OWLIndividual Processor_IsCompliantWith_ApprovedCodeOfConductIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_IsCompliantWith_ApprovedCodeOfConduct -"+ processName));
+		 OWLIndividual Processor_SeeksViewOf_DataSubjectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_SeeksViewOf_DataSubject -"+ processName));
+		 OWLIndividual Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Processor_SeeksViewOf_RepresentativeOfDataSubject -"+ processName));
+		 OWLIndividual PurposeOfProcessing_Has_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "PurposeOfProcessing_Has_Risk -"+ processName));
+		 OWLIndividual PurposeOfProcessing_IsLikelyToResultIn_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "PurposeOfProcessing_IsLikelyToResultIn_Risk -"+ processName));
+		 OWLIndividual Review_Checks_ProcessIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Review_Checks_Process -"+ processName));
+		 OWLIndividual Risk_ChangesIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Risk_Changes -"+ processName));
+		 OWLIndividual Scope_Has_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Scope_Has_Risk -"+ processName));
+		 OWLIndividual ScopeOfProcessing_IsLikelyToResultIn_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ScopeOfProcessing_IsLikelyToResultIn_Risk -"+ processName));
+		 OWLIndividual SupervisoryAuthority_Applies_ConsistencyMechanismIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "SupervisoryAuthority_Applies_ConsistencyMechanism -"+ processName));
+		 OWLIndividual SupervisoryAuthority_Controls_ProcessIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "SupervisoryAuthority_Controls_Process -"+ processName));
+		 OWLIndividual SupervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "SupervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessment -"+ processName));
+		 OWLIndividual SupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "SupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment -"+ processName));
+		 OWLIndividual SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment -"+ processName));
+		 OWLIndividual SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment -"+ processName));
+		 OWLIndividual Technology_Has_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "Technology_Has_Risk -"+ processName));
+		 OWLIndividual TechnologyOfProcessing_IsLikelyToResultIn_RiskIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "TechnologyOfProcessing_IsLikelyToResultIn_Risk -"+ processName));
+		 OWLIndividual PView_Respects_CommercialInterestIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "View_Respects_CommercialInterest -"+ processName));
+		 OWLIndividual View_Respects_PublicInterestIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "View_Respects_PublicInterest -"+ processName));
+		 OWLIndividual View_Respects_SecurityOfProcessingOperationIndividual = factory
+					.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "View_Respects_SecurityOfProcessingOperation -"+ processName));
+		 
+		 
+		 /* // reference to ObjectProperty -> like example line 1493
 		 * Set<OWLAxiom> axioms = new HashSet<OWLAxiom>();
 		 * 
 		 * OWLObjectProperty affects = factory.getOWLObjectProperty(ontologyIRI + "affects");
