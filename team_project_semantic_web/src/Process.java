@@ -1385,7 +1385,7 @@ public class Process {
 		 axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, view_Respects_SecurityOfProcessingOperation_Individual, securityOfProcessingOperationIndividual));
 		 axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, view_Respects_SecurityOfProcessingOperation_Individual, respectsIndividual));
 		 
-		 
+		 manager.addAxioms(onto, axioms);
 		 
 		// save changes to Ontology
 		OurOntology.saveOntology(onto);
