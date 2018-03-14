@@ -7,8 +7,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 public class TestApplication {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-		OWLOntology o = OurOntology.getOurOntology();
+		// OWLOntology o = OurOntology.getOurOntology();
 
 		String userInput = JOptionPane
 				.showInputDialog(
@@ -19,20 +18,19 @@ public class TestApplication {
 				Input input = new Input();
 				input.readInputFile(userInput);
 			} else {
-				String[] processNames = userInput.split(";");
+				String[] processIds = userInput.split(";");
 
-				/*
-				 * for (int i = 0; i < processNames.length; i++) {
-				 * String processName = processNames[i];
-				 * 
-				 * if(checkProcessAlreadyExists(processName) {
-				 * TODO something, error
-				 * }
-				 * 
-				 * // TODO check rules for each process
-				 * // TODO write all errors in a file. If no error occurs for a process write, that the process complies to all rules
-				 * }
-				 */
+				for (int i = 0; i < processIds.length; i++) {
+					String processId = processIds[i];
+
+					OWLOntology onto = OurOntology.getProcessOntology(processId);
+
+					OurOntology.checkRulesForProcess(onto, processId);
+
+					// TODO check rules for each process
+					// TODO write all errors in a file. If no error occurs for a process write, that the process complies to all rules
+				}
+
 			}
 		}
 
