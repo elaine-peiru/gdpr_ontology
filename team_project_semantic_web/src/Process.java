@@ -14,6 +14,7 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
@@ -408,119 +409,76 @@ public class Process {
 		  
 		  // specify class of individual -> like example line 1593
 		  // OWLClassAssertionAxiom classAssertionApprovedCodeOfConduct = factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
-		 * // approvedCodeOfConductIndividual);
-		 * OWLClassAssertionAxiom classAssertionAssessmentOfNecessityOfProcessing =
-		 * factory.getOWLClassAssertionAxiom(assessmentOfNecessityOfProcessing,
-		 * assessmentOfNecessityOfProcessingIndividual);
-		 * OWLClassAssertionAxiom classAssertionAssessmentOfProportionalityOfProcessing = factory
-		 * .getOWLClassAssertionAxiom(assessmentOfProportionalityOfProcessing, assessmentOfProportionalityOfProcessingIndividual);
-		 * OWLClassAssertionAxiom classAssertionAssessmentOfRisksToRightsAndFreedoms =
-		 * factory.getOWLClassAssertionAxiom(assessmentOfRisksToRightsAndFreedoms,
-		 * assessmentOfRisksToRightsAndFreedomsIndividual);
-		 * OWLClassAssertionAxiom classAssertionAutomatedProcessing = factory.getOWLClassAssertionAxiom(automatedProcessing,
-		 * automatedProcessingIndividual);
-		 * OWLClassAssertionAxiom classAssertionBiometricData = factory.getOWLClassAssertionAxiom(biometricData, biometricDataIndividual);
-		 * OWLClassAssertionAxiom classAssertionCommercialInterest = factory.getOWLClassAssertionAxiom(commercialInterest,
-		 * commercialInterestIndividual);
-		 * OWLClassAssertionAxiom classAssertionConsistencymechanism = factory.getOWLClassAssertionAxiom(consistencymechanism,
-		 * consistencymechanismIndividual);
-		 * OWLClassAssertionAxiom classAssertionContextOfProcessing = factory.getOWLClassAssertionAxiom(contextOfProcessing,
-		 * contextOfProcessingIndividual);
-		 * // OWLClassAssertionAxiom classAssertionController = factory.getOWLClassAssertionAxiom(controller, controllerIndividual);
-		 * OWLClassAssertionAxiom classAssertionCreationDate = factory.getOWLClassAssertionAxiom(creationDate, creationDateIndividual);
-		 * OWLClassAssertionAxiom classAssertionCriminalConviction = factory.getOWLClassAssertionAxiom(criminalConviction,
-		 * criminalConvictionIndividual);
-		 * OWLClassAssertionAxiom classAssertionCriminalOffense = factory.getOWLClassAssertionAxiom(criminalOffense,
-		 * criminalOffenseIndividual);
-		 * OWLClassAssertionAxiom classAssertionData = factory.getOWLClassAssertionAxiom(data, dataIndividual);
-		 * OWLClassAssertionAxiom classAssertionDataProtectionImpactAssessment =
-		 * factory.getOWLClassAssertionAxiom(dataProtectionImpactAssessment,
-		 * dataProtectionImpactAssessmentIndividual);
-		 * OWLClassAssertionAxiom classAssertionDataProtectionOfficer = factory.getOWLClassAssertionAxiom(dataProtectionOfficer,
-		 * dataProtectionOfficerIndividual);
-		 * OWLClassAssertionAxiom classAssertionDataSubject = factory.getOWLClassAssertionAxiom(dataSubject, dataSubjectIndividual);
-		 * OWLClassAssertionAxiom classAssertionEthnicOrigin = factory.getOWLClassAssertionAxiom(ethnicOrigin, ethnicOriginIndividual);
-		 * OWLClassAssertionAxiom classAssertionEvaluation = factory.getOWLClassAssertionAxiom(evaluation, evaluationIndividual);
-		 * OWLClassAssertionAxiom classAssertionFirstProcessingDate = factory.getOWLClassAssertionAxiom(firstProcessingDate,
-		 * firstProcessingDateIndividual);
-		 * OWLClassAssertionAxiom classAssertionFreeMovementOfData = factory.getOWLClassAssertionAxiom(freeMovementOfData,
-		 * freeMovementOfDataIndividual);
-		 * OWLClassAssertionAxiom classAssertionGdpr = factory.getOWLClassAssertionAxiom(gdpr, gdprIndividual);
-		 * OWLClassAssertionAxiom classAssertionGeneticData = factory.getOWLClassAssertionAxiom(geneticData, geneticDataIndividual);
-		 * OWLClassAssertionAxiom classAssertionHealth = factory.getOWLClassAssertionAxiom(health, healthIndividual);
-		 * OWLClassAssertionAxiom classAssertionLegalEffect = factory.getOWLClassAssertionAxiom(legalEffect, legalEffectIndividual);
-		 * OWLClassAssertionAxiom classAssertionLegitimateInterestOfProcessing =
-		 * factory.getOWLClassAssertionAxiom(legitimateInterestOfProcessing,
-		 * legitimateInterestOfProcessingIndividual);
-		 * OWLClassAssertionAxiom classAssertionListWithProcessesThatDoNotNeedDpia =
-		 * factory.getOWLClassAssertionAxiom(listWithProcessesThatDoNotNeedDpia,
-		 * listWithProcessesThatDoNotNeedDpiaIndividual);
-		 * OWLClassAssertionAxiom classAssertionListWithProcessesThatNeedDpia =
-		 * factory.getOWLClassAssertionAxiom(listWithProcessesThatNeedDpia,
-		 * listWithProcessesThatNeedDpiaIndividual);
-		 * OWLClassAssertionAxiom classAssertionMeasureToAddressRisk = factory.getOWLClassAssertionAxiom(measureToAddressRisk,
-		 * measureToAddressRiskIndividual);
-		 * OWLClassAssertionAxiom classAssertionMechanismsToEnsureProtectionOfData =
-		 * factory.getOWLClassAssertionAxiom(mechanismsToEnsureProtectionOfData,
-		 * mechanismsToEnsureProtectionOfDataIndividual);
-		 * OWLClassAssertionAxiom classAssertionMemberStateLaw = factory.getOWLClassAssertionAxiom(memberStateLaw,
-		 * memberStateLawIndividual);
-		 * OWLClassAssertionAxiom classAssertionMonitoringOfDataInMemberstate =
-		 * factory.getOWLClassAssertionAxiom(monitoringOfDataInMemberstate,
-		 * monitoringOfDataInMemberstateIndividual);
-		 * OWLClassAssertionAxiom classAssertionOfferingOfGoods = factory.getOWLClassAssertionAxiom(offeringOfGoods,
-		 * offeringOfGoodsIndividual);
-		 * OWLClassAssertionAxiom classAssertionOfferingOfServices = factory.getOWLClassAssertionAxiom(offeringOfServices,
-		 * offeringOfServicesIndividual);
-		 * OWLClassAssertionAxiom classAssertionPersonalData = factory.getOWLClassAssertionAxiom(personalData, personalDataIndividual);
-		 * OWLClassAssertionAxiom classAssertionPersonalInterest = factory.getOWLClassAssertionAxiom(personalInterest,
-		 * personalInterestIndividual);
-		 * OWLClassAssertionAxiom classAssertionPhilosophicalBelief = factory.getOWLClassAssertionAxiom(philosophicalBelief,
-		 * philosophicalBeliefIndividual);
-		 * OWLClassAssertionAxiom classAssertionPoliticalOpinion = factory.getOWLClassAssertionAxiom(politicalOpinion,
-		 * politicalOpinionIndividual);
-		 * OWLClassAssertionAxiom classAssertionProcess = factory.getOWLClassAssertionAxiom(process, processIndividual);
-		 * // OWLClassAssertionAxiom classAssertionProcessor = factory.getOWLClassAssertionAxiom(processor, processorIndividual);
-		 * OWLClassAssertionAxiom classAssertionProfiling = factory.getOWLClassAssertionAxiom(profiling, profilingIndividual);
-		 * OWLClassAssertionAxiom classAssertionPublicArea = factory.getOWLClassAssertionAxiom(publicArea, publicAreaIndividual);
-		 * OWLClassAssertionAxiom classAssertionPublicInterest = factory.getOWLClassAssertionAxiom(publicInterest,
-		 * publicInterestIndividual);
-		 * OWLClassAssertionAxiom classAssertionPurposeOfProcessing = factory.getOWLClassAssertionAxiom(purposeOfProcessing,
-		 * purposeOfProcessingIndividual);
-		 * OWLClassAssertionAxiom classAssertionRacialOrigin = factory.getOWLClassAssertionAxiom(racialOrigin, racialOriginIndividual);
-		 * OWLClassAssertionAxiom classAssertionReligiousBelief = factory.getOWLClassAssertionAxiom(religiousBelief,
-		 * religiousBeliefIndividual);
-		 * OWLClassAssertionAxiom classAssertionRepresentativeOfDataSubject = factory.getOWLClassAssertionAxiom(representativeOfDataSubject,
-		 * representativeOfDataSubjectIndividual);
-		 * OWLClassAssertionAxiom classAssertionReview = factory.getOWLClassAssertionAxiom(review, reviewIndividual);
-		 * OWLClassAssertionAxiom classAssertionRights = factory.getOWLClassAssertionAxiom(rights, rightsIndividual);
-		 * // OWLClassAssertionAxiom classAssertionRisk = factory.getOWLClassAssertionAxiom(risk, riskIndividual);
-		 * OWLClassAssertionAxiom classAssertionSafeguard = factory.getOWLClassAssertionAxiom(safeguard, safeguardIndividual);
-		 * OWLClassAssertionAxiom classAssertionScope = factory.getOWLClassAssertionAxiom(scope, scopeIndividual);
-		 * OWLClassAssertionAxiom classAssertionSecurityMeasure = factory.getOWLClassAssertionAxiom(securityMeasure,
-		 * securityMeasureIndividual);
-		 * OWLClassAssertionAxiom classAssertionSecurityOfProcessing = factory.getOWLClassAssertionAxiom(securityOfProcessingOperation,
-		 * securityOfProcessingOperationIndividual);
-		 * OWLClassAssertionAxiom classAssertionSexLife = factory.getOWLClassAssertionAxiom(sexLife, sexLifeIndividual);
-		 * OWLClassAssertionAxiom classAssertionSexualOrientation = factory.getOWLClassAssertionAxiom(sexualOrientation,
-		 * sexualOrientationIndividual);
-		 * // OWLClassAssertionAxiom classAssertionSupervisoryAuthority = factory.getOWLClassAssertionAxiom(supervisoryAuthority,
-		 * // supervisoryAuthorityIndividual);
-		 * OWLClassAssertionAxiom classAssertionSystematicDescriptionOfProcessing =
-		 * factory.getOWLClassAssertionAxiom(systematicDescriptionOfProcessing,
-		 * systematicDescriptionOfProcessingIndividual);
-		 * OWLClassAssertionAxiom classAssertionTechnology = factory.getOWLClassAssertionAxiom(technology, technologyIndividual);
-		 * OWLClassAssertionAxiom classAssertionTradeUnionMembership = factory.getOWLClassAssertionAxiom(tradeUnionMembership,
-		 * tradeUnionMembershipIndividual);
-		 * // OWLClassAssertionAxiom classAssertionView = factory.getOWLClassAssertionAxiom(view, viewIndividual);
-		 * OWLClassAssertionAxiom classAssertionEuropeanDataProtectionBoard = factory.getOWLClassAssertionAxiom(europeanDataProtectionBoard,
-		 * europeanDataProtectionBoardIndividual);
-		 * OWLClassAssertionAxiom classAssertionUnionLaw = factory.getOWLClassAssertionAxiom(unionLaw, unionLawIndividual);
-		 * OWLClassAssertionAxiom classAssertProcessing = factory.getOWLClassAssertionAxiom(processing, processingIndividual);
-		 * OWLClassAssertionAxiom classAssertMonitoring = factory.getOWLClassAssertionAxiom(monitoring, monitoringIndividual);
-		 * OWLClassAssertionAxiom classAssertActivity = factory.getOWLClassAssertionAxiom(activity, activityIndividual);
-		 * 
-		 */
+		 // approvedCodeOfConductIndividual);
+		 OWLClassAssertionAxiom classAssertionAssessmentOfNecessityOfProcessing = factory.getOWLClassAssertionAxiom(assessmentOfNecessityOfProcessing,assessmentOfNecessityOfProcessingIndividual);
+		 OWLClassAssertionAxiom classAssertionAssessmentOfProportionalityOfProcessing = factory.getOWLClassAssertionAxiom(assessmentOfProportionalityOfProcessing, assessmentOfProportionalityOfProcessingIndividual);
+		 OWLClassAssertionAxiom classAssertionAssessmentOfRisksToRightsAndFreedoms =factory.getOWLClassAssertionAxiom(assessmentOfRisksToRightsAndFreedoms,assessmentOfRisksToRightsAndFreedomsIndividual);
+		 OWLClassAssertionAxiom classAssertionAutomatedProcessing = factory.getOWLClassAssertionAxiom(automatedProcessing,automatedProcessingIndividual);
+		 OWLClassAssertionAxiom classAssertionBiometricData = factory.getOWLClassAssertionAxiom(biometricData, biometricDataIndividual);
+		 OWLClassAssertionAxiom classAssertionCommercialInterest = factory.getOWLClassAssertionAxiom(commercialInterest,commercialInterestIndividual);
+		 OWLClassAssertionAxiom classAssertionConsistencymechanism = factory.getOWLClassAssertionAxiom(consistencymechanism,consistencymechanismIndividual);
+		 OWLClassAssertionAxiom classAssertionContextOfProcessing = factory.getOWLClassAssertionAxiom(contextOfProcessing,contextOfProcessingIndividual);
+		 // OWLClassAssertionAxiom classAssertionController = factory.getOWLClassAssertionAxiom(controller, controllerIndividual);
+		 OWLClassAssertionAxiom classAssertionCreationDate = factory.getOWLClassAssertionAxiom(creationDate, creationDateIndividual);
+		 OWLClassAssertionAxiom classAssertionCriminalConviction = factory.getOWLClassAssertionAxiom(criminalConviction,criminalConvictionIndividual);
+		 OWLClassAssertionAxiom classAssertionCriminalOffense = factory.getOWLClassAssertionAxiom(criminalOffense,criminalOffenseIndividual);
+		 OWLClassAssertionAxiom classAssertionData = factory.getOWLClassAssertionAxiom(data, dataIndividual);
+		 OWLClassAssertionAxiom classAssertionDataProtectionImpactAssessment =factory.getOWLClassAssertionAxiom(dataProtectionImpactAssessment,dataProtectionImpactAssessmentIndividual);
+		 OWLClassAssertionAxiom classAssertionDataProtectionOfficer = factory.getOWLClassAssertionAxiom(dataProtectionOfficer,dataProtectionOfficerIndividual);
+		 OWLClassAssertionAxiom classAssertionDataSubject = factory.getOWLClassAssertionAxiom(dataSubject, dataSubjectIndividual);
+		 OWLClassAssertionAxiom classAssertionEthnicOrigin = factory.getOWLClassAssertionAxiom(ethnicOrigin, ethnicOriginIndividual);
+		 OWLClassAssertionAxiom classAssertionEvaluation = factory.getOWLClassAssertionAxiom(evaluation, evaluationIndividual);
+		 OWLClassAssertionAxiom classAssertionFirstProcessingDate = factory.getOWLClassAssertionAxiom(firstProcessingDate,firstProcessingDateIndividual);
+		 OWLClassAssertionAxiom classAssertionFreeMovementOfData = factory.getOWLClassAssertionAxiom(freeMovementOfData,freeMovementOfDataIndividual);
+		 OWLClassAssertionAxiom classAssertionGdpr = factory.getOWLClassAssertionAxiom(gdpr, gdprIndividual);
+		 OWLClassAssertionAxiom classAssertionGeneticData = factory.getOWLClassAssertionAxiom(geneticData, geneticDataIndividual);
+		 OWLClassAssertionAxiom classAssertionHealth = factory.getOWLClassAssertionAxiom(health, healthIndividual);
+		 OWLClassAssertionAxiom classAssertionLegalEffect = factory.getOWLClassAssertionAxiom(legalEffect, legalEffectIndividual);
+		 OWLClassAssertionAxiom classAssertionLegitimateInterestOfProcessing =factory.getOWLClassAssertionAxiom(legitimateInterestOfProcessing,legitimateInterestOfProcessingIndividual);
+		 OWLClassAssertionAxiom classAssertionListWithProcessesThatDoNotNeedDpia =factory.getOWLClassAssertionAxiom(listWithProcessesThatDoNotNeedDpia,listWithProcessesThatDoNotNeedDpiaIndividual);
+		 OWLClassAssertionAxiom classAssertionListWithProcessesThatNeedDpia =factory.getOWLClassAssertionAxiom(listWithProcessesThatNeedDpia,listWithProcessesThatNeedDpiaIndividual);
+		 OWLClassAssertionAxiom classAssertionMeasureToAddressRisk = factory.getOWLClassAssertionAxiom(measureToAddressRisk,measureToAddressRiskIndividual);
+		 OWLClassAssertionAxiom classAssertionMechanismsToEnsureProtectionOfData =factory.getOWLClassAssertionAxiom(mechanismsToEnsureProtectionOfData, mechanismsToEnsureProtectionOfDataIndividual);
+		 OWLClassAssertionAxiom classAssertionMemberStateLaw = factory.getOWLClassAssertionAxiom(memberStateLaw,memberStateLawIndividual);
+		 OWLClassAssertionAxiom classAssertionMonitoringOfDataInMemberstate =factory.getOWLClassAssertionAxiom(monitoringOfDataInMemberstate,monitoringOfDataInMemberstateIndividual);
+		 OWLClassAssertionAxiom classAssertionOfferingOfGoods = factory.getOWLClassAssertionAxiom(offeringOfGoods,offeringOfGoodsIndividual);
+		 OWLClassAssertionAxiom classAssertionOfferingOfServices = factory.getOWLClassAssertionAxiom(offeringOfServices,offeringOfServicesIndividual);
+		 OWLClassAssertionAxiom classAssertionPersonalData = factory.getOWLClassAssertionAxiom(personalData, personalDataIndividual);
+		 OWLClassAssertionAxiom classAssertionPersonalInterest = factory.getOWLClassAssertionAxiom(personalInterest,personalInterestIndividual);
+		 OWLClassAssertionAxiom classAssertionPhilosophicalBelief = factory.getOWLClassAssertionAxiom(philosophicalBelief, philosophicalBeliefIndividual);
+		 OWLClassAssertionAxiom classAssertionPoliticalOpinion = factory.getOWLClassAssertionAxiom(politicalOpinion,politicalOpinionIndividual);
+		 OWLClassAssertionAxiom classAssertionProcess = factory.getOWLClassAssertionAxiom(process, processIndividual);
+		 // OWLClassAssertionAxiom classAssertionProcessor = factory.getOWLClassAssertionAxiom(processor, processorIndividual);
+		 OWLClassAssertionAxiom classAssertionProfiling = factory.getOWLClassAssertionAxiom(profiling, profilingIndividual);
+		 OWLClassAssertionAxiom classAssertionPublicArea = factory.getOWLClassAssertionAxiom(publicArea, publicAreaIndividual);
+		 OWLClassAssertionAxiom classAssertionPublicInterest = factory.getOWLClassAssertionAxiom(publicInterest, publicInterestIndividual);
+		 OWLClassAssertionAxiom classAssertionPurposeOfProcessing = factory.getOWLClassAssertionAxiom(purposeOfProcessing,purposeOfProcessingIndividual);
+		 OWLClassAssertionAxiom classAssertionRacialOrigin = factory.getOWLClassAssertionAxiom(racialOrigin, racialOriginIndividual);
+		 OWLClassAssertionAxiom classAssertionReligiousBelief = factory.getOWLClassAssertionAxiom(religiousBelief,religiousBeliefIndividual);
+		 OWLClassAssertionAxiom classAssertionRepresentativeOfDataSubject = factory.getOWLClassAssertionAxiom(representativeOfDataSubject,representativeOfDataSubjectIndividual);
+		 OWLClassAssertionAxiom classAssertionReview = factory.getOWLClassAssertionAxiom(review, reviewIndividual);
+		 OWLClassAssertionAxiom classAssertionRights = factory.getOWLClassAssertionAxiom(rights, rightsIndividual);
+		 // OWLClassAssertionAxiom classAssertionRisk = factory.getOWLClassAssertionAxiom(risk, riskIndividual);
+		 OWLClassAssertionAxiom classAssertionSafeguard = factory.getOWLClassAssertionAxiom(safeguard, safeguardIndividual);
+		 OWLClassAssertionAxiom classAssertionScope = factory.getOWLClassAssertionAxiom(scopeOfProcessing, scopeIndividual);
+		 OWLClassAssertionAxiom classAssertionSecurityMeasure = factory.getOWLClassAssertionAxiom(securityMeasure,securityMeasureIndividual);
+		 OWLClassAssertionAxiom classAssertionSecurityOfProcessing = factory.getOWLClassAssertionAxiom(securityOfProcessingOperation, securityOfProcessingOperationIndividual);
+		 OWLClassAssertionAxiom classAssertionSexLife = factory.getOWLClassAssertionAxiom(sexLife, sexLifeIndividual);
+		 OWLClassAssertionAxiom classAssertionSexualOrientation = factory.getOWLClassAssertionAxiom(sexualOrientation,sexualOrientationIndividual);
+		 // OWLClassAssertionAxiom classAssertionSupervisoryAuthority = factory.getOWLClassAssertionAxiom(supervisoryAuthority,
+		 // supervisoryAuthorityIndividual);
+		 OWLClassAssertionAxiom classAssertionSystematicDescriptionOfProcessing =factory.getOWLClassAssertionAxiom(systematicDescriptionOfProcessing,systematicDescriptionOfProcessingIndividual);
+		 OWLClassAssertionAxiom classAssertionTechnology = factory.getOWLClassAssertionAxiom(technology, technologyIndividual);
+		 OWLClassAssertionAxiom classAssertionTradeUnionMembership = factory.getOWLClassAssertionAxiom(tradeUnionMembership,
+		 tradeUnionMembershipIndividual);
+		 // OWLClassAssertionAxiom classAssertionView = factory.getOWLClassAssertionAxiom(view, viewIndividual);
+		 OWLClassAssertionAxiom classAssertionEuropeanDataProtectionBoard = factory.getOWLClassAssertionAxiom(europeanDataProtectionBoard,europeanDataProtectionBoardIndividual);
+		 OWLClassAssertionAxiom classAssertionUnionLaw = factory.getOWLClassAssertionAxiom(unionLaw, unionLawIndividual);
+		 OWLClassAssertionAxiom classAssertProcessing = factory.getOWLClassAssertionAxiom(processing, processingIndividual);
+		 OWLClassAssertionAxiom classAssertMonitoring = factory.getOWLClassAssertionAxiom(monitoring, monitoringIndividual);
+		 OWLClassAssertionAxiom classAssertActivity = factory.getOWLClassAssertionAxiom(activity, activityIndividual);
+		 
+		 
 		 OWLIndividual ConsistencyMechanism_IsAppliedTo_ProcessingIndividual = factory
 				.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ConsistencyMechanism_IsAppliedTo_Processing -"+ processName));
 		 OWLIndividual ContextOfProcessing_Affects_FreeMovementOfDataIndividual = factory
