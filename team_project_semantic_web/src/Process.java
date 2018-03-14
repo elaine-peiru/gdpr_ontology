@@ -13,6 +13,7 @@ import org.json.simple.JSONObject;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLAxiomChange;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
@@ -365,6 +366,11 @@ public class Process {
 				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameSupervisoryAuthotityThatCreatedListDpia").toString()));
 		OWLIndividual supervisoryAuthorityListNoDPIAIndividual = factory
 				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("nameSupervisoryAuthorityThatCreatedListNoDpia").toString()));
+		// TODO add this individual to scenario template and to input method!!
+		OWLIndividual supervisoryAuthorityThatAppliedConsistencyMechanismIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("namesupervisoryAuthorityThatAppliedConsistencyMechanismIndividual").toString()));
+		OWLIndividual supervisoryAuthorityThatControlsProcessIndividual = factory
+				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("supervisoryAuthorityThatControlsProcessIndividual").toString()));
 		OWLIndividual systematicDescriptionOfProcessingIndividual = factory
 				.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("systematicDescriptionOfProcessing").toString()));
 		OWLIndividual technologyIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("technologyOfProcessing").toString()));
@@ -378,16 +384,17 @@ public class Process {
 		OWLIndividual monitoringIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
 		OWLIndividual activityIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
 
-		
-		//TODO add individuals in json
-		OWLIndividual controllerIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
-		OWLIndividual approvedCodeOfConductIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
-		OWLIndividual supervisoryAuthorityIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
-		OWLIndividual listOfProcessesThatDoNotRequireAssessmentIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
-		OWLIndividual viewOfDataSubjectIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
+		// TODO add individuals in json
+		// ????????????????ß
+		/*
+		 * OWLIndividual controllerIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
+		 * OWLIndividual approvedCodeOfConductIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
+		 * OWLIndividual supervisoryAuthorityIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
+		 * OWLIndividual listOfProcessesThatDoNotRequireAssessmentIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI +
+		 * json.get("").toString()));
+		 * OWLIndividual viewOfDataSubjectIndividual = factory.getOWLNamedIndividual(IRI.create(ontologyIRI + json.get("").toString()));
+		 */
 
-		
-		
 		/**
 		 * assert Factor Individuals to OWL Class
 		 */
@@ -480,7 +487,8 @@ public class Process {
 		/**
 		 * Create Individuals of Verbconcepts
 		 */
-		OWLIndividual ConsistencyMechanism_IsAppliedTo_ProcessingIndividual = factory.getOWLNamedIndividual(IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ConsistencyMechanism_IsAppliedTo_Processing -" + processName));
+		OWLIndividual ConsistencyMechanism_IsAppliedTo_ProcessingIndividual = factory.getOWLNamedIndividual(
+				IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ConsistencyMechanism_IsAppliedTo_Processing -" + processName));
 		OWLIndividual ContextOfProcessing_Affects_FreeMovementOfDataIndividual = factory
 				.getOWLNamedIndividual(
 						IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "ContextOfProcessing_Affects_FreeMovementOfData -" + processName));
@@ -699,9 +707,6 @@ public class Process {
 				.getOWLNamedIndividual(
 						IRI.create(this.onto.getOntologyID().getOntologyIRI().get() + "View_Respects_SecurityOfProcessingOperation -" + processName));
 
-		
-		
-		
 		/**
 		 * Add Verbconcept Individuals to the Verbconcept Class
 		 * factory.getOWLClassAssertionAxiom(activity, activityIndividual);
@@ -877,13 +882,8 @@ public class Process {
 		OWLIndividual applies = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCf1IsHQ3nlxgPdbFez7gY1");
 		OWLIndividual publishes = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCdSDoXDS1NWnqJuIxLCAp4");
 		OWLIndividual respects = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU");
-<<<<<<< HEAD
 
 		OWLIndividual isCompliantWith = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV");
-=======
-		// TODO
-		OWLIndividual isCompliantWith = factory.getOWLNamedIndividual("");
->>>>>>> origin/master
 
 		OWLIndividual has = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK");
 		OWLIndividual isAppliedTo = factory.getOWLNamedIndividual("http://purl.org/net/team_project_semantic_web/is_applied_to");
@@ -896,7 +896,7 @@ public class Process {
 		 * Define Relationship hasSubject, hasObject and hasVerb for all Verbconcepts and the corresponding Individuals
 		 */
 
-		List<OWLAxiom> axioms = new ArrayList<OWLAxiom>();
+		List<OWLAxiomChange> axioms = new ArrayList<OWLAxiomChange>();
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
 				consistencymechanismIndividual));
@@ -953,7 +953,8 @@ public class Process {
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Controller_Creates_DataProtectionImpactAssessmentIndividual, creates));
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_IsCompliantWith_ApprovedCodeOfConductIndividual, controllerIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Controller_IsCompliantWith_ApprovedCodeOfConductIndividual, approvedCodeOfConductIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Controller_IsCompliantWith_ApprovedCodeOfConductIndividual,
+				approvedCodeOfConductControllerIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Controller_IsCompliantWith_ApprovedCodeOfConductIndividual, isCompliantWith));
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_SeeksAdviceOf_DataProtectionOfficerIndividual, controllerIndividual));
@@ -970,10 +971,13 @@ public class Process {
 				representativeOfDataSubjectIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Controller_SeeksViewOf_RepresentativeOfDataSubjectIndividual, seeksViewOf));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, CreationDate_OccursBefore_FirstProcessingDateIndividual, creationDateIndividual));
-		axioms.add(
-				factory.getOWLObjectPropertyAssertionAxiom(hasObject, CreationDate_OccursBefore_FirstProcessingDateIndividual, firstProcessingDateIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, CreationDate_OccursBefore_FirstProcessingDateIndividual, occursBefore));
+		if (this.compareDates(json.get("dpiaCreationDate").toString(), json.get("firstProcessingDate").toString())) {
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, CreationDate_OccursBefore_FirstProcessingDateIndividual, creationDateIndividual));
+			axioms.add(
+					factory.getOWLObjectPropertyAssertionAxiom(hasObject, CreationDate_OccursBefore_FirstProcessingDateIndividual,
+							firstProcessingDateIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, CreationDate_OccursBefore_FirstProcessingDateIndividual, occursBefore));
+		}
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Data_Contains_BiometricDataIndividual, dataIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Data_Contains_BiometricDataIndividual, biometricDataIndividual));
@@ -1103,10 +1107,13 @@ public class Process {
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, DataSubject_Has_ViewIndividual, viewDataSubjectIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, DataSubject_Has_ViewIndividual, has));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual, europeanDataProtectionBoardIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual,
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
+				EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual, europeanDataProtectionBoardIndividual));
+		axioms.add(
+				factory.getOWLObjectPropertyAssertionAxiom(hasObject, EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual,
 						listWithProcessesThatDoNotNeedDpiaIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual, receives));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual,
+				receives));
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, EuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessmentIndividual,
 				europeanDataProtectionBoardIndividual));
@@ -1195,35 +1202,40 @@ public class Process {
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processing_Has_TechnologyIndividual, technologyIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processing_Has_TechnologyIndividual, has));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_Assesses_PurposeOfProcessingIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_Assesses_PurposeOfProcessingIndividual, purposeOfProcessingIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_Assesses_PurposeOfProcessingIndividual, assesses));
+		for (int i = 0; i < processorIndividuals.size(); i++) {
+			OWLIndividual processorIndividual = processorIndividuals.get(i);
+			OWLIndividual approvedCodeOfConductProcessorIndividual = approvedCodeOfConductProcessorIndividuals.get(i);
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_Assesses_PurposeOfProcessingIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_Assesses_PurposeOfProcessingIndividual, purposeOfProcessingIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_Assesses_PurposeOfProcessingIndividual, assesses));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_Controls_ProcessIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_Controls_ProcessIndividual, processIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_Controls_ProcessIndividual, controls));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_Controls_ProcessIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_Controls_ProcessIndividual, processIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_Controls_ProcessIndividual, controls));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsAuthorizedBy_MemberStatelawIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsAuthorizedBy_MemberStatelawIndividual, memberStateLawIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_MemberStatelawIndividual, isAuthorizedBy));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsAuthorizedBy_MemberStatelawIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsAuthorizedBy_MemberStatelawIndividual, memberStateLawIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_MemberStatelawIndividual, isAuthorizedBy));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsAuthorizedBy_UnionlawIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsAuthorizedBy_UnionlawIndividual, unionLawIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_UnionlawIndividual, isAuthorizedBy));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsAuthorizedBy_UnionlawIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsAuthorizedBy_UnionlawIndividual, unionLawIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_UnionlawIndividual, isAuthorizedBy));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
-				approvedCodeOfConductIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual, isCompliantWith));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
+					approvedCodeOfConductProcessorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual, isCompliantWith));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_DataSubjectIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_DataSubjectIndividual, dataSubjectIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_DataSubjectIndividual, seeksViewOf));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_DataSubjectIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_DataSubjectIndividual, dataSubjectIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_DataSubjectIndividual, seeksViewOf));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual, processorIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
-				representativeOfDataSubjectIndividual));
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual, seeksViewOf));
+			axioms.add(
+					factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual, processorIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
+					representativeOfDataSubjectIndividual));
+			axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual, seeksViewOf));
+		}
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, PurposeOfProcessing_Has_RiskIndividual, purposeOfProcessingIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, PurposeOfProcessing_Has_RiskIndividual, riskOfPurposeIndividual));
@@ -1238,9 +1250,11 @@ public class Process {
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Review_Checks_ProcessIndividual, processIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Review_Checks_ProcessIndividual, checks));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Risk_ChangesIndividual, riskIndividual));
-		// TODO define which risk has actually changed
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Risk_ChangesIndividual, changes));
+		/*
+		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Risk_ChangesIndividual, riskIndividual));
+		 * // TODO define which risk has actually changed
+		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Risk_ChangesIndividual, changes));
+		 */
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Scope_Has_RiskIndividual, scopeIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Scope_Has_RiskIndividual, riskOfScopeIndividual));
@@ -1251,12 +1265,13 @@ public class Process {
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ScopeOfProcessing_IsLikelyToResultIn_RiskIndividual, isLikelyToResultIn));
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
-				supervisoryAuthorityIndividual));// TODO check which supervisoryAUthority applied it
+				supervisoryAuthorityThatAppliedConsistencyMechanismIndividual));// TODO check which supervisoryAUthority applied it
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
 				consistencymechanismIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual, applies));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Controls_ProcessIndividual, supervisoryAuthorityIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Controls_ProcessIndividual,
+				supervisoryAuthorityThatControlsProcessIndividual));
 		// TODO supervisory authority of criminal conviction or offense ?!
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Controls_ProcessIndividual, processIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Controls_ProcessIndividual, controls));
@@ -1283,12 +1298,8 @@ public class Process {
 
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
 				supervisoryAuthorityListNeedDPIAIndividual));
-<<<<<<< HEAD
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
 				listWithProcessesThatDoNotNeedDpiaIndividual));
-=======
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,listOfProcessesThatDoNotRequireAssessmentIndividual));
->>>>>>> origin/master
 		axioms.add(
 				factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual, publishes));
 
@@ -1300,17 +1311,34 @@ public class Process {
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, TechnologyOfProcessing_IsLikelyToResultIn_RiskIndividual, riskOfTechnologyIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, TechnologyOfProcessing_IsLikelyToResultIn_RiskIndividual, isLikelyToResultIn));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_CommercialInterestIndividual, viewOfDataSubjectIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_CommercialInterestIndividual, viewDataSubjectIndividual));
 		// TODO either view of data subject or view of representative
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_CommercialInterestIndividual, commercialInterestIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_CommercialInterestIndividual, respects));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_PublicInterestIndividual, viewOfDataSubjectIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_PublicInterestIndividual, viewDataSubjectIndividual));
 		// TODO same here as above
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_PublicInterestIndividual, publicInterestIndividual));
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_PublicInterestIndividual, respects));
 
-		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_SecurityOfProcessingOperationIndividual, viewOfDataSubjectIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_SecurityOfProcessingOperationIndividual, viewDataSubjectIndividual));
+		// TODO same here as above
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_SecurityOfProcessingOperationIndividual,
+				securityOfProcessingOperationIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_SecurityOfProcessingOperationIndividual, respects));
+
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_CommercialInterestIndividual, viewRepresenativeDataSubjectIndividual));
+		// TODO either view of data subject or view of representative
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_CommercialInterestIndividual, commercialInterestIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_CommercialInterestIndividual, respects));
+
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_PublicInterestIndividual, viewRepresenativeDataSubjectIndividual));
+		// TODO same here as above
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_PublicInterestIndividual, publicInterestIndividual));
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_PublicInterestIndividual, respects));
+
+		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_SecurityOfProcessingOperationIndividual,
+				viewRepresenativeDataSubjectIndividual));
 		// TODO same here as above
 		axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_SecurityOfProcessingOperationIndividual,
 				securityOfProcessingOperationIndividual));
