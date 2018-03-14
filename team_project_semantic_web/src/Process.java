@@ -703,45 +703,45 @@ public class Process {
 		 * get Reference of Verb Individuals from our ontology
 		 */
 
-		OWLObjectProperty affects = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a");
-		OWLObjectProperty involves = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH");
-		OWLObjectProperty isLikelyToResultIn = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d");
-		OWLObjectProperty assesses = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RqNBSia6wh0aAzt0Arji9P");
-		OWLObjectProperty carriesOut = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RDSdGrHXYl9Eu0s8r5IS5Oj");
-		OWLObjectProperty creates = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7");
-		OWLObjectProperty isCompliantTo = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV");
-		OWLObjectProperty seeksAdviceOf = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RRtBczGxkl8IyzzoK7bmKd");
-		OWLObjectProperty seeksViewOf = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A");
-		OWLObjectProperty occursBefore = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R86mMcJndHzoTUpE4c4Y2vJ");
-		OWLObjectProperty contains = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf");
-		OWLObjectProperty isMonitoredIn = factory.getOWLObjectProperty("http://purl.org/net/team_project_semantic_web/is_monitored_in");
-		OWLObjectProperty relatesTo = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS");
-		OWLObjectProperty revealsInformationAbout = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK");
-		OWLObjectProperty isDesignated = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RV7kczTIRtjPdaLFeqbJio");
-		OWLObjectProperty receives = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R87t7dgn6sgWrizmrIVVss6");
-		OWLObjectProperty produces = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RBjc6dioKfLQXvdY6AOWJrg");
-		OWLObjectProperty concerns = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RC1BTLj1hUpMHhqJcTjKqzm");
-		OWLObjectProperty compliesTo = factory.getOWLObjectProperty("http://purl.org/net/team_project_semantic_web/complies_to");
-		OWLObjectProperty takesIntoAccount = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RBG7sVWc5jZZhT4N0sEdYTs");
-		OWLObjectProperty basesOn = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RicP6oSkrmhtRFrztSkOt");
-		OWLObjectProperty isPartOf = factory.getOWLObjectProperty("http://purl.org/net/team_project_semantic_web/is_part_of");
-		OWLObjectProperty isPerformedAccordingTo = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R9sgi5889wsvWlxuMvptCZ");
-		OWLObjectProperty controls = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL");
-		OWLObjectProperty isAuthorizedBy = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2");
-		OWLObjectProperty checks = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RyaKJMMydAydlR8BS6Gi7I");
-		OWLObjectProperty changes = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R8byyFZU9KweuTjs6z6rZLF");
-		OWLObjectProperty applies = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RCf1IsHQ3nlxgPdbFez7gY1");
-		OWLObjectProperty publishes = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RCdSDoXDS1NWnqJuIxLCAp4");
-		OWLObjectProperty respects = factory.getOWLObjectProperty("http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU");
+		OWLIndividual affects = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a");
+		OWLIndividual involves = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH");
+		OWLIndividual isLikelyToResultIn = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d");
+		OWLIndividual assesses = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RqNBSia6wh0aAzt0Arji9P");
+		OWLIndividual carriesOut = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RDSdGrHXYl9Eu0s8r5IS5Oj");
+		OWLIndividual creates = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7");
+		OWLIndividual isCompliantTo = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV");
+		OWLIndividual seeksAdviceOf = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RRtBczGxkl8IyzzoK7bmKd");
+		OWLIndividual seeksViewOf = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A");
+		OWLIndividual occursBefore = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R86mMcJndHzoTUpE4c4Y2vJ");
+		OWLIndividual contains = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf");
+		OWLIndividual isMonitoredIn = factory.getOWLNamedIndividual("http://purl.org/net/team_project_semantic_web/is_monitored_in");
+		OWLIndividual relatesTo = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS");
+		OWLIndividual revealsInformationAbout = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK");
+		OWLIndividual isDesignated = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RV7kczTIRtjPdaLFeqbJio");
+		OWLIndividual receives = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R87t7dgn6sgWrizmrIVVss6");
+		OWLIndividual produces = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RBjc6dioKfLQXvdY6AOWJrg");
+		OWLIndividual concerns = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RC1BTLj1hUpMHhqJcTjKqzm");
+		OWLIndividual compliesTo = factory.getOWLNamedIndividual("http://purl.org/net/team_project_semantic_web/complies_to");
+		OWLIndividual takesIntoAccount = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RBG7sVWc5jZZhT4N0sEdYTs");
+		OWLIndividual basesOn = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RicP6oSkrmhtRFrztSkOt");
+		OWLIndividual isPartOf = factory.getOWLNamedIndividual("http://purl.org/net/team_project_semantic_web/is_part_of");
+		OWLIndividual isPerformedAccordingTo = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R9sgi5889wsvWlxuMvptCZ");
+		OWLIndividual controls = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL");
+		OWLIndividual isAuthorizedBy = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2");
+		OWLIndividual checks = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RyaKJMMydAydlR8BS6Gi7I");
+		OWLIndividual changes = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R8byyFZU9KweuTjs6z6rZLF");
+		OWLIndividual applies = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCf1IsHQ3nlxgPdbFez7gY1");
+		OWLIndividual publishes = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCdSDoXDS1NWnqJuIxLCAp4");
+		OWLIndividual respects = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU");
 		// TODO
 		OWLObjectProperty isCompliantWith = factory.getOWLObjectProperty("");
 
-		OWLObjectProperty has = factory.getOWLObjectProperty("http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK");
-		OWLObjectProperty isAppliedTo = factory.getOWLObjectProperty("http://purl.org/net/team_project_semantic_web/is_applied_to");
+		OWLIndividual has = factory.getOWLNamedIndividual("http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK");
+		OWLIndividual isAppliedTo = factory.getOWLNamedIndividual("http://purl.org/net/team_project_semantic_web/is_applied_to");
 
-		OWLObjectProperty hasSubject = factory.getOWLObjectProperty(RuleName.hasSubject.getPath());
-		OWLObjectProperty hasObject = factory.getOWLObjectProperty(RuleName.hasObject.getPath());
-		OWLObjectProperty hasVerb = factory.getOWLObjectProperty(RuleName.hasVerb.getPath());
+		OWLIndividual hasSubject = factory.getOWLNamedIndividual(RuleName.hasSubject.getPath());
+		OWLIndividual hasObject = factory.getOWLNamedIndividual(RuleName.hasObject.getPath());
+		OWLIndividual hasVerb = factory.getOWLNamedIndividual(RuleName.hasVerb.getPath());
 
 		/**
 		 * Define Relationship hasSubject, hasObject and hasVerb for all Verbconcepts and the corresponding Individuals
