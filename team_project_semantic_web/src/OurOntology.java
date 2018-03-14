@@ -1,10 +1,12 @@
 package src;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
-import org.semanticweb.owlapi.io.StreamDocumentTarget;
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -35,20 +37,53 @@ public class OurOntology {
 			return o;
 
 		} catch (OWLOntologyCreationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return null;
 		}
 	}
 
-	public static void saveOntology(OWLOntology onto) {
+	public static OWLOntology getProcessOntology(String processId) {
+		try {
+			OWLOntologyManager man = OWLManager.createOWLOntologyManager();
+			String path = "./documents" + File.pathSeparator + processId + File.pathSeparator + ".owl";
+			File file = new File(path);
+
+			OWLOntology onto = man.loadOntologyFromOntologyDocument(file);
+
+			return onto;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public static void saveOntology(OWLOntology onto, String processId) {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		try {
-			RDFXMLDocumentFormat owlxmlFormat = new RDFXMLDocumentFormat();
-			manager.saveOntology(onto, owlxmlFormat, new StreamDocumentTarget(System.out));
+			String path = "./documents" + File.pathSeparator + processId + File.pathSeparator + ".owl";
+			File file = new File(path);
+			RDFXMLDocumentFormat rdfxmlFormat = new RDFXMLDocumentFormat();
+			manager.saveOntology(onto, rdfxmlFormat, IRI.create(file.toURI()));
 		} catch (OWLOntologyStorageException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public static void checkRulesForProcess(OWLOntology onto, String processId) {
+
+		String result = "";
+		writeResultFile(result, processId);
+	}
+
+	public static void writeResultFile(String output, String processId) {
+		String path = "./checkResults" + File.pathSeparator + processId + ".txt";
+		try {
+			PrintWriter writer = new PrintWriter(path);
+			writer.print(output);
+			writer.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
 	}
 }

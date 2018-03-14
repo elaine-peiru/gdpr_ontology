@@ -24,6 +24,9 @@ public class Input {
 			while (line != null) {
 				String[] inputParts = line.split(":", -1);
 				switch (inputParts[0]) {
+				case "ID":
+					json.put("processId", inputParts[2]);
+					break;
 				case "0.":
 					json.put("process", inputParts[2]);
 					break;

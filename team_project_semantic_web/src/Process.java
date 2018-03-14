@@ -40,6 +40,7 @@ public class Process {
 
 		
 		String processName = json.get("proess").toString();
+		String processId = json.get("processId").toString();
 
 		OWLClass approvedCodeOfConduct = factory.getOWLClass(ontologyIRI + "approvedCodeOfConduct");
 		OWLClass assessmentOfNecessityOfProcessing = factory.getOWLClass(ontologyIRI + "assessmentOfNecessityOfProcessing");
@@ -1386,7 +1387,7 @@ public class Process {
 		 manager.addAxioms(onto, axioms);
 		 
 		// save changes to Ontology
-		OurOntology.saveOntology(onto);
+		OurOntology.saveOntology(onto, processId);
 	}
 
 	public boolean compareDates(String creationDate, String processingDate) {
