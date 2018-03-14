@@ -217,17 +217,8 @@ public class Input {
 				case "12.3":
 					json.put("riskOfPersonsViewToSecurityOfProcessing", inputParts[2]);
 					break;
-				case "13.":
+				case "12.0":
 					json.put("viewOfRepresentativeOfPerson", inputParts[2]);
-					break;
-				case "13.1":
-					json.put("riskOfRepresentaticesViewToPublicInterest", inputParts[2]);
-					break;
-				case "13.2":
-					json.put("riskOfRepresentativesViewToCommercialInterest", inputParts[2]);
-					break;
-				case "13.3":
-					json.put("riskToRepresentativesViewToSecurityOfProcessing", inputParts[2]);
 					break;
 				case "14.":
 					json.put("nameOfPublicAreaWhereDataWasMonitored", inputParts[2]);
