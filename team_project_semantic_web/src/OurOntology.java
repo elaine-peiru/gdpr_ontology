@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
-import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.io.StreamDocumentTarget;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -63,7 +63,8 @@ public class OurOntology {
 			String path = "./documents" + File.pathSeparator + processId + File.pathSeparator + ".owl";
 			File file = new File(path);
 			RDFXMLDocumentFormat rdfxmlFormat = new RDFXMLDocumentFormat();
-			manager.saveOntology(onto, rdfxmlFormat, IRI.create(file.toURI()));
+			manager.saveOntology(onto, rdfxmlFormat, new StreamDocumentTarget(
+					System.out));
 		} catch (OWLOntologyStorageException e) {
 			e.printStackTrace();
 		}
