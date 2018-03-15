@@ -27,6 +27,9 @@ public class Input {
 				case "ID":
 					json.put("processId", inputParts[2]);
 					break;
+				case "VersionNumber":
+					json.put("versionNumber", inputParts[2]);
+					break;
 				case "0.":
 					json.put("process", inputParts[2]);
 					break;
@@ -36,12 +39,12 @@ public class Input {
 				case "2.":
 					json.put("dpiaCreationDate", inputParts[2]);
 					break;
-				case "3.":
+				case "3.1":
+					json.put("dpoIsDesignated", inputParts[2]);
+					break;
+				case "3.2":
 					json.put("nameDataProtectionOfficer", inputParts[2]);
 					break;
-				// case "4.":
-				// json.put("", inputParts[2]);
-				// break;
 				case "4.1":
 					json.put("systematicDescriptionOfProcessing", inputParts[2]);
 					break;
@@ -60,11 +63,9 @@ public class Input {
 				case "4.6":
 					json.put("assessmentOfRisks", inputParts[2]);
 					break;
-				/*
-				 * case "4.7":
-				 * json.put("", inputParts[2]);
-				 * break;
-				 */
+				case "4.7":
+					json.put("measuresToAddressRisksDpia", inputParts[2]);
+					break;
 				case "4.7.1":
 					json.put("safeguard", inputParts[2]);
 					break;
@@ -75,12 +76,12 @@ public class Input {
 					json.put("mechanismsToEnsureProtectionOfData", inputParts[2]);
 					break;
 				case "5.":
+					json.put("processing", inputParts[2]);
+					break;
+				case "5.1":
 					json.put("contentOfProcessing", inputParts[2]);
 					break;
 				/*
-				 * case "5.1":
-				 * json.put("", inputParts[2]);
-				 * break;
 				 * case "5.1.1":
 				 * json.put("", inputParts[2]);
 				 * break;
@@ -92,32 +93,45 @@ public class Input {
 					json.put("offeringOfServices", inputParts[2]);
 					break;
 				case "5.1.1.3":
+					json.put("freeMovementOfData", inputParts[2]);
+					break;
+				case "5.1.1.4":
 					json.put("monitoringBehaviorInMemberstate", inputParts[2]);
 					break;
 				case "5.1.2":
 					json.put("riskRelatedToContent", inputParts[2]);
 					break;
+				case "5.1.2.1":
+					json.put("contentRiskUpdated", inputParts[2]);
 				case "5.2":
 					json.put("purposeOfProcessing", inputParts[2]);
 					break;
 				case "5.2.1":
 					json.put("riskRelatedToPurpose", inputParts[2]);
 					break;
+				case ("5.2.1.1"):
+					json.put("purposeRiskUpdated", inputParts[2]);
 				case "5.3":
 					json.put("scopeOfProcessing", inputParts[2]);
 					break;
 				case "5.3.1":
 					json.put("riskRelatedToScope", inputParts[2]);
 					break;
+				case "5.3.1.1":
+					json.put("scopeRiskUpdated", inputParts[2]);
 				case "5.4":
 					json.put("technologyOfProcessing", inputParts[2]);
 					break;
 				case "5.4.1":
 					json.put("riskRelatedToTechnology", inputParts[2]);
 					break;
-				case "6.":
+				case "5.4.1.1":
+					json.put("technologyRiskUpdated", inputParts[2]);
+				case "6.1":
 					json.put("consistencyMechanism", inputParts[2]);
 					break;
+				case "6.2":
+					json.put("nameSupervisoryAuthorithyThatAppliedCosistencyMechanism", inputParts[2]);
 				case "7.":
 					json.put("evaluation", inputParts[2]);
 					break;
@@ -217,9 +231,6 @@ public class Input {
 				case "12.3":
 					json.put("riskOfPersonsViewToSecurityOfProcessing", inputParts[2]);
 					break;
-				case "12.0":
-					json.put("viewOfRepresentativeOfPerson", inputParts[2]);
-					break;
 				case "14.":
 					json.put("nameOfPublicAreaWhereDataWasMonitored", inputParts[2]);
 					break;
@@ -232,11 +243,22 @@ public class Input {
 				case "16.1":
 					json.put("controllerAppliedApprovedCodeOfConduct", inputParts[2]);
 					break;
+				case "16.2":
+					json.put("nameSupervisoryAuthorityThatControlsProcess", inputParts[2]);
 				case "17.":
 					json.put("nameOfProcessor", inputParts[2]);
 					break;
 				case "17.1":
 					json.put("processorAppliedAppovedCodeOfConduct", inputParts[2]);
+					break;
+				case "17.2.1":
+					json.put("memberstatelaw", inputParts[2]);
+					break;
+				case "17.2.2":
+					json.put("unionlawAuthorization", inputParts[2]);
+					break;
+				case "18.":
+					json.put("reviewApplied", inputParts[2]);
 					break;
 				default:
 					break;
