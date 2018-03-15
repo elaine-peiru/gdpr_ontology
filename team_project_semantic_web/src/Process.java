@@ -773,55 +773,97 @@ public class Process {
 				factory.getOWLClassAssertionAxiom(contextOfProcessing_Affects_FreeMovementOfData, ContextOfProcessing_Affects_FreeMovementOfDataIndividual));
 		manager.applyChange(addVerbConcept);
 		
-		 addVerbConcept = new AddAxiom(onto,factory.getOWLClassAssertionAxiom(contextOfProcessing_Has_Activity,
-		 ContextOfProcessing_Has_ActivityIndividual));
-		 manager.applyChange(addVerbConcept);
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(contextOfProcessing_Has_Risk,
-		 * ContextOfProcessing_Has_RiskIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(contextOfProcessing_Involves_MonitoringOfDataInMemberstate,
-		 * ContextOfProcessing_Involves_MonitoringOfDataInMemberstateIndividual));
-		 * addVerbconceptToClass
-		 * .add(factory.getOWLClassAssertionAxiom(contextOfProcessing_Involves_OfferingOfGood,
-		 * ContextOfProcessing_Involves_OfferingOfGoodIndividual));
-		 * addVerbconceptToClass.add(
-		 * factory.getOWLClassAssertionAxiom(contextOfProcessing_Involves_OfferingOfServices,
-		 * ContextOfProcessing_Involves_OfferingOfServicesIndividual));
-		 * addVerbconceptToClass
-		 * .add(factory.getOWLClassAssertionAxiom(contextOfProcessing_IsLikelyToResultIn_Risk,
-		 * ContextOfProcessing_IsLikelyToResultIn_RiskIndividual));
-		 * addVerbconceptToClass
-		 * .add(factory.getOWLClassAssertionAxiom(controller_Assesses_PurposeOfProcessing,
-		 * Controller_Assesses_PurposeOfProcessingIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(controller_CarriesOut_Review,
-		 * Controller_CarriesOut_ReviewIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(controller_Creates_DataProtectionImpactAssessment,
-		 * Controller_Creates_DataProtectionImpactAssessmentIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(controller_IsCompliantWith_ApprovedCodeOfConduct,
-		 * Controller_IsCompliantWith_ApprovedCodeOfConductIndividual));
-		 * addVerbconceptToClass.add(
-		 * factory.getOWLClassAssertionAxiom(controller_SeeksAdviceOf_DataProtectionOfficer,
-		 * Controller_SeeksAdviceOf_DataProtectionOfficerIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(controller_SeeksViewOf_DataSubject,
-		 * Controller_SeeksViewOf_DataSubjectIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(controller_SeeksViewOf_RepresentativeOfDataSubject,
-		 * Controller_SeeksViewOf_RepresentativeOfDataSubjectIndividual));
-		 * addVerbconceptToClass
-		 * .add(factory.getOWLClassAssertionAxiom(creationDate_OccursBefore_FirstProcessingDate,
-		 * CreationDate_OccursBefore_FirstProcessingDateIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_Contains_BiometricData, Data_Contains_BiometricDataIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_Contains_GeneticData, Data_Contains_GeneticDataIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_Has_Monitoring, Data_Has_MonitoringIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_IsMonitoredIn_PublicArea,
-		 * Data_IsMonitoredIn_PublicAreaIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_IsPartOf_Evaluation, Data_IsPartOf_EvaluationIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_RelatesTo_CriminalConviction,
-		 * Data_RelatesTo_CriminalConvictionIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_RelatesTo_CriminalOffense,
-		 * Data_RelatesTo_CriminalOffenseIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(personalData_RelatesTo_DataSubject,
-		 * Data_RelatesTo_DataSubjectIndividual));
-		 * addVerbconceptToClass.add(factory.getOWLClassAssertionAxiom(data_RelatesTo_SecurityMeasure,
-		 * Data_RelatesTo_SecurityMeasureIndividual));
+		addVerbconcept = new AddAxiom(onto, 
+				 factory.getOWLClassAssertionAxiom(contextOfProcessing_Has_Activity, ContextOfProcessing_Has_ActivityIndividual));
+		manager.applyChange(addVerbConcept);
+		 
+	    addVerbconcept = new AddAxiom(onto, 
+				 factory.getOWLClassAssertionAxiom(contextOfProcessing_Has_Risk, ContextOfProcessing_Has_RiskIndividual));
+		manager.applyChange(addVerbConcept);
+		 
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(contextOfProcessing_Involves_MonitoringOfDataInMemberstate, ContextOfProcessing_Involves_MonitoringOfDataInMemberstateIndividual));
+		manager.applyChange(addVerbConcept); 
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(contextOfProcessing_Involves_OfferingOfGood, ContextOfProcessing_Involves_OfferingOfGoodIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(contextOfProcessing_Involves_OfferingOfServices, ContextOfProcessing_Involves_OfferingOfServicesIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(contextOfProcessing_IsLikelyToResultIn_Risk, ContextOfProcessing_IsLikelyToResultIn_RiskIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_Assesses_PurposeOfProcessing, Controller_Assesses_PurposeOfProcessingIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_CarriesOut_Review, Controller_CarriesOut_ReviewIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_Creates_DataProtectionImpactAssessment, Controller_Creates_DataProtectionImpactAssessmentIndividual));
+		manager.applyChange(addVerbConcept); 
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_IsCompliantWith_ApprovedCodeOfConduct, Controller_IsCompliantWith_ApprovedCodeOfConductIndividual));
+		manager.applyChange(addVerbConcept); 
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_SeeksAdviceOf_DataProtectionOfficer, Controller_SeeksAdviceOf_DataProtectionOfficerIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_SeeksViewOf_DataSubject, Controller_SeeksViewOf_DataSubjectIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(controller_SeeksViewOf_RepresentativeOfDataSubject, Controller_SeeksViewOf_RepresentativeOfDataSubjectIndividual));
+		manager.applyChange(addVerbConcept); 
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(creationDate_OccursBefore_FirstProcessingDate, CreationDate_OccursBefore_FirstProcessingDateIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_Contains_BiometricData, Data_Contains_BiometricDataIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_Contains_GeneticData, Data_Contains_GeneticDataIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_Has_Monitoring, Data_Has_MonitoringIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_IsMonitoredIn_PublicArea, Data_IsMonitoredIn_PublicAreaIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_IsPartOf_Evaluation, Data_IsPartOf_EvaluationIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_RelatesTo_CriminalConviction, Data_RelatesTo_CriminalConvictionIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_RelatesTo_CriminalOffense, Data_RelatesTo_CriminalOffenseIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(personalData_RelatesTo_DataSubject, Data_RelatesTo_DataSubjectIndividual));
+		manager.applyChange(addVerbConcept);
+		
+		addVerbconcept = new AddAxiom(onto,
+				 factory.getOWLClassAssertionAxiom(data_RelatesTo_SecurityMeasure, Data_RelatesTo_SecurityMeasureIndividual));
+		manager.applyChange(addVerbConcept);
 		 addVerbConcept = new AddAxiom(onto,factory.getOWLClassAssertionAxiom(data_RevealsInformationAbout_EthnicOrigin,
 		 Data_RevealsInformationAbout_EthnicOriginIndividual));
 		 manager.applyChange(addVerbConcept);
