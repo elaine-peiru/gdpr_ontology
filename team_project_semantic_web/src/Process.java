@@ -960,18 +960,24 @@ public class Process {
 		 * Define Relationship hasSubject, hasObject and hasVerb for all Verbconcepts and the corresponding Individuals
 		 */
 
-		/*
-		 * List<OWLAxiomChange> axioms = new ArrayList<OWLAxiomChange>();
-		 * 
-		 * if (json.get("nameOfController") != null) {
-		 * if (json.get("purposeOfProcessing") != null) {
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_Assesses_PurposeOfProcessingIndividual,
-		 * controllerIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Controller_Assesses_PurposeOfProcessingIndividual,
-		 * purposeOfProcessingIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Controller_Assesses_PurposeOfProcessingIndividual, assesses));
-		 * }
-		 * 
+		
+		  List<OWLAxiomChange> axioms = new ArrayList<OWLAxiomChange>();
+		  
+		 AddAxiom addRelation;
+		 
+		 
+		 if (json.get("nameOfController") != null) {
+			 if (json.get("purposeOfProcessing") != null) {
+				 addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_Assesses_PurposeOfProcessingIndividual,
+				  controllerIndividual));
+				 manager.applyChange(addRelation);
+				 addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Controller_Assesses_PurposeOfProcessingIndividual,
+				  purposeOfProcessingIndividual));
+				 manager.applyChange(addRelation);
+				 addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Controller_Assesses_PurposeOfProcessingIndividual, assesses));
+				 manager.applyChange(addRelation);
+			 }
+		
 		 * if (json.get("review") != null) {// TODO review missing in scenario
 		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_CarriesOut_ReviewIndividual, controllerIndividual));
 		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Controller_CarriesOut_ReviewIndividual, reviewIndividual));
