@@ -415,73 +415,73 @@ public class Process {
 		// add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(contextOfProcessing, contextOfProcessingIndividual));
 		// manager.applyChange(add);
 		// OWLClassAssertionAxiom classAssertionController = factory.getOWLClassAssertionAxiom(controller, controllerIndividual);
-		/*
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(creationDate, creationDateIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(criminalConviction, criminalConvictionIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(criminalOffense, criminalOffenseIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(data, dataIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(dataProtectionImpactAssessment,
-		 * dataProtectionImpactAssessmentIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(dataProtectionOfficer, dataProtectionOfficerIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(dataSubject, dataSubjectIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(ethnicOrigin, ethnicOriginIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(evaluation, evaluationIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(firstProcessingDate, firstProcessingDateIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(freeMovementOfData, freeMovementOfDataIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(gdpr, gdprIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(geneticData, geneticDataIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(health, healthIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(legalEffect, legalEffectIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(legitimateInterestOfProcessing,
-		 * legitimateInterestOfProcessingIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(listWithProcessesThatDoNotNeedDpia,
-		 * listWithProcessesThatDoNotNeedDpiaIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(listWithProcessesThatNeedDpia,
-		 * listWithProcessesThatNeedDpiaIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(measureToAddressRisk, measureToAddressRiskIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(mechanismsToEnsureProtectionOfData,
-		 * mechanismsToEnsureProtectionOfDataIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(memberStateLaw, memberStateLawIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(monitoringOfDataInMemberstate,
-		 * monitoringOfDataInMemberstateIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(offeringOfGoods, offeringOfGoodsIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(offeringOfServices, offeringOfServicesIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(personalData, personalDataIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(personalInterest, personalInterestIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(philosophicalBelief, philosophicalBeliefIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(politicalOpinion, politicalOpinionIndividual));
-		 * manager.applyChange(add);
-		 * add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(process, processIndividual));
-		 * manager.applyChange(add);
-		 * // OWLClassAssertionAxiom classAssertionProcessor = factory.getOWLClassAssertionAxiom(processor, processorIndividual);
-		 */
+		
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(creationDate, creationDateIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(criminalConviction, criminalConvictionIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(criminalOffense, criminalOffenseIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(data, dataIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(dataProtectionImpactAssessment,
+		dataProtectionImpactAssessmentIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(dataProtectionOfficer, dataProtectionOfficerIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(dataSubject, dataSubjectIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(ethnicOrigin, ethnicOriginIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(evaluation, evaluationIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(firstProcessingDate, firstProcessingDateIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(freeMovementOfData, freeMovementOfDataIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(gdpr, gdprIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(geneticData, geneticDataIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(health, healthIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(legalEffect, legalEffectIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(legitimateInterestOfProcessing,
+		legitimateInterestOfProcessingIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(listWithProcessesThatDoNotNeedDpia,
+		listWithProcessesThatDoNotNeedDpiaIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(listWithProcessesThatNeedDpia,
+		listWithProcessesThatNeedDpiaIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(measureToAddressRisk, measureToAddressRiskIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(mechanismsToEnsureProtectionOfData,
+		mechanismsToEnsureProtectionOfDataIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(memberStateLaw, memberStateLawIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(monitoringOfDataInMemberstate,
+		monitoringOfDataInMemberstateIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(offeringOfGoods, offeringOfGoodsIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(offeringOfServices, offeringOfServicesIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(personalData, personalDataIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(personalInterest, personalInterestIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(philosophicalBelief, philosophicalBeliefIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(politicalOpinion, politicalOpinionIndividual));
+		manager.applyChange(add);
+		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(process, processIndividual));
+		manager.applyChange(add);
+		// add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(processor, processorIndividual));
+		// manager.applyChange(add);
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(profiling, profilingIndividual));
 		manager.applyChange(add);
 		add = new AddAxiom(onto,factory.getOWLClassAssertionAxiom(publicArea, publicAreaIndividual));
