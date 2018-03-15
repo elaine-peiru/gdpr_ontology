@@ -1736,115 +1736,147 @@ public class Process {
 		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_UnionlawIndividual, isAuthorizedBy));
 		 * }
 		 * 
-		 * if (json.get("processorAppliedApprovedCodeOfConduct") != null) {
-		 * // TODO make another check here -> only if value says yes
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
-		 * processorIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
-		 * approvedCodeOfConductProcessorIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
-		 * isCompliantWith));
-		 * }
-		 * 
-		 * if (json.get("") != null) { // TODO get a check of scenario if the view is supposed to be seeked -> not yet in the scenario
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_DataSubjectIndividual,
-		 * processorIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_DataSubjectIndividual,
-		 * dataSubjectIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_DataSubjectIndividual, seeksViewOf));
-		 * }
-		 * 
-		 * if (json.get("") != null) { // TODO get a check of scenario if the view is supposed to be seeked -> not yet in the scenario
-		 * axioms.add(
-		 * factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
-		 * processorIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
-		 * representativeOfDataSubjectIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
-		 * seeksViewOf));
-		 * }
-		 * 
-		 * }
-		 * }
-		 * 
-		 * if (json.get("review") != null && json.get("process") != null) {
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Review_Checks_ProcessIndividual, reviewIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, Review_Checks_ProcessIndividual, processIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Review_Checks_ProcessIndividual, checks));
-		 * }
-		 */
+		 if (json.get("processorAppliedApprovedCodeOfConduct") != null) {
+		 // TODO make another check here -> only if value says yes
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
+		 processorIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
+		 approvedCodeOfConductProcessorIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsCompliantWith_ApprovedCodeOfConductIndividual,
+		 isCompliantWith));
+		 manager.applyChange(addRelation);
+		 	}
+		 
+		 if (json.get("") != null) { // TODO get a check of scenario if the view is supposed to be seeked -> not yet in the scenario
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_DataSubjectIndividual,
+		 processorIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_DataSubjectIndividual,
+		 dataSubjectIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_DataSubjectIndividual, seeksViewOf));
+		 manager.applyChange(addRelation);
+		 }
+		  
+		 if (json.get("") != null) { // TODO get a check of scenario if the view is supposed to be seeked -> not yet in the scenario
+		 addRelation = new addAxiom(onto, 
+		 factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
+		 processorIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
+		 representativeOfDataSubjectIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
+		 seeksViewOf));
+		 manager.applyChange(addRelation);
+		 }
+		  
+		 }
+		 }
+		  
+		 if (json.get("review") != null && json.get("process") != null) {
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Review_Checks_ProcessIndividual, reviewIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Review_Checks_ProcessIndividual, processIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Review_Checks_ProcessIndividual, checks));
+		 manager.applyChange(addRelation);
+		 }
+		 
 
-		/*
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Risk_ChangesIndividual, riskIndividual));
-		 * // TODO define which risk has actually changed
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Risk_ChangesIndividual, changes));
-		 */
+		
+		 addRelation = new addAxiom(onto,factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Risk_ChangesIndividual, riskIndividual));
+		 manager.applyChange(addRelation);
+		 // TODO define which risk has actually changed
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Risk_ChangesIndividual, changes));
+		 manager.applyChange(addRelation);
+		 
 
-		/*
-		 * if (json.get("consistencyMechnism").toString().equals("yes")) {
-		 * if (json.get("supervisoryAuthorityThatAppliedConsistencyMechanism") != null) { // TODO add this value to scenario and json
-		 * // //TODO create directly individual of
-		 * // consistency mechnism
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
-		 * supervisoryAuthorityThatAppliedConsistencyMechanismIndividual));// TODO check which supervisoryAUthority applied it
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
-		 * consistencymechanismIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
-		 * applies));
-		 * }
-		 * if (json.get("processing") != null) {
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
-		 * consistencymechanismIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
-		 * processingIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
-		 * isAppliedTo));
-		 * }
-		 * }
-		 * 
-		 * if (json.get("nameOfSupervisoryAuthorityThatControlsProcessCriminalConviction") != null
-		 * || json.get("nameOfSupervisoryAuthorityThatControlsProcessCriminalOffense") != null) {
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Controls_ProcessIndividual,
-		 * supervisoryAuthorityThatControlsProcessIndividual));
-		 * // TODO supervisory authority of criminal conviction or offense ?!
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Controls_ProcessIndividual,
-		 * processIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Controls_ProcessIndividual, controls));
-		 * }
-		 * 
-		 * if (json.get("viewOfPerson") != null || json.get("viewOfRepresentativeOfPerson") != null) {
-		 * if (json.get("viewOfPerson") == null) {
-		 * viewDataSubjectIndividual = viewRepresenativeDataSubjectIndividual;
-		 * }
-		 * if (json.get("riskOfPersonsViewToCommercialInterest") != null) {
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_CommercialInterestIndividual,
-		 * viewDataSubjectIndividual));
-		 * axioms.add(
-		 * factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_CommercialInterestIndividual,
-		 * riskToCommercialInterestIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_CommercialInterestIndividual, respects));
-		 * }
-		 * 
-		 * if (json.get("riskOfPersonsViewToPublicInterest") != null) {
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_PublicInterestIndividual,
-		 * viewDataSubjectIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_PublicInterestIndividual,
-		 * riskToPublicInterestIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_PublicInterestIndividual, respects));
-		 * }
-		 * 
-		 * if (json.get("riskOfPersonsViewToSecurityOfProcessing") != null) {
-		 * axioms.add(
-		 * factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_SecurityOfProcessingOperationIndividual,
-		 * viewDataSubjectIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_SecurityOfProcessingOperationIndividual,
-		 * riskToSecurityOfProcessingOperationIndividual));
-		 * axioms.add(factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_SecurityOfProcessingOperationIndividual, respects));
-		 * }
-		 * }
-		 * 
-		 * manager.applyChanges(axioms);
-		 */
+		
+		 if (json.get("consistencyMechnism").toString().equals("yes")) {
+		 if (json.get("supervisoryAuthorityThatAppliedConsistencyMechanism") != null) { // TODO add this value to scenario and json
+		 // //TODO create directly individual of
+		 // consistency mechnism
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
+		 supervisoryAuthorityThatAppliedConsistencyMechanismIndividual));// TODO check which supervisoryAUthority applied it
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
+		 consistencymechanismIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
+		 applies));
+		 manager.applyChange(addRelation);
+		 }
+		 if (json.get("processing") != null) {
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
+		 consistencymechanismIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
+		 processingIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
+		 isAppliedTo));
+		 manager.applyChange(addRelation);
+		 }
+		 }
+		  
+		 if (json.get("nameOfSupervisoryAuthorityThatControlsProcessCriminalConviction") != null
+		 || json.get("nameOfSupervisoryAuthorityThatControlsProcessCriminalOffense") != null) {
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Controls_ProcessIndividual,
+		 supervisoryAuthorityThatControlsProcessIndividual));
+		 manager.applyChange(addRelation);
+		 // TODO supervisory authority of criminal conviction or offense ?!
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, SupervisoryAuthority_Controls_ProcessIndividual,
+		 processIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Controls_ProcessIndividual, controls));
+		 manager.applyChange(addRelation);
+		 	}
+		  
+		 if (json.get("viewOfPerson") != null || json.get("viewOfRepresentativeOfPerson") != null) {
+		 if (json.get("viewOfPerson") == null) {
+		 viewDataSubjectIndividual = viewRepresenativeDataSubjectIndividual;
+		 	}
+		  
+		 if (json.get("riskOfPersonsViewToCommercialInterest") != null) {
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_CommercialInterestIndividual,
+		 viewDataSubjectIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, 
+		 factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_CommercialInterestIndividual,
+		 riskToCommercialInterestIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_CommercialInterestIndividual, respects));
+		 manager.applyChange(addRelation);
+		 	}
+		  
+		 if (json.get("riskOfPersonsViewToPublicInterest") != null) {
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_PublicInterestIndividual,
+		 viewDataSubjectIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_PublicInterestIndividual,
+		 riskToPublicInterestIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_PublicInterestIndividual, respects));
+		 manager.applyChange(addRelation);
+		 	}
+		  
+		 if (json.get("riskOfPersonsViewToSecurityOfProcessing") != null) {
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, View_Respects_SecurityOfProcessingOperationIndividual,
+		 viewDataSubjectIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, View_Respects_SecurityOfProcessingOperationIndividual,
+		 riskToSecurityOfProcessingOperationIndividual));
+		 manager.applyChange(addRelation);
+		 addRelation = new addAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_SecurityOfProcessingOperationIndividual, respects));
+		 manager.applyChange(addRelation);
+		 	}
+		 }
+		  
+		 //manager.applyChanges(axioms);
+		 
 
 		// save changes to Ontology
 		OurOntology.saveOntology(onto, processId);
