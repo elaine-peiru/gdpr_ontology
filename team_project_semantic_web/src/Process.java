@@ -380,7 +380,6 @@ public class Process {
 		 */
 		// OWLClassAssertionAxiom classAssertionApprovedCodeOfConduct = factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
 		// approvedCodeOfConductIndividual);
-		Set<OWLAxiom> addFactorsToClass = new HashSet<OWLAxiom>();
 		AddAxiom add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
 				approvedCodeOfConductControllerIndividual));
 		manager.applyChange(add);
