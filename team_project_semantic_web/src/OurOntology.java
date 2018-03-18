@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.io.WriterDocumentTarget;
-import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -40,15 +40,8 @@ public class OurOntology {
 		try {
 			OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 			String stringPath = "team_project_semantic_web/src/" + processId + ".owl";
-
 			File file = new File(stringPath);
-			System.out.println(file);
-			IRI ontoIri = IRI.create(file);
-
-			OWLOntology onto = man.loadOntology(ontoIri);
-			System.out.println("opened the ontology");
-			System.out.println(onto);
-
+			OWLOntology onto = man.loadOntologyFromOntologyDocument(file);
 			return onto;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -67,7 +60,6 @@ public class OurOntology {
 			try {
 				manager.saveOntology(onto, rdfxmlFormat, new WriterDocumentTarget(new PrintWriter(fileformatted)));
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (OWLOntologyStorageException e) {
@@ -76,6 +68,9 @@ public class OurOntology {
 	}
 
 	public static void checkRulesForProcess(OWLOntology onto, String processId) {
+		for (OWLClass cls : onto.getClassesInSignature()) {
+			System.out.println(cls);
+		}
 
 		String result = "";
 		writeResultFile(result, processId);
