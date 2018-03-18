@@ -15,6 +15,8 @@ import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 public class OurOntology {
 
+	public static final String OntologyUri = "<http://purl.org/net/team_project_semantic_web/";
+
 	public OurOntology() {
 
 	}
@@ -68,8 +70,14 @@ public class OurOntology {
 	}
 
 	public static void checkRulesForProcess(OWLOntology onto, String processId) {
+
 		for (OWLClass cls : onto.getClassesInSignature()) {
-			System.out.println(cls);
+			// System.out.println(cls.toString());
+			switch (cls.toString()) {
+			case OntologyUri + "Rule1_Deontic>":
+				System.out.println("It is there");
+				break;
+			}
 		}
 
 		String result = "";
