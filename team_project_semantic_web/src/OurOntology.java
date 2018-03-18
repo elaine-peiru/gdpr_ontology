@@ -72,20 +72,32 @@ public class OurOntology {
 	}
 
 	public static void checkRulesForProcess(OWLOntology onto, String processId) {
+		boolean isCompliant = true;
 		Set<OWLClass> classes = onto.getClassesInSignature();
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLClass rule1_deontic = factory.getOWLClass(RuleName.Rule1_Deontic.getPath());
+		OWLClass rule1_condition1 = factory.getOWLClass(RuleName.Rule1_Condition1.getPath());
 		OWLClass rule3_deontic = factory.getOWLClass(RuleName.Rule3_Deontic.getPath());
+		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
 		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
+		OWLClass rule4_condition1 = factory.getOWLClass(RuleName.Rule4_Condition1.getPath());
 		OWLClass rule5_deontic = factory.getOWLClass(RuleName.Rule5_Deontic.getPath());
+		OWLClass rule5_condition1 = factory.getOWLClass(RuleName.Rule5_Condition1.getPath());
 		OWLClass rule7_deontic = factory.getOWLClass(RuleName.Rule7_Deontic.getPath());
+		OWLClass rule7_condition1 = factory.getOWLClass(RuleName.Rule7_Condition1.getPath());
 		OWLClass rule8_deontic = factory.getOWLClass(RuleName.Rule8_Deontic.getPath());
+		OWLClass rule8_condition1 = factory.getOWLClass(RuleName.Rule8_Condition1.getPath());
 		OWLClass rule9_deontic = factory.getOWLClass(RuleName.Rule9_Deontic.getPath());
+		OWLClass rule9_condition1 = factory.getOWLClass(RuleName.Rule9_Condition1.getPath());
 		OWLClass rule10_deontic = factory.getOWLClass(RuleName.Rule10_Deontic.getPath());
+		OWLClass rule10_condition1 = factory.getOWLClass(RuleName.Rule10_Condition1.getPath());
 		OWLClass rule12_deontic = factory.getOWLClass(RuleName.Rule12_Deontic.getPath());
+		OWLClass rule12_condition1 = factory.getOWLClass(RuleName.Rule12_Condition1.getPath());
 		OWLClass rule13_deontic = factory.getOWLClass(RuleName.Rule13_Deontic.getPath());
+		OWLClass rule13_condition1 = factory.getOWLClass(RuleName.Rule13_Condition1.getPath());
 		OWLClass rule15_deontic = factory.getOWLClass(RuleName.Rule15_Deontic.getPath());
+		OWLClass rule15_condition1 = factory.getOWLClass(RuleName.Rule15_Condition1.getPath());
 		OWLClass rule18_deontic = factory.getOWLClass(RuleName.Rule18_Deontic.getPath());
 		OWLClass rule18_condition1 = factory.getOWLClass(RuleName.Rule18_Condition1.getPath());
 		OWLClass rule20_deontic = factory.getOWLClass(RuleName.Rule20_Deontic.getPath());
@@ -108,18 +120,6 @@ public class OurOntology {
 		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
 		System.out.println(classes.contains(rule1_deontic));
 		
-
-		/*
-		 * for (OWLClass cls : onto.getClassesInSignature()) {
-		 * // System.out.println(cls.toString());
-		 * switch (cls.toString()) {
-		 * case OntologyUri + "Rule1_Condition1>":
-		 * System.out.println("It is there");
-		 * break;
-		 * // case OntologyUri + "Rule"
-		 * }
-		 * }
-		 */
 
 		String result = "";
 		writeResultFile(result, processId);
