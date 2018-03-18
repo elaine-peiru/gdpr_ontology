@@ -119,17 +119,92 @@ public class OurOntology {
 		OWLClass rule16_deontic = factory.getOWLClass(RuleName.Rule16_Deontic.getPath());
 		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
 		System.out.println(classes.contains(rule1_deontic));
-		
+
+		if (classes.contains(rule1_condition1)) {
+			if (!classes.contains(rule1_deontic)) {
+				isCompliant = false;
+				// TODO
+			}
+		}
+
+		if (classes.contains(rule3_condition1)) {
+			if (!classes.contains(rule3_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+
+		if (classes.contains(rule4_condition1)) {
+			if (!classes.contains(rule4_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule5_condition1)) {
+			if (!classes.contains(rule5_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule7_condition1)) {
+			if (!classes.contains(rule7_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+
+		if (classes.contains(rule8_condition1)) {
+			if (!classes.contains(rule8_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule9_condition1)) {
+			if (!classes.contains(rule9_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule10_condition1)) {
+			if (!classes.contains(rule10_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule12_condition1)) {
+			if (!classes.contains(rule12_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule13_condition1)) {
+			if (!classes.contains(rule13_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule15_condition1)) {
+			if (!classes.contains(rule15_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
 
 		String result = "";
+		if (isCompliant) {
+			result = "The process " + processId + " is compliant to Article 35 of GDPR.";
+		}
+
 		writeResultFile(result, processId);
 	}
 
-	public static void writeResultFile(String output, String processId) {
+	public static void writeResultFile(Set<String> output, String processId) {
 		String path = "./checkResults/" + processId + ".txt";
 		try {
 			PrintWriter writer = new PrintWriter(path);
-			writer.print(output);
+			for (String line : output) {
+				writer.println(line);
+			}
 			writer.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
