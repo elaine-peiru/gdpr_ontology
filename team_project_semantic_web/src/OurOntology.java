@@ -1,12 +1,9 @@
 package src;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -133,7 +130,11 @@ public class OurOntology {
 		}
 
 		if (classes.contains(rule3_condition1)) {
-			if (!classes.contains(rule3_deontic)) {
+			System.out.println("hghgh");
+			int i = 2;
+			int j = 1;
+			if (i != j) { /// * !classes.contains(rule3_deontic) */
+				System.out.println("test rule3");
 				isCompliant = false;
 				rulesError.add("You need to seek the advice of the Data Protection Officer.");
 
@@ -219,7 +220,7 @@ public class OurOntology {
 			if (!classes.contains(rule20_deontic)) {
 				isCompliant = false;
 				rulesError.add("The measure to address risks does not show compliance to GDPR. Refer to paragraph 7d.");
-				}
+			}
 		}
 
 		if (classes.contains(rule22_condition1)) {
@@ -277,7 +278,6 @@ public class OurOntology {
 				isCompliant = false;
 				rulesError.add("Controller needs to review DPIA. Refer to paragraph 11.");
 
-
 			}
 		}
 
@@ -299,7 +299,6 @@ public class OurOntology {
 			}
 		}
 
-
 		if (isCompliant) {
 			rulesError.add("The process " + processId + " is compliant to Article 35 of GDPR.");
 		}
@@ -308,7 +307,6 @@ public class OurOntology {
 
 	}
 
-	
 	public static void writeResultFile(Set<String> output, String processId) {
 		String path = "./checkResults/" + processId + ".txt";
 		try {

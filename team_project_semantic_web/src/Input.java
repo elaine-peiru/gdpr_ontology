@@ -19,6 +19,7 @@ public class Input {
 		try {
 			BufferedReader input = new BufferedReader(new FileReader(inputFileName));
 			String line = input.readLine();
+			System.out.println(line);
 			JSONObject json = new JSONObject();
 
 			while (line != null) {
@@ -26,9 +27,11 @@ public class Input {
 				switch (inputParts[0]) {
 				case "ID":
 					json.put("processId", inputParts[2]);
+					System.out.println(inputParts[2]);
 					break;
 				case "VersionNumber":
 					json.put("versionNumber", inputParts[2]);
+					System.out.println(inputParts[2]);
 					break;
 				case "0.":
 					json.put("process", inputParts[2]);
@@ -266,7 +269,7 @@ public class Input {
 
 				line = input.readLine();
 			}
-			this.printJSON(json);
+			// this.printJSON(json);
 
 			Process process = new Process();
 			process.createIndividualOfProcess(json);
