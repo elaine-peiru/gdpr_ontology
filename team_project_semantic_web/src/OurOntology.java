@@ -3,6 +3,8 @@ package src;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -14,6 +16,8 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public class OurOntology {
 
@@ -109,7 +113,7 @@ public class OurOntology {
 		OWLClass rule24_deontic = factory.getOWLClass(RuleName.Rule24_Deontic.getPath());
 		OWLClass rule24_condition1 = factory.getOWLClass(RuleName.Rule24_Condition1.getPath());
 		OWLClass rule241_deontic = factory.getOWLClass(RuleName.Rule241_Deontic.getPath());
-		OWLClass rul241_condition1 = factory.getOWLClass(RuleName.Rule241_Condition1.getPath());
+		OWLClass rule241_condition1 = factory.getOWLClass(RuleName.Rule241_Condition1.getPath());
 		OWLClass rule25_deontic = factory.getOWLClass(RuleName.Rule25_Deontic.getPath());
 		OWLClass rule251_deontic = factory.getOWLClass(RuleName.Rule251_Deontic.getPath());
 		OWLClass rule26_deontic = factory.getOWLClass(RuleName.Rule26_Deontic.getPath());
@@ -120,6 +124,102 @@ public class OurOntology {
 		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
 		System.out.println(classes.contains(rule1_deontic));
 		
+		Set<String> rulesError = new HashSet<String>();
+		
+		
+		if (classes.contains(rule18_condition1)){
+			
+			if(!classes.contains(rule18_deontic)) {
+				isCompliant = false;
+				rulesError.add("DPIA is not complete");
+			}
+		}
+
+		
+		if (classes.contains(rule20_condition1)){
+			
+			if(!classes.contains(rule20_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
+		
+		if (classes.contains(rule22_condition1)){
+			
+			if(!classes.contains(rule22_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
+		
+		
+		if (classes.contains(rule23_condition1)){
+			
+			if(!classes.contains(rule23_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
+		
+		if (classes.contains(rule24_condition1)){
+			
+			if(!classes.contains(rule24_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
+		
+		
+		if (classes.contains(rule241_condition1)){
+			
+			if(!classes.contains(rule241_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
+
+		if (classes.contains(rule24_condition1)){
+			
+			if(!classes.contains(rule25_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
+		
+		
+		if (classes.contains(rule24_condition1)){
+			
+			if(!classes.contains(rule251_deontic)) {
+				isCompliant = false;
+				
+			}
+		}
+		
+		
+		if (classes.contains(rule26_condition1)){
+			
+			if(!classes.contains(rule26_deontic)) {
+				isCompliant = false;
+				
+			}
+		}
+
+		
+		if (classes.contains(rule21_condition1)){
+			
+			if(!classes.contains(rule21_deontic)) {
+				isCompliant = false;
+			}
+		}
+
+		
+		if (classes.contains(rule16_condition1)){
+			
+			if(!classes.contains(rule16_deontic)) {
+				isCompliant = false;
+				System.out.println("Rule not fulfilled...");
+			}
+		}
 
 		String result = "";
 		writeResultFile(result, processId);
