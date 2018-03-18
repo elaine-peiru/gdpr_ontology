@@ -3,7 +3,6 @@ package src;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,8 +15,6 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
-
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public class OurOntology {
 
@@ -78,6 +75,7 @@ public class OurOntology {
 	public static void checkRulesForProcess(OWLOntology onto, String processId) {
 		boolean isCompliant = true;
 		Set<OWLClass> classes = onto.getClassesInSignature();
+		Set<String> rulesError = new HashSet<String>();
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLClass rule1_deontic = factory.getOWLClass(RuleName.Rule1_Deontic.getPath());
@@ -123,103 +121,168 @@ public class OurOntology {
 		OWLClass rule16_deontic = factory.getOWLClass(RuleName.Rule16_Deontic.getPath());
 		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
 		System.out.println(classes.contains(rule1_deontic));
-		
-		Set<String> rulesError = new HashSet<String>();
-		
-		
-		if (classes.contains(rule18_condition1)){
-			
-			if(!classes.contains(rule18_deontic)) {
+
+		if (classes.contains(rule1_condition1)) {
+			if (!classes.contains(rule1_deontic)) {
+				isCompliant = false;
+				// TODO
+			}
+		}
+
+		if (classes.contains(rule3_condition1)) {
+			if (!classes.contains(rule3_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+
+		if (classes.contains(rule4_condition1)) {
+			if (!classes.contains(rule4_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule5_condition1)) {
+			if (!classes.contains(rule5_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule7_condition1)) {
+			if (!classes.contains(rule7_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+
+		if (classes.contains(rule8_condition1)) {
+			if (!classes.contains(rule8_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule9_condition1)) {
+			if (!classes.contains(rule9_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule10_condition1)) {
+			if (!classes.contains(rule10_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule12_condition1)) {
+			if (!classes.contains(rule12_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule13_condition1)) {
+			if (!classes.contains(rule13_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+		if (classes.contains(rule15_condition1)) {
+			if (!classes.contains(rule15_deontic)) {
+				isCompliant = false;
+				// TODO write text for output file
+			}
+		}
+
+		if (classes.contains(rule18_condition1)) {
+
+			if (!classes.contains(rule18_deontic)) {
 				isCompliant = false;
 				rulesError.add("DPIA is not complete");
 			}
 		}
 
-		
-		if (classes.contains(rule20_condition1)){
-			
-			if(!classes.contains(rule20_deontic)) {
+		if (classes.contains(rule20_condition1)) {
+
+			if (!classes.contains(rule20_deontic)) {
 				isCompliant = false;
 				rulesError.add("");
 				}
 		}
-		
-		if (classes.contains(rule22_condition1)){
-			
-			if(!classes.contains(rule22_deontic)) {
+
+		if (classes.contains(rule22_condition1)) {
+
+			if (!classes.contains(rule22_deontic)) {
 				isCompliant = false;
 				rulesError.add("Controller not compliant with Approved Code of Conduct. Refer to Paragraph 8.");
 			}
 		}
-		
-		
-		if (classes.contains(rule23_condition1)){
-			
-			if(!classes.contains(rule23_deontic)) {
+
+		if (classes.contains(rule23_condition1)) {
+
+			if (!classes.contains(rule23_deontic)) {
 				isCompliant = false;
 				rulesError.add("Processor not compliant with approved code of conduct. Refer to paragraph 8");
 			}
 		}
-		
-		if (classes.contains(rule24_condition1)){
-			
-			if(!classes.contains(rule24_deontic)) {
+
+		if (classes.contains(rule24_condition1)) {
+
+			if (!classes.contains(rule24_deontic)) {
 				isCompliant = false;
 				rulesError.add("Controller not seeking view of data subject. Refer to paragraph 9");
 			}
 		}
-		
-		
-		if (classes.contains(rule241_condition1)){
-			
-			if(!classes.contains(rule241_deontic)) {
+
+		if (classes.contains(rule241_condition1)) {
+
+			if (!classes.contains(rule241_deontic)) {
 				isCompliant = false;
 				rulesError.add("");
 			}
 		}
 
-		if (classes.contains(rule24_condition1)){
-			
-			if(!classes.contains(rule25_deontic)) {
+		if (classes.contains(rule24_condition1)) {
+
+			if (!classes.contains(rule25_deontic)) {
 				isCompliant = false;
 				rulesError.add("Rule not fulfilled...");
 			}
 		}
-		
-		
-		if (classes.contains(rule24_condition1)){
-			
-			if(!classes.contains(rule251_deontic)) {
+
+		if (classes.contains(rule24_condition1)) {
+
+			if (!classes.contains(rule251_deontic)) {
 				isCompliant = false;
 				rulesError.add("");
-			}
-		}
-		
-		
-		if (classes.contains(rule26_condition1)){
-			
-			if(!classes.contains(rule26_deontic)) {
-				isCompliant = false;
-				rulesError.add("");
+
 			}
 		}
 
-		
-		if (classes.contains(rule21_condition1)){
-			
-			if(!classes.contains(rule21_deontic)) {
+		if (classes.contains(rule26_condition1)) {
+
+			if (!classes.contains(rule26_deontic)) {
+				isCompliant = false;
+				rulesError.add("");
+
+
+			}
+		}
+
+		if (classes.contains(rule21_condition1)) {
+
+			if (!classes.contains(rule21_deontic)) {
 				isCompliant = false;
 			}
 		}
 
-		
-		if (classes.contains(rule16_condition1)){
-			
-			if(!classes.contains(rule16_deontic)) {
+		if (classes.contains(rule16_condition1)) {
+
+			if (!classes.contains(rule16_deontic)) {
 				isCompliant = false;
 				System.out.println("Rule not fulfilled...");
+
 			}
 		}
+
 
 		//String result = "";
 		//writeResultFile(result, processId);
@@ -227,13 +290,22 @@ public class OurOntology {
 		for(String tmp: rulesError) {
 			System.out.println(tmp);
 		}
+
+		if (isCompliant) {
+			rulesError.add("The process " + processId + " is compliant to Article 35 of GDPR.");
+		}
+
+		writeResultFile(rulesError, processId);
+
 	}
 
-	public static void writeResultFile(String output, String processId) {
+	public static void writeResultFile(Set<String> output, String processId) {
 		String path = "./checkResults/" + processId + ".txt";
 		try {
 			PrintWriter writer = new PrintWriter(path);
-			writer.print(output);
+			for (String line : output) {
+				writer.println(line);
+			}
 			writer.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
