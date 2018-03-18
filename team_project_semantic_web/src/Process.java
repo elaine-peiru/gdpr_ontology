@@ -1179,7 +1179,7 @@ public class Process {
 				manager.applyChange(addRelation);
 			}
 
-			if (json.get("controllerAppliedApprovedCodOfConduct").toString().equals("yes")) {
+			if (json.get("controllerAppliedApprovedCodeOfConduct").toString().equals("yes")) {
 				addRelation = new AddAxiom(onto,
 						factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_IsCompliantWith_ApprovedCodeOfConductIndividual,
 								controllerIndividual));
@@ -2123,7 +2123,7 @@ public class Process {
 			}
 		}
 
-		if (json.get("consistencyMechnism").toString().equals("yes")) {
+		if (json.get("consistencyMechanism").toString().equals("yes")) {
 			if (json.get("nameSupervisoryAuthorityThatAppliedConsistencyMechanism") != null) {
 				addRelation = new AddAxiom(onto,
 						factory.getOWLObjectPropertyAssertionAxiom(hasSubject, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
@@ -2208,7 +2208,7 @@ public class Process {
 	public boolean compareDates(String creationDate, String processingDate) {
 		boolean creationBeforeProcessing = false;
 		try {
-			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 			Date dCreationDate = sdf.parse(creationDate);
 			Date dProcessingDate = sdf.parse(processingDate);
 			creationBeforeProcessing = dCreationDate.before(dProcessingDate);

@@ -64,7 +64,7 @@ public class Input {
 					json.put("assessmentOfRisks", inputParts[2]);
 					break;
 				case "4.7":
-					json.put("measuresToAddressRisksDpia", inputParts[2]);
+					json.put("measureToAddressRisksDpia", inputParts[2]);
 					break;
 				case "4.7.1":
 					json.put("safeguard", inputParts[2]);
@@ -131,7 +131,7 @@ public class Input {
 					json.put("consistencyMechanism", inputParts[2]);
 					break;
 				case "6.2":
-					json.put("nameSupervisoryAuthorithyThatAppliedCosistencyMechanism", inputParts[2]);
+					json.put("nameSupervisoryAuthorityThatAppliedConsistencyMechanism", inputParts[2]);
 				case "7.":
 					json.put("evaluation", inputParts[2]);
 					break;
@@ -258,7 +258,7 @@ public class Input {
 					json.put("unionlawAuthorization", inputParts[2]);
 					break;
 				case "18.":
-					json.put("reviewApplied", inputParts[2]);
+					json.put("review", inputParts[2]);
 					break;
 				default:
 					break;
