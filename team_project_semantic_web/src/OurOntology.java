@@ -1,9 +1,12 @@
 package src;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -125,33 +128,37 @@ public class OurOntology {
 		if (classes.contains(rule1_condition1)) {
 			if (!classes.contains(rule1_deontic)) {
 				isCompliant = false;
-				// TODO
+				rulesError.add("No DPIA has been created. Refer to paragraph 1");
 			}
 		}
 
 		if (classes.contains(rule3_condition1)) {
 			if (!classes.contains(rule3_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("You need to seek the advice of the Data Protection Officer.");
+
 			}
 		}
 
 		if (classes.contains(rule4_condition1)) {
 			if (!classes.contains(rule4_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("No DPIA has been created. Refer to paragraph 3a");
+
 			}
 		}
 		if (classes.contains(rule5_condition1)) {
 			if (!classes.contains(rule5_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("No DPIA has been created. Refer to paragraph 3b");
+
 			}
 		}
 		if (classes.contains(rule7_condition1)) {
 			if (!classes.contains(rule7_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("Supervisory authority needs to check this process. Refer to paragraph 3b");
+
 			}
 		}
 
@@ -159,36 +166,43 @@ public class OurOntology {
 			if (!classes.contains(rule8_deontic)) {
 				isCompliant = false;
 				// TODO write text for output file
+				rulesError.add("Processor is not authorized to work on the process.");
+
 			}
 		}
 		if (classes.contains(rule9_condition1)) {
 			if (!classes.contains(rule9_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("No DPIA has been created. Refer to paragraph 3c.");
+
 			}
 		}
 		if (classes.contains(rule10_condition1)) {
 			if (!classes.contains(rule10_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("You have to publish the list of processes that require a DPIA. Refer to paragraph 4.");
+
 			}
 		}
 		if (classes.contains(rule12_condition1)) {
 			if (!classes.contains(rule12_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("You have to publish the list of processes that require a DPIA to the European Data Protection Board. Refer to paragraph 4.");
+
 			}
 		}
 		if (classes.contains(rule13_condition1)) {
 			if (!classes.contains(rule13_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("You have to publish the list of processes that require a DPIA. Refer to paragraph 5.");
+
 			}
 		}
 		if (classes.contains(rule15_condition1)) {
 			if (!classes.contains(rule15_deontic)) {
 				isCompliant = false;
-				// TODO write text for output file
+				rulesError.add("You have to publish the list of processes that require a DPIA to the European Data Protection Board. Refer to paragraph 5.");
+
 			}
 		}
 
@@ -196,7 +210,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule18_deontic)) {
 				isCompliant = false;
-				rulesError.add("DPIA is not complete");
+				rulesError.add("DPIA is not complete. Refer to paragraph 7.");
 			}
 		}
 
@@ -204,7 +218,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule20_deontic)) {
 				isCompliant = false;
-				rulesError.add("");
+				rulesError.add("The measure to address risks does not show compliance to GDPR. Refer to paragraph 7d.");
 				}
 		}
 
@@ -228,7 +242,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule24_deontic)) {
 				isCompliant = false;
-				rulesError.add("Controller not seeking view of data subject. Refer to paragraph 9");
+				rulesError.add("Controller should not seek view of the data subject. Refer to paragraph 9");
 			}
 		}
 
@@ -236,7 +250,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule241_deontic)) {
 				isCompliant = false;
-				rulesError.add("");
+				rulesError.add("Controller should not seek view of the representative of data subject. Refer to paragraph 9");
 			}
 		}
 
@@ -244,7 +258,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule25_deontic)) {
 				isCompliant = false;
-				rulesError.add("Rule not fulfilled...");
+				rulesError.add("Processor should not seek view of the data subject. Refer to paragraph 9");
 			}
 		}
 
@@ -252,7 +266,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule251_deontic)) {
 				isCompliant = false;
-				rulesError.add("");
+				rulesError.add("Processor should not seek view of the representative of data subject. Refer to paragraph 9");
 
 			}
 		}
@@ -261,7 +275,7 @@ public class OurOntology {
 
 			if (!classes.contains(rule26_deontic)) {
 				isCompliant = false;
-				rulesError.add("");
+				rulesError.add("Controller needs to review DPIA. Refer to paragraph 11.");
 
 
 			}
@@ -271,6 +285,8 @@ public class OurOntology {
 
 			if (!classes.contains(rule21_deontic)) {
 				isCompliant = false;
+				rulesError.add("The measure to address risks are not complete. Refer to paragraph 7d.");
+
 			}
 		}
 
@@ -278,18 +294,11 @@ public class OurOntology {
 
 			if (!classes.contains(rule16_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
+				rulesError.add("You have to apply the consistency mechanism. Refer to paragraph 6.");
 
 			}
 		}
 
-
-		//String result = "";
-		//writeResultFile(result, processId);
-		
-		for(String tmp: rulesError) {
-			System.out.println(tmp);
-		}
 
 		if (isCompliant) {
 			rulesError.add("The process " + processId + " is compliant to Article 35 of GDPR.");
@@ -299,6 +308,7 @@ public class OurOntology {
 
 	}
 
+	
 	public static void writeResultFile(Set<String> output, String processId) {
 		String path = "./checkResults/" + processId + ".txt";
 		try {
