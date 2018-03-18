@@ -140,15 +140,15 @@ public class OurOntology {
 			
 			if(!classes.contains(rule20_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
-			}
+				rulesError.add("");
+				}
 		}
 		
 		if (classes.contains(rule22_condition1)){
 			
 			if(!classes.contains(rule22_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
+				rulesError.add("Controller not compliant with Approved Code of Conduct. Refer to Paragraph 8.");
 			}
 		}
 		
@@ -157,7 +157,7 @@ public class OurOntology {
 			
 			if(!classes.contains(rule23_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
+				rulesError.add("Processor not compliant with approved code of conduct. Refer to paragraph 8");
 			}
 		}
 		
@@ -165,7 +165,7 @@ public class OurOntology {
 			
 			if(!classes.contains(rule24_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
+				rulesError.add("Controller not seeking view of data subject. Refer to paragraph 9");
 			}
 		}
 		
@@ -174,7 +174,7 @@ public class OurOntology {
 			
 			if(!classes.contains(rule241_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
+				rulesError.add("");
 			}
 		}
 
@@ -182,7 +182,7 @@ public class OurOntology {
 			
 			if(!classes.contains(rule25_deontic)) {
 				isCompliant = false;
-				System.out.println("Rule not fulfilled...");
+				rulesError.add("Rule not fulfilled...");
 			}
 		}
 		
@@ -191,7 +191,7 @@ public class OurOntology {
 			
 			if(!classes.contains(rule251_deontic)) {
 				isCompliant = false;
-				
+				rulesError.add("");
 			}
 		}
 		
@@ -200,7 +200,7 @@ public class OurOntology {
 			
 			if(!classes.contains(rule26_deontic)) {
 				isCompliant = false;
-				
+				rulesError.add("");
 			}
 		}
 
@@ -221,8 +221,12 @@ public class OurOntology {
 			}
 		}
 
-		String result = "";
-		writeResultFile(result, processId);
+		//String result = "";
+		//writeResultFile(result, processId);
+		
+		for(String tmp: rulesError) {
+			System.out.println(tmp);
+		}
 	}
 
 	public static void writeResultFile(String output, String processId) {
