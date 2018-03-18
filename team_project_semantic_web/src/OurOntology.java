@@ -87,17 +87,27 @@ public class OurOntology {
 		OWLClass rule13_deontic = factory.getOWLClass(RuleName.Rule13_Deontic.getPath());
 		OWLClass rule15_deontic = factory.getOWLClass(RuleName.Rule15_Deontic.getPath());
 		OWLClass rule18_deontic = factory.getOWLClass(RuleName.Rule18_Deontic.getPath());
+		OWLClass rule18_condition1 = factory.getOWLClass(RuleName.Rule18_Condition1.getPath());
 		OWLClass rule20_deontic = factory.getOWLClass(RuleName.Rule20_Deontic.getPath());
+		OWLClass rule20_condition1 = factory.getOWLClass(RuleName.Rule20_Condition1.getPath());
 		OWLClass rule22_deontic = factory.getOWLClass(RuleName.Rule22_Deontic.getPath());
+		OWLClass rule22_condition1 = factory.getOWLClass(RuleName.Rule22_Condition1.getPath());
 		OWLClass rule23_deontic = factory.getOWLClass(RuleName.Rule23_Deontic.getPath());
+		OWLClass rule23_condition1 = factory.getOWLClass(RuleName.Rule23_Condition1.getPath());
 		OWLClass rule24_deontic = factory.getOWLClass(RuleName.Rule24_Deontic.getPath());
+		OWLClass rule24_condition1 = factory.getOWLClass(RuleName.Rule24_Condition1.getPath());
 		OWLClass rule241_deontic = factory.getOWLClass(RuleName.Rule241_Deontic.getPath());
+		OWLClass rul241_condition1 = factory.getOWLClass(RuleName.Rule241_Condition1.getPath());
 		OWLClass rule25_deontic = factory.getOWLClass(RuleName.Rule25_Deontic.getPath());
 		OWLClass rule251_deontic = factory.getOWLClass(RuleName.Rule251_Deontic.getPath());
 		OWLClass rule26_deontic = factory.getOWLClass(RuleName.Rule26_Deontic.getPath());
+		OWLClass rule26_condition1 = factory.getOWLClass(RuleName.Rule26_Condition1.getPath());
 		OWLClass rule21_deontic = factory.getOWLClass(RuleName.Rule21_Deontic.getPath());
+		OWLClass rule21_condition1 = factory.getOWLClass(RuleName.Rule21_Condition1.getPath());
 		OWLClass rule16_deontic = factory.getOWLClass(RuleName.Rule16_Deontic.getPath());
+		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
 		System.out.println(classes.contains(rule1_deontic));
+		
 
 		/*
 		 * for (OWLClass cls : onto.getClassesInSignature()) {
