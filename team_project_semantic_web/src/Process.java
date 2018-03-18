@@ -1103,8 +1103,8 @@ public class Process {
 
 		AddAxiom addRelation;
 
-		if (json.get("nameOfController") != null) {
-			if (json.get("purposeOfProcessing") != null) {
+		if (!json.get("nameOfController").toString().isEmpty()) {
+			if (!json.get("purposeOfProcessing").toString().isEmpty()) {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_Assesses_PurposeOfProcessingIndividual,
 						controllerIndividual));
 				manager.applyChange(addRelation);
@@ -1215,7 +1215,7 @@ public class Process {
 				}
 			}
 
-			if (json.get("viewOfPerson") != null) {
+			if (!json.get("viewOfPerson").toString().isEmpty()) {
 				if (json.get("viewOfPerson").toString().contains("NaturalPerson")) {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Controller_SeeksViewOf_DataSubjectIndividual,
 							controllerIndividual));
