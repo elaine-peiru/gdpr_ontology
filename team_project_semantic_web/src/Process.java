@@ -38,7 +38,6 @@ public class Process {
 
 		String processName = json.get("process").toString();
 		String processId = json.get("processId").toString();
-
 		/**
 		 * reference to OWL Class Factors
 		 */

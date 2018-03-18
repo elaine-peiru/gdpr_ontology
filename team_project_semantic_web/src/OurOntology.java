@@ -6,7 +6,8 @@ import java.io.PrintWriter;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
-import org.semanticweb.owlapi.io.StreamDocumentTarget;
+import org.semanticweb.owlapi.io.WriterDocumentTarget;
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -26,14 +27,7 @@ public class OurOntology {
 
 			OWLOntology o = man.loadOntologyFromOntologyDocument(file);
 			System.out.println(o);
-			/*
-			 * OWLDataFactory df = man.getOWLDataFactory();
-			 * OWLReasonerFactory rf = new ReasonerFactory();
-			 * OWLReasoner r = rf.createReasoner(o);
-			 * r.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-			 * r.getSubClasses(df.getOWLClass("http://webprotege.stanford.edu/R7H4bmcf6rOqPHpkWrWU0iA"), false);
-			 * System.out.println(o);
-			 */
+
 			return o;
 
 		} catch (OWLOntologyCreationException e) {
@@ -45,10 +39,15 @@ public class OurOntology {
 	public static OWLOntology getProcessOntology(String processId) {
 		try {
 			OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-			String path = "./documents" + File.pathSeparator + processId + File.pathSeparator + ".owl";
-			File file = new File(path);
+			String stringPath = "team_project_semantic_web/src/" + processId + ".owl";
 
-			OWLOntology onto = man.loadOntologyFromOntologyDocument(file);
+			File file = new File(stringPath);
+			System.out.println(file);
+			IRI ontoIri = IRI.create(file);
+
+			OWLOntology onto = man.loadOntology(ontoIri);
+			System.out.println("opened the ontology");
+			System.out.println(onto);
 
 			return onto;
 		} catch (Exception e) {
@@ -60,11 +59,17 @@ public class OurOntology {
 	public static void saveOntology(OWLOntology onto, String processId) {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		try {
-			String path = "./documents" + File.pathSeparator + processId + File.pathSeparator + ".owl";
-			File file = new File(path);
+			// Create a file for the new format
+			String path = "./team_project_semantic_web/src/" + processId + ".owl";
+			File fileformatted = new File(path);
+			System.out.println(fileformatted);
 			RDFXMLDocumentFormat rdfxmlFormat = new RDFXMLDocumentFormat();
-			manager.saveOntology(onto, rdfxmlFormat, new StreamDocumentTarget(
-					System.out));
+			try {
+				manager.saveOntology(onto, rdfxmlFormat, new WriterDocumentTarget(new PrintWriter(fileformatted)));
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch (OWLOntologyStorageException e) {
 			e.printStackTrace();
 		}
@@ -77,7 +82,7 @@ public class OurOntology {
 	}
 
 	public static void writeResultFile(String output, String processId) {
-		String path = "./checkResults" + File.pathSeparator + processId + ".txt";
+		String path = "./checkResults/" + processId + ".txt";
 		try {
 			PrintWriter writer = new PrintWriter(path);
 			writer.print(output);
