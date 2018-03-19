@@ -93,6 +93,7 @@ public class OurOntology {
 		OWLClass rule1_condition2 = factory.getOWLClass(RuleName.Rule1_Condition2.getPath());
 		OWLClass rule1_condition3 = factory.getOWLClass(RuleName.Rule1_Condition3.getPath());
 		OWLClass rule1_condition4 = factory.getOWLClass(RuleName.Rule1_Condition4.getPath());
+		OWLClass rule2_deontic = factory.getOWLClass(RuleName.Rule2_Deontic.getPath());
 		OWLClass rule3_deontic = factory.getOWLClass(RuleName.Rule3_Deontic.getPath());
 		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
 		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
@@ -148,7 +149,12 @@ public class OurOntology {
 			}
 		}
 
-		if (reasoner.getEquivalentClasses(rule3_condition1).getSize() > 1) {
+		if (reasoner.getEquivalentClasses(rule2_deontic).getSize() == 1) {
+			isCompliant = false;
+			rulesError.add("You have performed the process before you have created the data protection impact assessment. This breaches paragraph 1.");
+		}
+
+		if (reasoner.getEquivalentClasses(rule3_condition1).getSize() >= 1) {
 			if (reasoner.getEquivalentClasses(rule3_deontic).getSize() == 1) {
 				System.out.println("test rule3");
 				isCompliant = false;
