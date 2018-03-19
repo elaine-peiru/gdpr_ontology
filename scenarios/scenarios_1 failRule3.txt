@@ -22,6 +22,8 @@ personal data can be used for other commercial uses
 4.7.1:Safeguard:to avoid the personal data is used for other purposes
 4.7.2:Security Measures: backup regularly, limit the access to the server
 4.7.3:Mechanisms to ensure protection of data: put a strong firewall, install anti-virus protection,
+4.7.4:Mechanisms show compliance to gdpr:
+4.7.5:Mechanisms are taking into accounts the rights:
 5.:Processing:
 5.1:Content of the processing:
 5.1.1:Content is about trading:

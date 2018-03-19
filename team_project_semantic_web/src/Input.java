@@ -78,6 +78,12 @@ public class Input {
 				case "4.7.3":
 					json.put("mechanismsToEnsureProtectionOfData", inputParts[2]);
 					break;
+				case "4.7.4":
+					json.put("measureCompliantTogdpr", inputParts[2]);
+					break;
+				case "4.7.5":
+					json.put("measureTakeIntoAccountRights", inputParts[2]);
+					break;
 				case "5.":
 					json.put("processing", inputParts[2]);
 					break;
@@ -112,7 +118,7 @@ public class Input {
 				case "5.2.1":
 					json.put("riskRelatedToPurpose", inputParts[2]);
 					break;
-				case ("5.2.1.1"):
+				case "5.2.1.1":
 					json.put("purposeRiskUpdated", inputParts[2]);
 				case "5.3":
 					json.put("scopeOfProcessing", inputParts[2]);
