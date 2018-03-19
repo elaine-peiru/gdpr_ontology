@@ -1,0 +1,91 @@
+
+ID: Id for process(string):05287698
+VersionNumber: to check if this is update:6.2
+0.:Process(Name):Clinical Decision Support Systems in hospitals	
+1.:Data Protection Impact Assessment (Name):Ensuring data protection for patient data
+2.:Date when the DPIA was created: 2018-03-11
+3.:Data Protection officer:
+3.1:Is DPO designed:no
+3.2:Name of Data Protection Officer that reviewed DPIA:
+4.:Content of DPIA:
+4.1:Systematic Description of Processing:Storing patient data and generating recommendations or alerts based on the patient entry to help physicians with their decisions
+4.2:Purpose of processing:To prevent and discover hidden diseases
+4.3:Legitimate Interest of Processing:Saving lives and costs by helping physicians with their decisions making process
+4.4:Assessment of necessity of Processing:Impossible to check the data individually or manually
+4.5:Assessment of Proportionality of Processing:No other reasonable alternative data for this purpose
+4.6:Assessment of risks to rights and freedoms:Breach of highly sensitive data, genetic and health data of vulnerable data subjects, could lead to a violation of Article 8 (right to respect for private and family life) of the European Convention on Human Rights
+4.7:Measures to address risks:
+4.7.1:Safeguard:GDPR
+4.7.2:Security Measures:Data encryption
+4.7.3:Mechanisms to ensure protection of data:Strict authorized access
+5.:Processing:processing name
+5.1:Content of the processing:Patient Data
+5.1.1:Content is about trading
+5.1.1.1:Content is about the offering of goods:No
+5.1.1.2:Content is about the offering of services:yes
+5.1.1.3:Content is about the offering of Free Movement of Data:???
+5.1.1.4:Content monitors the behavior in at least one member state of the EU:yes
+5.1.2:Content leads to risk to rights and freedom of natural person:yes,violation of privacy
+5.1.2.1: In case of update, risk changed (yes/no):????
+5.2:Purpose of the processing:
+5.2.1:Purpose leads to risk to right and freedom of natural person:No
+5.2.1.1: In case of update, risk changed (yes/no):??
+5.3:Scope of the processing:
+5.3.1:Scope leads to riks to right and freedom of natural person:Yes, breach of all private information
+5.3.1.1: In case of update, risk changed (yes/no):??
+5.4:Technology used for processing:
+5.4.1:Technology leads to risk to right and freedom of natural person:Yes, by using decision support systems
+5.4.1.1: In case of update, risk changed (yes/no):???
+6.:The Consistency Mechanism:
+6.1:The Consistency Mechanism is applied:No
+6.2:Name of supervisory authority that applied Consistency Mechanism:
+7.:Processing has an evaluation of the results(Name):Predicting diseases based on patient data
+7.1:Evaluation is done via automated processing:Yes
+7.2:Evaluation is done via profiling:Yes
+7.3:Evaluation leads to a legal effect(Name/Description):Article 8 of the EU convention on human rights that deals with the right to respect private life
+8.:Process is part of a list with all processes that require a DPIA(Name of list):Decision Support Processes
+8.1:List is published to public: Yes
+8.2:List is published to European Data Protection Board:No
+8.3:Name of supervisory authority that created the list: Maja Smoltczyk, supervising authority of Berlin
+9.:Process is part of the list that do not require a DPIA(name of list):
+9.1:list is published to public:
+9.2:list is published to European Data Protection Board:
+9.3:Name of supervisory authority that created the list:
+10.:Data relates to a natural person:yes
+11.:Data that is used for processing is about:
+11.1:Racial origin:yes
+11.2:Ethnic origin:No
+11.3:Political Opinion:No
+11.4:Religious Belief:No
+11.5:Philosophical Belief:No
+11.6:Trade Union Membership:No
+11.7:Genetic Data:yes
+11.8:Biometric Data:yes
+11.9:Health:yes
+11.10:Sex Life:yes
+11.11:Sexual Orientation:yes
+11.12:Criminal Convictions:No
+11.12.1:Name of supervisory authority that checked the related process:
+11.13:Criminal Offense: No
+11.13.1:Name of supervisory authority that checked the related process:
+12.:View of the natural person  or representative could be seeked: (NaturalPerson) Name
+12.1:view has a risk to the public interest:No
+12.2:view has a risk to the commercial interest:yes, losing patients and revenue
+12.3:view has a risk to the security of processing:No
+14.:Data was collected via monitoring a public accessible area(Name of Area):No
+15.:Date when process is firstly processed:2018-04-11
+16.:Name of the Controller of the process(can also be more, separated by semicolon): Max Müller
+16.1:Controller has applied the approved code of conduct(Boolean, one per controller, separated by semicolon):yes
+16.2:Name of supervisory authority that controls process:
+17.:Name of the Processor of the process(can also be more, separated by semicolon):Maria Stark, Sebastian Wagner
+17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon):True;true
+17.2:Authorization of Processor:??
+17.2.1:Authorized by member state law(name):??
+17.2.2:Authorized by member union:??
+18.: In case of update, controller reviewed dpia (yes/no):??
+
+
+
+
+
+

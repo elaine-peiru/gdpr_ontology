@@ -252,7 +252,7 @@ public class Input {
 					json.put("nameOfProcessor", inputParts[2]);
 					break;
 				case "17.1":
-					json.put("processorAppliedAppovedCodeOfConduct", inputParts[2]);
+					json.put("processorAppliedApprovedCodeOfConduct", inputParts[2]);
 					break;
 				case "17.2.1":
 					json.put("memberstatelaw", inputParts[2]);

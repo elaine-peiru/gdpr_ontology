@@ -1087,7 +1087,9 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
     <!-- MeasureToAddressRisks_Contains_SecurityMeasure -->
 
 
-    <owl:Class rdf:about="MeasureToAddressRisks_Contains_SecurityMeasure"/>
+    <owl:Class rdf:about="MeasureToAddressRisks_Contains_SecurityMeasure">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Condition9"/>
+    </owl:Class>
     
 
 
@@ -1319,6 +1321,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Condition2"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1347,6 +1350,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Condition3"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1375,6 +1379,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Condition5"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1403,6 +1408,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1431,6 +1437,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule24_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1459,6 +1466,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Data_Has_Monitoring">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule9_Condition3"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1515,6 +1523,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Data_IsPartOf_Evaluation">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition3"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1634,6 +1643,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Evaluation_BasesOn_AutomatedProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition4"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1662,6 +1672,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Evaluation_BasesOn_Profiling">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition4"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1774,6 +1785,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/PersonalData_IsPartOf_Evaluation">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition3"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1830,6 +1842,10 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Process_Has_Data">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition2"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule5_Condition2"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule7_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule9_Condition2"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1858,6 +1874,11 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Process_Has_DataProtectionImpactAssessment">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Deontic"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule5_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule9_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1886,6 +1907,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Process_Has_Processing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition2"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2472,6 +2495,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition10">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9ZM1UG9ZC4UnRJ4BXEYQCv"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2547,6 +2571,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition4">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RCRRWI52DFNrphyNoF5XrqA"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2597,6 +2622,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition6">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2639,6 +2665,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition7">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDUAhgOchdhNRCHCMEoKUuM"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2664,6 +2691,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition8">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDMaFO4l3dlUJpC2WwDAmPP"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2994,6 +3022,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule1_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RC5TffFpbysBH9qThlVi1L3"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3030,6 +3059,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule20_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3141,6 +3171,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule21_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3185,6 +3216,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule22_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RzDl3q6FXyjU9SNPeecqbW"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3502,6 +3534,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule24_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDIHlvOtj8sCa5jle6Zvsas"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3610,6 +3643,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule26_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R788aFQPm1XRZ9jz0v7BMhY"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3806,6 +3840,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule26_Condition5">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RD3UeNw8F5TNnsJUipY1l5a"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3947,6 +3982,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule26_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RWw8FJPJmtw19tJ7abNcJC"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4014,6 +4050,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule3_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R8j7TNX1ncFdCPVwCGIFoQS"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4035,6 +4072,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule3_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R7A2eSUb8q33ErNY8KrqKsy"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4221,6 +4259,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule4_Condition6">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDo7l0OEvV6CW29XejZAeRN"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4251,6 +4290,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule4_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RC5TffFpbysBH9qThlVi1L3"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4317,6 +4357,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule5_Condition2">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDN8KU2b232QrMj6CFajaqL"/>
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RmwjxgkyjXmM0b10oiNWGo"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4342,6 +4384,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule5_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RC5TffFpbysBH9qThlVi1L3"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4378,6 +4421,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule7_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDN8KU2b232QrMj6CFajaqL"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4602,6 +4646,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule9_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RC5TffFpbysBH9qThlVi1L3"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -7696,6 +7741,13 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
+    
+
+
     <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] processor1 -->
 
 
@@ -8807,9 +8859,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Affects_FreeMovementOfData - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Affects_FreeMovementOfData"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test content"/>
     </owl:NamedIndividual>
     
 
@@ -8820,7 +8869,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Activity - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Activity"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test trading of goods"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test content"/>
     </owl:NamedIndividual>
@@ -8832,10 +8880,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Risk - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Risk"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test content"/>
     </owl:NamedIndividual>
     
 
@@ -8845,7 +8889,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_MonitoringOfDataInMemberstate - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_MonitoringOfDataInMemberstate"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test content"/>
     </owl:NamedIndividual>
     
 
@@ -8867,9 +8910,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfServices - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_OfferingOfServices"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test content"/>
     </owl:NamedIndividual>
     
 
@@ -8879,9 +8919,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_IsLikelyToResultIn_Risk - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_IsLikelyToResultIn_Risk"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test content"/>
     </owl:NamedIndividual>
     
 
@@ -8935,7 +8972,11 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksAdviceOf_DataProtectionOfficer - testProcess">
+        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Rule3_Deontic"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R7A2eSUb8q33ErNY8KrqKsy"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RRtBczGxkl8IyzzoK7bmKd"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test DPO"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test controller"/>
     </owl:NamedIndividual>
     
 
@@ -9026,6 +9067,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_MeasureToAddressRisks - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test measures"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] testDPIA"/>
     </owl:NamedIndividual>
     
 
@@ -9058,7 +9102,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionOfficer_IsDesignated - testProcess">
+        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Rule3_Condition1"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8j7TNX1ncFdCPVwCGIFoQS"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RV7kczTIRtjPdaLFeqbJio"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9068,6 +9115,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Name"/>
     </owl:NamedIndividual>
     
 
@@ -9077,9 +9126,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_BiometricData - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RUNNm57Ybl1j2yX11wj8lI"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9089,9 +9135,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_GeneticData - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RJCiCTeU8CQOZ4DKymvzHs"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9125,6 +9168,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsPartOf_Evaluation - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_IsPartOf_Evaluation"/>
+        <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_part_of"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test evaluation"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9134,9 +9180,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalConviction - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDILph149siB525wLgwEQyy"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9146,9 +9189,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalOffense - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R981VKpiQCH3tIEXGoxLCRE"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9167,6 +9207,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_SecurityMeasure - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDN8KU2b232QrMj6CFajaqL"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test security measure"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9176,9 +9219,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_EthnicOrigin - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9gpZaRGbtcPi2R2VAUCSJa"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9188,9 +9228,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_Health - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_Health"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9200,9 +9237,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PhilosophicalBelief - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBolrIj5Vp43qNexDSn0Go4"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9212,9 +9246,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PoliticalOpinion - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RYvrajW4BIwv1GxJWNdAeR"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9236,9 +9267,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_ReligiousBelief - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9peWME9Yxv6X0xK3ePLa7n"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9248,9 +9276,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexLife - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_SexLife"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9260,9 +9285,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexualOrientation - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_SexualOrientation"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9272,9 +9294,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_TradeUnionMembership - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8ty1cYJADbCOMi1RIJ7lNG"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9293,9 +9312,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9KIwIlUZtDYTzy73MHkZCe"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R87t7dgn6sgWrizmrIVVss6"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test name list"/>
-        <hasSubject rdf:resource="http://purl.org/net/team_project_semantic_web/European_Data_Protection_Board"/>
     </owl:NamedIndividual>
     
 
@@ -9305,9 +9321,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_AutomatedProcessing - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Evaluation_BasesOn_AutomatedProcessing"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RicP6oSkrmhtRFrztSkOt"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test evaluation"/>
     </owl:NamedIndividual>
     
 
@@ -9406,6 +9419,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPersonalData_IsPartOf_Evaluation - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PersonalData_IsPartOf_Evaluation"/>
+        <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_part_of"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test evaluation"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]personalData"/>
     </owl:NamedIndividual>
     
 
@@ -9415,6 +9431,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Data - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_Data"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] testProcess"/>
     </owl:NamedIndividual>
     
 
@@ -9524,10 +9543,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_MemberStatelaw - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R46gnBMTdGZG6YLbfl4FyD"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] processor1"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] processor2"/>
     </owl:NamedIndividual>
     
 
@@ -9546,6 +9561,11 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsCompliantWith_ApprovedCodeOfConduct - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBpuCG4EugpZPT2QLJPjl8I"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] processor1"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] processor2"/>
     </owl:NamedIndividual>
     
 
@@ -9577,9 +9597,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_Has_Risk - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_Has_Risk"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test purpose of processing"/>
     </owl:NamedIndividual>
     
 
@@ -9589,9 +9606,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_IsLikelyToResultIn_Risk - testProcess">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_IsLikelyToResultIn_Risk"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test purpose of processing"/>
     </owl:NamedIndividual>
     
 
@@ -9657,9 +9671,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Controls_Process - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDDrHslDguIxiM3JMxWuolA"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] testProcess"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] test controller"/>
     </owl:NamedIndividual>
     
 
@@ -9726,9 +9737,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_CommercialInterest - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R88vGIiLDzslOeqpFg51Mr9"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Name"/>
     </owl:NamedIndividual>
     
 
@@ -9750,9 +9758,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_SecurityOfProcessingOperation - testProcess">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDMHJMow5pg2NwzSKcxzwky"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Name"/>
     </owl:NamedIndividual>
     
 

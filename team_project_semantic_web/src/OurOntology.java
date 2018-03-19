@@ -11,10 +11,14 @@ import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.io.WriterDocumentTarget;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
 public class OurOntology {
 
@@ -74,12 +78,21 @@ public class OurOntology {
 
 	public static void checkRulesForProcess(OWLOntology onto, String processId) {
 		boolean isCompliant = true;
-		Set<OWLClass> classes = onto.getClassesInSignature();
 		Set<String> rulesError = new HashSet<String>();
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLDataFactory factory = manager.getOWLDataFactory();
+		Set<OWLClass> classes = onto.getClassesInSignature();
+		Set<OWLNamedIndividual> indi = onto.getIndividualsInSignature();
+		OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+		OWLReasoner reasoner = reasonerFactory.createReasoner(onto);
+		System.out.println(reasoner.getEquivalentClasses(factory.getOWLClass(RuleName.Rule1_Deontic.getPath())));
+
 		OWLClass rule1_deontic = factory.getOWLClass(RuleName.Rule1_Deontic.getPath());
+
 		OWLClass rule1_condition1 = factory.getOWLClass(RuleName.Rule1_Condition1.getPath());
+		OWLClass rule1_condition2 = factory.getOWLClass(RuleName.Rule1_Condition2.getPath());
+		OWLClass rule1_condition3 = factory.getOWLClass(RuleName.Rule1_Condition3.getPath());
+		OWLClass rule1_condition4 = factory.getOWLClass(RuleName.Rule1_Condition4.getPath());
 		OWLClass rule3_deontic = factory.getOWLClass(RuleName.Rule3_Deontic.getPath());
 		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
 		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
@@ -122,177 +135,176 @@ public class OurOntology {
 		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
 		System.out.println(classes.contains(rule1_deontic));
 
-		if (classes.contains(rule1_condition1)) {
-			if (!classes.contains(rule1_deontic)) {
-				isCompliant = false;
-				rulesError.add("No DPIA has been created. Refer to paragraph 1");
+		if (reasoner.getEquivalentClasses(rule1_condition4).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule1_condition3).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule1_condition2).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule1_condition1).getSize() >= 1) {
+						if (reasoner.getEquivalentClasses(rule1_deontic).getSize() == 1) {
+							isCompliant = false;
+							rulesError.add("No DPIA has been created. Refer to paragraph 1");
+						}
+					}
+				}
 			}
 		}
 
-		if (classes.contains(rule3_condition1)) {
-			System.out.println("hghgh");
-			int i = 2;
-			int j = 1;
-			if (i != j) { /// * !classes.contains(rule3_deontic) */
+		if (reasoner.getEquivalentClasses(rule3_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule3_deontic).getSize() == 1) {
 				System.out.println("test rule3");
 				isCompliant = false;
 				rulesError.add("You need to seek the advice of the Data Protection Officer.");
-
 			}
 		}
 
-		if (classes.contains(rule4_condition1)) {
-			if (!classes.contains(rule4_deontic)) {
+		if (reasoner.getEquivalentClasses(rule4_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule4_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("No DPIA has been created. Refer to paragraph 3a");
 
 			}
 		}
-		if (classes.contains(rule5_condition1)) {
-			if (!classes.contains(rule5_deontic)) {
+		if (reasoner.getEquivalentClasses(rule5_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule5_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("No DPIA has been created. Refer to paragraph 3b");
 
 			}
 		}
-		if (classes.contains(rule7_condition1)) {
-			if (!classes.contains(rule7_deontic)) {
+		if (reasoner.getEquivalentClasses(rule7_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule7_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Supervisory authority needs to check this process. Refer to paragraph 3b");
 
 			}
 		}
 
-		if (classes.contains(rule8_condition1)) {
-			if (!classes.contains(rule8_deontic)) {
+		if (reasoner.getEquivalentClasses(rule8_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule8_deontic).getSize() == 1) {
 				isCompliant = false;
 				// TODO write text for output file
 				rulesError.add("Processor is not authorized to work on the process.");
 
 			}
 		}
-		if (classes.contains(rule9_condition1)) {
-			if (!classes.contains(rule9_deontic)) {
+		if (reasoner.getEquivalentClasses(rule9_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule9_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("No DPIA has been created. Refer to paragraph 3c.");
 
 			}
 		}
-		if (classes.contains(rule10_condition1)) {
-			if (!classes.contains(rule10_deontic)) {
+		if (reasoner.getEquivalentClasses(rule10_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule10_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("You have to publish the list of processes that require a DPIA. Refer to paragraph 4.");
 
 			}
 		}
-		if (classes.contains(rule12_condition1)) {
-			if (!classes.contains(rule12_deontic)) {
+		if (reasoner.getEquivalentClasses(rule12_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule12_deontic).getSize() == 1) {
+				System.out.println("rule12");
 				isCompliant = false;
 				rulesError.add("You have to publish the list of processes that require a DPIA to the European Data Protection Board. Refer to paragraph 4.");
 
 			}
 		}
-		if (classes.contains(rule13_condition1)) {
-			if (!classes.contains(rule13_deontic)) {
+		if (reasoner.getEquivalentClasses(rule13_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule13_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("You have to publish the list of processes that require a DPIA. Refer to paragraph 5.");
 
 			}
 		}
-		if (classes.contains(rule15_condition1)) {
-			if (!classes.contains(rule15_deontic)) {
+		if (reasoner.getEquivalentClasses(rule15_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule15_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("You have to publish the list of processes that require a DPIA to the European Data Protection Board. Refer to paragraph 5.");
 
 			}
 		}
 
-		if (classes.contains(rule18_condition1)) {
-
-			if (!classes.contains(rule18_deontic)) {
+		if (reasoner.getEquivalentClasses(rule18_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule18_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("DPIA is not complete. Refer to paragraph 7.");
 			}
 		}
 
-		if (classes.contains(rule20_condition1)) {
-
-			if (!classes.contains(rule20_deontic)) {
+		if (reasoner.getEquivalentClasses(rule20_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule20_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("The measure to address risks does not show compliance to GDPR. Refer to paragraph 7d.");
 			}
 		}
 
-		if (classes.contains(rule22_condition1)) {
-
-			if (!classes.contains(rule22_deontic)) {
+		if (reasoner.getEquivalentClasses(rule22_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule22_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Controller not compliant with Approved Code of Conduct. Refer to Paragraph 8.");
 			}
 		}
 
-		if (classes.contains(rule23_condition1)) {
-
-			if (!classes.contains(rule23_deontic)) {
+		if (reasoner.getEquivalentClasses(rule23_condition1).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule23_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Processor not compliant with approved code of conduct. Refer to paragraph 8");
 			}
 		}
 
-		if (classes.contains(rule24_condition1)) {
+		if (reasoner.getEquivalentClasses(rule24_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule24_deontic)) {
+			if (reasoner.getEquivalentClasses(rule24_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Controller should not seek view of the data subject. Refer to paragraph 9");
 			}
 		}
 
-		if (classes.contains(rule241_condition1)) {
+		if (reasoner.getEquivalentClasses(rule24_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule241_deontic)) {
+			if (reasoner.getEquivalentClasses(rule241_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Controller should not seek view of the representative of data subject. Refer to paragraph 9");
 			}
 		}
 
-		if (classes.contains(rule24_condition1)) {
+		if (reasoner.getEquivalentClasses(rule24_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule25_deontic)) {
+			if (reasoner.getEquivalentClasses(rule25_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Processor should not seek view of the data subject. Refer to paragraph 9");
 			}
 		}
 
-		if (classes.contains(rule24_condition1)) {
+		if (reasoner.getEquivalentClasses(rule24_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule251_deontic)) {
+			if (reasoner.getEquivalentClasses(rule251_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Processor should not seek view of the representative of data subject. Refer to paragraph 9");
 
 			}
 		}
 
-		if (classes.contains(rule26_condition1)) {
+		if (reasoner.getEquivalentClasses(rule26_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule26_deontic)) {
+			if (reasoner.getEquivalentClasses(rule26_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Controller needs to review DPIA. Refer to paragraph 11.");
 
 			}
 		}
 
-		if (classes.contains(rule21_condition1)) {
+		if (reasoner.getEquivalentClasses(rule21_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule21_deontic)) {
+			if (reasoner.getEquivalentClasses(rule21_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("The measure to address risks are not complete. Refer to paragraph 7d.");
 
 			}
 		}
 
-		if (classes.contains(rule16_condition1)) {
+		if (reasoner.getEquivalentClasses(rule16_condition1).getSize() > 1) {
 
-			if (!classes.contains(rule16_deontic)) {
+			if (reasoner.getEquivalentClasses(rule16_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("You have to apply the consistency mechanism. Refer to paragraph 6.");
 
