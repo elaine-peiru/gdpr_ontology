@@ -264,14 +264,33 @@ public class OurOntology {
 
 			}
 		}
-
-		if (reasoner.getEquivalentClasses(rule18_condition1).getSize() > 1) {
-			if (reasoner.getEquivalentClasses(rule18_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("DPIA is not complete. Refer to paragraph 7.");
+		
+		if (reasoner.getEquivalentClasses(rule18_condition10).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule18_condition9).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule18_condition8).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule18_condition7).getSize() > 1) {
+						if (reasoner.getEquivalentClasses(rule18_condition6).getSize() > 1) {
+							if (reasoner.getEquivalentClasses(rule18_condition5).getSize() > 1) {
+								if (reasoner.getEquivalentClasses(rule18_condition4).getSize() > 1) {
+									if (reasoner.getEquivalentClasses(rule18_condition3).getSize() > 1) {
+										if (reasoner.getEquivalentClasses(rule18_condition2).getSize() > 1) {
+											if (reasoner.getEquivalentClasses(rule18_condition1).getSize() > 1) {
+												if (reasoner.getEquivalentClasses(rule18_deontic).getSize() == 1) {
+													isCompliant = false;
+													rulesError.add("DPIA is not complete. Refer to paragraph 7.");
+												}
+											}
+										}
+									}
+								}
+							}	
+						}
+					}
+				}
 			}
 		}
 
+		
 		if (reasoner.getEquivalentClasses(rule20_condition1).getSize() > 1) {
 			if (reasoner.getEquivalentClasses(rule20_deontic).getSize() == 1) {
 				isCompliant = false;
@@ -293,11 +312,16 @@ public class OurOntology {
 			}
 		}
 
-		if (reasoner.getEquivalentClasses(rule24_condition1).getSize() > 1) {
-
-			if (reasoner.getEquivalentClasses(rule24_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("Controller should not seek view of the data subject. Refer to paragraph 9");
+		if (reasoner.getEquivalentClasses(rule24_condition4).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule24_condition3).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule24_condition2).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule24_condition1).getSize() > 1) {
+						if (reasoner.getEquivalentClasses(rule24_deontic).getSize() == 1) {
+							isCompliant = false;
+							rulesError.add("Controller should not seek view of the data subject. Refer to paragraph 9");
+						}
+					}
+				}
 			}
 		}
 
@@ -325,33 +349,60 @@ public class OurOntology {
 
 			}
 		}
-
-		if (reasoner.getEquivalentClasses(rule26_Condition1).getSize() > 1) {
-
-			if (reasoner.getEquivalentClasses(rule26_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("Controller needs to review DPIA. Refer to paragraph 11.");
-
+		
+	
+		if (reasoner.getEquivalentClasses(rule26_Condition11).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule26_Condition10).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule26_Condition9).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule26_Condition8).getSize() > 1) {
+						if (reasoner.getEquivalentClasses(rule26_Condition7).getSize() > 1) {
+							if (reasoner.getEquivalentClasses(rule26_Condition6).getSize() > 1) {
+								if (reasoner.getEquivalentClasses(rule26_Condition5).getSize() > 1) {
+									if (reasoner.getEquivalentClasses(rule26_Condition4).getSize() > 1) {
+										if (reasoner.getEquivalentClasses(rule26_Condition3).getSize() > 1) {
+											if (reasoner.getEquivalentClasses(rule26_Condition2).getSize() > 1) {
+												if (reasoner.getEquivalentClasses(rule26_Condition1).getSize() > 1) {
+													if (reasoner.getEquivalentClasses(rule26_deontic).getSize() == 1) {
+														isCompliant = false;
+														rulesError.add("Controller needs to review DPIA. Refer to paragraph 11.");
+										
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 
-		if (reasoner.getEquivalentClasses(rule21_condition1).getSize() > 1) {
-
-			if (reasoner.getEquivalentClasses(rule21_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("The measure to address risks are not complete. Refer to paragraph 7d.");
-
+		
+		if (reasoner.getEquivalentClasses(rule21_condition2).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule21_condition1).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule21_deontic).getSize() == 1) {
+					isCompliant = false;
+					rulesError.add("The measure to address risks are not complete. Refer to paragraph 7d.");
+	
+				}
 			}
 		}
-
-		if (reasoner.getEquivalentClasses(rule16_condition1).getSize() > 1) {
-
-			if (reasoner.getEquivalentClasses(rule16_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("You have to apply the consistency mechanism. Refer to paragraph 6.");
-
+		
+		
+		if (reasoner.getEquivalentClasses(rule16_condition3).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule16_condition2).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule16_condition1).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule16_deontic).getSize() == 1) {
+						isCompliant = false;
+						rulesError.add("You have to apply the consistency mechanism. Refer to paragraph 6.");
+		
+					}
+				}
 			}
 		}
+	
 
 		if (isCompliant) {
 			rulesError.add("The process " + processId + " is compliant to Article 35 of GDPR.");
