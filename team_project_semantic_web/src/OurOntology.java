@@ -97,6 +97,11 @@ public class OurOntology {
 		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
 		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
 		OWLClass rule4_condition1 = factory.getOWLClass(RuleName.Rule4_Condition1.getPath());
+		OWLClass rule4_condition2 = factory.getOWLClass(RuleName.Rule4_Condition2.getPath());
+		OWLClass rule4_condition3 = factory.getOWLClass(RuleName.Rule4_Condition3.getPath());
+		OWLClass rule4_condition4 = factory.getOWLClass(RuleName.Rule4_Condition4.getPath());
+		OWLClass rule4_condition5 = factory.getOWLClass(RuleName.Rule4_Condition5.getPath());
+		OWLClass rule4_condition6 = factory.getOWLClass(RuleName.Rule4_Condition6.getPath());
 		OWLClass rule5_deontic = factory.getOWLClass(RuleName.Rule5_Deontic.getPath());
 		OWLClass rule5_condition1 = factory.getOWLClass(RuleName.Rule5_Condition1.getPath());
 		OWLClass rule7_deontic = factory.getOWLClass(RuleName.Rule7_Deontic.getPath());

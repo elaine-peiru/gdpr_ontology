@@ -2066,7 +2066,7 @@ public class Process {
 			manager.applyChange(addRelation);
 			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Process_Has_ProcessingIndividual, has));
 			addRelation = new AddAxiom(onto,
-					factory.getOWLEquivalentClassesAxiom(process_Has_Processing, rule1_condition1));
+					factory.getOWLEquivalentClassesAxiom(process_Has_Processing, rule1_condition2));
 			manager.applyChange(addRelation);
 			addRelation = new AddAxiom(onto,
 					factory.getOWLEquivalentClassesAxiom(process_Has_Processing, rule26_Condition2));
@@ -2085,6 +2085,18 @@ public class Process {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processing_Has_ContextOfProcessingIndividual, has));
 				manager.applyChange(addRelation);
 
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_ContextOfProcessing, rule1_condition3));
+				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_ContextOfProcessing, rule26_condition10));
+				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_ContextOfProcessing, rule16_condition2));
+				manager.applyChange(addRelation);
+				
 				if (!json.get("freeMovementOfData").toString().isEmpty()) {
 					addRelation = new AddAxiom(onto,
 							factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ContextOfProcessing_Affects_FreeMovementOfDataIndividual,
@@ -2107,6 +2119,10 @@ public class Process {
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, affects));
 					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Activity, rule16_condition3));
+					manager.applyChange(addRelation);
 				}
 
 				if (!json.get("riskRelatedToContent").toString().isEmpty()) {
@@ -2120,6 +2136,14 @@ public class Process {
 					manager.applyChange(addRelation);
 
 					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Risk, rule1_condition4));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Risk, rule26_condition11));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
 							factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ContextOfProcessing_IsLikelyToResultIn_RiskIndividual,
 									contextOfProcessingIndividual));
 					manager.applyChange(addRelation);
@@ -2130,6 +2154,8 @@ public class Process {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_IsLikelyToResultIn_RiskIndividual,
 							isLikelyToResultIn));
 					manager.applyChange(addRelation);
+					
+					
 				}
 
 				if (!json.get("monitoringBehaviorInMemberstate").toString().isEmpty()) {
@@ -2140,16 +2166,28 @@ public class Process {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, ContextOfProcessing_Has_RiskIndividual,
 							monitoringOfDataInMemberstateIndividual));
 					manager.applyChange(addRelation);
-					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_RiskIndividual, involves));
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_RiskIndividual, has));
 					manager.applyChange(addRelation);
 
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Risk, rule1_condition4));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Risk, rule26_condition11));
+					manager.applyChange(addRelation);
+					
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ContextOfProcessing_Has_ActivityIndividual,
 							contextOfProcessingIndividual));
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, ContextOfProcessing_Has_ActivityIndividual,
 							monitoringOfDataInMemberstateIndividual));
 					manager.applyChange(addRelation);
-					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, affects));
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, has));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Activity, rule16_condition3));
 					manager.applyChange(addRelation);
 				}
 
@@ -2171,7 +2209,11 @@ public class Process {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, ContextOfProcessing_Has_ActivityIndividual,
 							offeringOfGoodsIndividual));
 					manager.applyChange(addRelation);
-					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, affects));
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, has));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Activity, rule16_condition3));
 					manager.applyChange(addRelation);
 				}
 
@@ -2195,7 +2237,11 @@ public class Process {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, ContextOfProcessing_Has_ActivityIndividual,
 							offeringOfServicesIndividual));
 					manager.applyChange(addRelation);
-					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, affects));
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ContextOfProcessing_Has_ActivityIndividual, has));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Activity, rule16_condition3));
 					manager.applyChange(addRelation);
 				}
 			}
@@ -2209,6 +2255,15 @@ public class Process {
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processing_Has_PurposeOfProcessingIndividual, has));
 				manager.applyChange(addRelation);
+				
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_PurposeOfProcessing, rule1_condition3));
+				manager.applyChange(addRelation); 
+				
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_PurposeOfProcessing, rule26_condition8));
+				manager.applyChange(addRelation);
+				
 				if (!json.get("riskRelatedToPurpose").toString().isEmpty()) {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, PurposeOfProcessing_Has_RiskIndividual,
 							purposeOfProcessingIndividual));
@@ -2217,6 +2272,14 @@ public class Process {
 							riskOfPurposeIndividual));
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, PurposeOfProcessing_Has_RiskIndividual, has));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(purposeOfProcessing_Has_Risk, rule1_condition4));
+					manager.applyChange(addRelation);
+
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(contextOfProcessing_Has_Activity, rule26_condition9));
 					manager.applyChange(addRelation);
 				}
 
@@ -2242,13 +2305,30 @@ public class Process {
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processing_Has_ScopeIndividual, has));
 
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_Scope, rule1_condition3));
+				manager.applyChange(addRelation);
+				
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_Scope, rule26_condition3));
+				manager.applyChange(addRelation);
+				
 				if (!json.get("riskRelatedToScope").toString().isEmpty()) {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Scope_Has_RiskIndividual, scopeIndividual));
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Scope_Has_RiskIndividual, riskOfScopeIndividual));
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Scope_Has_RiskIndividual, has));
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(scope_Has_Risk, rule1_condition4));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(scope_Has_Risk, rule26_condition4));
+					manager.applyChange(addRelation);
 				}
+				
 				if (!json.get("riskRelatedToScope").toString().isEmpty()) {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ScopeOfProcessing_IsLikelyToResultIn_RiskIndividual,
 							scopeIndividual));
@@ -2270,12 +2350,28 @@ public class Process {
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processing_Has_TechnologyIndividual, has));
 
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_Technology, rule1_condition3));
+				manager.applyChange(addRelation);
+				
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(processing_Has_Technology, rule26_condition6));
+				manager.applyChange(addRelation);
+				
 				if (!json.get("riskRelatedToTechnology").toString().isEmpty()) {
 					addRelation = new AddAxiom(onto,
 							factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Technology_Has_RiskIndividual, technologyIndividual));
 					addRelation = new AddAxiom(onto,
 							factory.getOWLObjectPropertyAssertionAxiom(hasObject, Technology_Has_RiskIndividual, riskOfTechnologyIndividual));
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Technology_Has_RiskIndividual, has));
+				
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(technology_Has_Risk, rule1_condition4));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(technology_Has_Risk, rule26_condition7));
+					manager.applyChange(addRelation);
 				}
 
 				if (!json.get("riskRelatedToTechnology").toString().isEmpty()) {
@@ -2309,6 +2405,10 @@ public class Process {
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto,
 							factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_Assesses_PurposeOfProcessingIndividual, assesses));
+				
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(processor_Assesses_PurposeOfProcessing, rule23_condition1));
+					manager.applyChange(addRelation);
 				}
 
 				if (!json.get("process").toString().isEmpty()) {
@@ -2319,6 +2419,10 @@ public class Process {
 							factory.getOWLObjectPropertyAssertionAxiom(hasObject, Processor_Controls_ProcessIndividual, processIndividual));
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_Controls_ProcessIndividual, controls));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(processor_Controls_Process, rule8_deontic));
 					manager.applyChange(addRelation);
 				}
 
@@ -2332,6 +2436,10 @@ public class Process {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_MemberStatelawIndividual,
 							isAuthorizedBy));
 					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(processor_IsAuthorizedBy_MemberStatelaw, rule8_condition1));
+					manager.applyChange(addRelation);
 				}
 
 				if (json.get("unionlawAuthorization").toString().equals("yes")) {
@@ -2343,6 +2451,10 @@ public class Process {
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto,
 							factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_IsAuthorizedBy_UnionlawIndividual, isAuthorizedBy));
+					manager.applyChange(addRelation);
+					
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(processor_IsAuthorizedBy_Unionlaw, rule8_condition1));
 					manager.applyChange(addRelation);
 				}
 				if (!json.get("processorAppliedApprovedCodeOfConduct").toString().isEmpty()) {
@@ -2372,6 +2484,15 @@ public class Process {
 						addRelation = new AddAxiom(onto,
 								factory.getOWLObjectPropertyAssertionAxiom(hasVerb, Processor_SeeksViewOf_DataSubjectIndividual, seeksViewOf));
 						manager.applyChange(addRelation);
+						
+						addRelation = new AddAxiom(onto,
+								factory.getOWLEquivalentClassesAxiom(processor_SeeksViewOf_DataSubject, rule25_deontic));
+						manager.applyChange(addRelation);
+						
+						addRelation = new AddAxiom(onto,
+								factory.getOWLEquivalentClassesAxiom(processor_SeeksViewOf_DataSubject, rule251_deontic));
+						manager.applyChange(addRelation);
+						
 					} else {
 						addRelation = new AddAxiom(onto,
 								factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Processor_SeeksViewOf_RepresentativeOfDataSubjectIndividual,
@@ -2404,6 +2525,10 @@ public class Process {
 						factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Applies_ConsistencyMechanismIndividual,
 								applies));
 				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Applies_ConsistencyMechanism, rule16_deontic));
+				manager.applyChange(addRelation);
 			}
 			if (!json.get("processing").toString().isEmpty()) {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
@@ -2414,6 +2539,10 @@ public class Process {
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, ConsistencyMechanism_IsAppliedTo_ProcessingIndividual,
 						isAppliedTo));
+				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(consistencyMechanism_IsAppliedTo_Processing, rule16_condition1));
 				manager.applyChange(addRelation);
 			}
 		}
@@ -2429,6 +2558,10 @@ public class Process {
 			manager.applyChange(addRelation);
 			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, SupervisoryAuthority_Controls_ProcessIndividual, controls));
 			manager.applyChange(addRelation);
+
+			addRelation = new AddAxiom(onto,
+					factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Controls_Process, rule7_deontic));
+			manager.applyChange(addRelation);
 		}
 
 		if (!json.get("viewOfPerson").toString().isEmpty()) {
@@ -2443,6 +2576,10 @@ public class Process {
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_CommercialInterestIndividual, respects));
 				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(view_Respects_CommercialInterest, rule24_condition3));
+				manager.applyChange(addRelation);
 			}
 
 			if (!json.get("riskOfPersonsViewToPublicInterest").toString().isEmpty()) {
@@ -2453,6 +2590,10 @@ public class Process {
 						riskToPublicInterestIndividual));
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_PublicInterestIndividual, respects));
+				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(view_Respects_PublicInterest, rule24_condition2));
 				manager.applyChange(addRelation);
 			}
 
@@ -2465,6 +2606,10 @@ public class Process {
 				manager.applyChange(addRelation);
 				addRelation = new AddAxiom(onto,
 						factory.getOWLObjectPropertyAssertionAxiom(hasVerb, View_Respects_SecurityOfProcessingOperationIndividual, respects));
+				manager.applyChange(addRelation);
+
+				addRelation = new AddAxiom(onto,
+						factory.getOWLEquivalentClassesAxiom(view_Respects_SecurityOfProcessingOperation, rule24_condition4));
 				manager.applyChange(addRelation);
 			}
 		}
