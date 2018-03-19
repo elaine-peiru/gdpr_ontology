@@ -88,52 +88,85 @@ public class OurOntology {
 		System.out.println(reasoner.getEquivalentClasses(factory.getOWLClass(RuleName.Rule1_Deontic.getPath())));
 
 		OWLClass rule1_deontic = factory.getOWLClass(RuleName.Rule1_Deontic.getPath());
+		OWLClass rule2_deontic = factory.getOWLClass(RuleName.Rule2_Deontic.getPath());
+		OWLClass rule3_deontic = factory.getOWLClass(RuleName.Rule3_Deontic.getPath());
+		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
+		OWLClass rule5_deontic = factory.getOWLClass(RuleName.Rule5_Deontic.getPath());
+		OWLClass rule7_deontic = factory.getOWLClass(RuleName.Rule7_Deontic.getPath());
+		OWLClass rule8_deontic = factory.getOWLClass(RuleName.Rule8_Deontic.getPath());
+		OWLClass rule9_deontic = factory.getOWLClass(RuleName.Rule9_Deontic.getPath());
+		OWLClass rule10_deontic = factory.getOWLClass(RuleName.Rule10_Deontic.getPath());
+		OWLClass rule12_deontic = factory.getOWLClass(RuleName.Rule12_Deontic.getPath());
+		OWLClass rule13_deontic = factory.getOWLClass(RuleName.Rule13_Deontic.getPath());
+		OWLClass rule15_deontic = factory.getOWLClass(RuleName.Rule15_Deontic.getPath());
+		OWLClass rule18_deontic = factory.getOWLClass(RuleName.Rule18_Deontic.getPath());
+		OWLClass rule20_deontic = factory.getOWLClass(RuleName.Rule20_Deontic.getPath());
+		OWLClass rule22_deontic = factory.getOWLClass(RuleName.Rule22_Deontic.getPath());
+		OWLClass rule23_deontic = factory.getOWLClass(RuleName.Rule23_Deontic.getPath());
+		OWLClass rule24_deontic = factory.getOWLClass(RuleName.Rule24_Deontic.getPath());
+		OWLClass rule241_deontic = factory.getOWLClass(RuleName.Rule241_Deontic.getPath());
+		OWLClass rule25_deontic = factory.getOWLClass(RuleName.Rule25_Deontic.getPath());
+		OWLClass rule251_deontic = factory.getOWLClass(RuleName.Rule251_Deontic.getPath());
+		OWLClass rule26_deontic = factory.getOWLClass(RuleName.Rule26_Deontic.getPath());
+		OWLClass rule21_deontic = factory.getOWLClass(RuleName.Rule21_Deontic.getPath());
+		OWLClass rule16_deontic = factory.getOWLClass(RuleName.Rule16_Deontic.getPath());
 
 		OWLClass rule1_condition1 = factory.getOWLClass(RuleName.Rule1_Condition1.getPath());
 		OWLClass rule1_condition2 = factory.getOWLClass(RuleName.Rule1_Condition2.getPath());
 		OWLClass rule1_condition3 = factory.getOWLClass(RuleName.Rule1_Condition3.getPath());
 		OWLClass rule1_condition4 = factory.getOWLClass(RuleName.Rule1_Condition4.getPath());
-		OWLClass rule2_deontic = factory.getOWLClass(RuleName.Rule2_Deontic.getPath());
-		OWLClass rule3_deontic = factory.getOWLClass(RuleName.Rule3_Deontic.getPath());
 		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
-		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
 		OWLClass rule4_condition1 = factory.getOWLClass(RuleName.Rule4_Condition1.getPath());
-		OWLClass rule5_deontic = factory.getOWLClass(RuleName.Rule5_Deontic.getPath());
+		OWLClass rule4_condition2 = factory.getOWLClass(RuleName.Rule4_Condition2.getPath());
+		OWLClass rule4_condition3 = factory.getOWLClass(RuleName.Rule4_Condition3.getPath());
+		OWLClass rule4_condition4 = factory.getOWLClass(RuleName.Rule4_Condition4.getPath());
+		OWLClass rule4_condition5 = factory.getOWLClass(RuleName.Rule4_Condition5.getPath());
+		OWLClass rule4_condition6 = factory.getOWLClass(RuleName.Rule4_Condition6.getPath());
 		OWLClass rule5_condition1 = factory.getOWLClass(RuleName.Rule5_Condition1.getPath());
-		OWLClass rule7_deontic = factory.getOWLClass(RuleName.Rule7_Deontic.getPath());
+		OWLClass rule5_condition2 = factory.getOWLClass(RuleName.Rule5_Condition2.getPath());
 		OWLClass rule7_condition1 = factory.getOWLClass(RuleName.Rule7_Condition1.getPath());
-		OWLClass rule8_deontic = factory.getOWLClass(RuleName.Rule8_Deontic.getPath());
 		OWLClass rule8_condition1 = factory.getOWLClass(RuleName.Rule8_Condition1.getPath());
-		OWLClass rule9_deontic = factory.getOWLClass(RuleName.Rule9_Deontic.getPath());
 		OWLClass rule9_condition1 = factory.getOWLClass(RuleName.Rule9_Condition1.getPath());
-		OWLClass rule10_deontic = factory.getOWLClass(RuleName.Rule10_Deontic.getPath());
+		OWLClass rule9_condition2 = factory.getOWLClass(RuleName.Rule9_Condition2.getPath());
+		OWLClass rule9_condition3 = factory.getOWLClass(RuleName.Rule9_Condition3.getPath());
 		OWLClass rule10_condition1 = factory.getOWLClass(RuleName.Rule10_Condition1.getPath());
-		OWLClass rule12_deontic = factory.getOWLClass(RuleName.Rule12_Deontic.getPath());
 		OWLClass rule12_condition1 = factory.getOWLClass(RuleName.Rule12_Condition1.getPath());
-		OWLClass rule13_deontic = factory.getOWLClass(RuleName.Rule13_Deontic.getPath());
 		OWLClass rule13_condition1 = factory.getOWLClass(RuleName.Rule13_Condition1.getPath());
-		OWLClass rule15_deontic = factory.getOWLClass(RuleName.Rule15_Deontic.getPath());
 		OWLClass rule15_condition1 = factory.getOWLClass(RuleName.Rule15_Condition1.getPath());
-		OWLClass rule18_deontic = factory.getOWLClass(RuleName.Rule18_Deontic.getPath());
 		OWLClass rule18_condition1 = factory.getOWLClass(RuleName.Rule18_Condition1.getPath());
-		OWLClass rule20_deontic = factory.getOWLClass(RuleName.Rule20_Deontic.getPath());
+		OWLClass rule18_condition2 = factory.getOWLClass(RuleName.Rule18_Condition2.getPath());
+		OWLClass rule18_condition3 = factory.getOWLClass(RuleName.Rule18_Condition3.getPath());
+		OWLClass rule18_condition4 = factory.getOWLClass(RuleName.Rule18_Condition4.getPath());
+		OWLClass rule18_condition5 = factory.getOWLClass(RuleName.Rule18_Condition5.getPath());
+		OWLClass rule18_condition6 = factory.getOWLClass(RuleName.Rule18_Condition6.getPath());
+		OWLClass rule18_condition7 = factory.getOWLClass(RuleName.Rule18_Condition7.getPath());
+		OWLClass rule18_condition8 = factory.getOWLClass(RuleName.Rule18_Condition8.getPath());
+		OWLClass rule18_condition9 = factory.getOWLClass(RuleName.Rule18_Condition9.getPath());
+		OWLClass rule18_condition10 = factory.getOWLClass(RuleName.Rule18_Condition10.getPath());
 		OWLClass rule20_condition1 = factory.getOWLClass(RuleName.Rule20_Condition1.getPath());
-		OWLClass rule22_deontic = factory.getOWLClass(RuleName.Rule22_Deontic.getPath());
-		OWLClass rule22_condition1 = factory.getOWLClass(RuleName.Rule22_Condition1.getPath());
-		OWLClass rule23_deontic = factory.getOWLClass(RuleName.Rule23_Deontic.getPath());
+		OWLClass rule22_Condition1 = factory.getOWLClass(RuleName.Rule22_Condition1.getPath());
 		OWLClass rule23_condition1 = factory.getOWLClass(RuleName.Rule23_Condition1.getPath());
-		OWLClass rule24_deontic = factory.getOWLClass(RuleName.Rule24_Deontic.getPath());
 		OWLClass rule24_condition1 = factory.getOWLClass(RuleName.Rule24_Condition1.getPath());
-		OWLClass rule241_deontic = factory.getOWLClass(RuleName.Rule241_Deontic.getPath());
+		OWLClass rule24_condition2 = factory.getOWLClass(RuleName.Rule24_Condition2.getPath());
+		OWLClass rule24_condition3 = factory.getOWLClass(RuleName.Rule24_Condition3.getPath());
+		OWLClass rule24_condition4 = factory.getOWLClass(RuleName.Rule24_Condition4.getPath());
 		OWLClass rule241_condition1 = factory.getOWLClass(RuleName.Rule241_Condition1.getPath());
-		OWLClass rule25_deontic = factory.getOWLClass(RuleName.Rule25_Deontic.getPath());
-		OWLClass rule251_deontic = factory.getOWLClass(RuleName.Rule251_Deontic.getPath());
-		OWLClass rule26_deontic = factory.getOWLClass(RuleName.Rule26_Deontic.getPath());
-		OWLClass rule26_condition1 = factory.getOWLClass(RuleName.Rule26_Condition1.getPath());
-		OWLClass rule21_deontic = factory.getOWLClass(RuleName.Rule21_Deontic.getPath());
+		OWLClass rule26_Condition1 = factory.getOWLClass(RuleName.Rule26_Condition1.getPath());
+		OWLClass rule26_Condition2 = factory.getOWLClass(RuleName.Rule26_Condition2.getPath());
+		OWLClass rule26_Condition3 = factory.getOWLClass(RuleName.Rule26_Condition3.getPath());
+		OWLClass rule26_Condition4 = factory.getOWLClass(RuleName.Rule26_Condition4.getPath());
+		OWLClass rule26_Condition5 = factory.getOWLClass(RuleName.Rule26_Condition5.getPath());
+		OWLClass rule26_Condition6 = factory.getOWLClass(RuleName.Rule26_Condition6.getPath());
+		OWLClass rule26_Condition7 = factory.getOWLClass(RuleName.Rule26_Condition7.getPath());
+		OWLClass rule26_Condition8 = factory.getOWLClass(RuleName.Rule26_Condition8.getPath());
+		OWLClass rule26_Condition9 = factory.getOWLClass(RuleName.Rule26_Condition9.getPath());
+		OWLClass rule26_Condition10 = factory.getOWLClass(RuleName.Rule26_Condition10.getPath());
+		OWLClass rule26_Condition11 = factory.getOWLClass(RuleName.Rule26_Condition11.getPath());
 		OWLClass rule21_condition1 = factory.getOWLClass(RuleName.Rule21_Condition1.getPath());
-		OWLClass rule16_deontic = factory.getOWLClass(RuleName.Rule16_Deontic.getPath());
+		OWLClass rule21_condition2 = factory.getOWLClass(RuleName.Rule21_Condition2.getPath());
 		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
+		OWLClass rule16_condition2 = factory.getOWLClass(RuleName.Rule16_Condition2.getPath());
+		OWLClass rule16_condition3 = factory.getOWLClass(RuleName.Rule16_Condition3.getPath());
 		System.out.println(classes.contains(rule1_deontic));
 
 		if (reasoner.getEquivalentClasses(rule1_condition4).getSize() > 1) {
@@ -243,7 +276,7 @@ public class OurOntology {
 			}
 		}
 
-		if (reasoner.getEquivalentClasses(rule22_condition1).getSize() > 1) {
+		if (reasoner.getEquivalentClasses(rule22_Condition1).getSize() > 1) {
 			if (reasoner.getEquivalentClasses(rule22_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Controller not compliant with Approved Code of Conduct. Refer to Paragraph 8.");
@@ -290,7 +323,7 @@ public class OurOntology {
 			}
 		}
 
-		if (reasoner.getEquivalentClasses(rule26_condition1).getSize() > 1) {
+		if (reasoner.getEquivalentClasses(rule26_Condition1).getSize() > 1) {
 
 			if (reasoner.getEquivalentClasses(rule26_deontic).getSize() == 1) {
 				isCompliant = false;
