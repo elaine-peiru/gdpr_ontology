@@ -1332,21 +1332,6 @@ public class Process {
 			}
 		}
 
-		if (this.compareDates(json.get("dpiaCreationDate").toString(), json.get("firstProcessingDate").toString())) {
-			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, CreationDate_OccursBefore_FirstProcessingDateIndividual,
-					creationDateIndividual));
-			manager.applyChange(addRelation);
-			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, CreationDate_OccursBefore_FirstProcessingDateIndividual,
-					firstProcessingDateIndividual));
-			manager.applyChange(addRelation);
-			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, CreationDate_OccursBefore_FirstProcessingDateIndividual,
-					occursBefore));
-			manager.applyChange(addRelation);
-			addRelation = new AddAxiom(onto, factory.getOWLEquivalentClassesAxiom(creationDate_OccursBefore_FirstProcessingDate,
-					rule2_deontic));
-			manager.applyChange(addRelation);
-		}
-
 		if (!json.get("biometricData").toString().isEmpty()) {
 			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Data_Contains_BiometricDataIndividual, dataIndividual));
 			manager.applyChange(addRelation);
@@ -1591,6 +1576,20 @@ public class Process {
 		}
 
 		if (!json.get("dpiaName").toString().isEmpty()) {
+			if (this.compareDates(json.get("dpiaCreationDate").toString(), json.get("firstProcessingDate").toString())) {
+				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, CreationDate_OccursBefore_FirstProcessingDateIndividual,
+						creationDateIndividual));
+				manager.applyChange(addRelation);
+				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, CreationDate_OccursBefore_FirstProcessingDateIndividual,
+						firstProcessingDateIndividual));
+				manager.applyChange(addRelation);
+				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, CreationDate_OccursBefore_FirstProcessingDateIndividual,
+						occursBefore));
+				manager.applyChange(addRelation);
+				addRelation = new AddAxiom(onto, factory.getOWLEquivalentClassesAxiom(creationDate_OccursBefore_FirstProcessingDate,
+						rule2_deontic));
+				manager.applyChange(addRelation);
+			}
 			if (!json.get("assessmentOfNecessity").toString().isEmpty()) {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
 						DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessingIndividual, dataProtectionImpactAssessmentIndividual));
@@ -1682,7 +1681,7 @@ public class Process {
 				manager.applyChange(addRelation);
 			}
 
-			if (!json.get("measureCompliantTogdpr").toString().isEmpty()) {
+			if (!json.get("measureCompliantTogdpr").toString().equals("yes")) {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
 						MeasureToAddressRisk_CompliesTo_GDPRIndividual,
 						measureToAddressRiskIndividual));
@@ -1696,7 +1695,7 @@ public class Process {
 				manager.applyChange(addRelation);
 			}
 
-			if (!json.get("measureTakeIntoAccountRisk").toString().isEmpty()) { // TODO add this check to scenario and json!
+			if (!json.get("measureTakeIntoAccountRights").toString().equals("yes")) {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
 						MeasureToAddressRisk_TakesIntoAccount_RightsIndividual,
 						measureToAddressRiskIndividual));
@@ -1808,9 +1807,9 @@ public class Process {
 			manager.applyChange(addRelation);
 		}
 
-		if (json.get("nameOfListWithAllProcessesThatNeedDpia") != null) {
+		if (!json.get("nameOfListWithAllProcessesThatNeedDpia").toString().isEmpty()) {
 
-			if (json.get("nameSupervisoryAuthorityThatCreatedListDpia") != null) {
+			if (!json.get("nameSupervisoryAuthotityThatCreatedListDpia").toString().isEmpty()) {
 				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
 						SupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessmentIndividual,
 						supervisoryAuthorityListNeedDPIAIndividual));
@@ -1830,21 +1829,23 @@ public class Process {
 						factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment, rule12_condition1));
 				manager.applyChange(addRelation);
 
-				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
-						SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
-						supervisoryAuthorityListNeedDPIAIndividual));
-				manager.applyChange(addRelation);
-				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject,
-						SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
-						listWithProcessesThatDoNotNeedDpiaIndividual));
-				manager.applyChange(addRelation);
-				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb,
-						SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
-						publishes));
-				manager.applyChange(addRelation);
-				addRelation = new AddAxiom(onto,
-						factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment, rule10_deontic));
-				manager.applyChange(addRelation);
+				if (json.get("listDpiaPublishedToPublic").toString().equals("yes")) {
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
+							SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
+							supervisoryAuthorityListNeedDPIAIndividual));
+					manager.applyChange(addRelation);
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject,
+							SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
+							listWithProcessesThatDoNotNeedDpiaIndividual));
+					manager.applyChange(addRelation);
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb,
+							SupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessmentIndividual,
+							publishes));
+					manager.applyChange(addRelation);
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment, rule10_deontic));
+					manager.applyChange(addRelation);
+				}
 
 				if (json.get("listDpiaPublishedToEDPB").toString().equals("yes")) {
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
@@ -1889,21 +1890,23 @@ public class Process {
 						factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessment, rule15_condition1));
 				manager.applyChange(addRelation);
 
-				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
-						SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual,
-						supervisoryAuthorityListNoDPIAIndividual));
-				manager.applyChange(addRelation);
-				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject,
-						SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual,
-						listWithProcessesThatDoNotNeedDpiaIndividual));
-				manager.applyChange(addRelation);
-				addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb,
-						SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual,
-						publishes));
-				manager.applyChange(addRelation);
-				addRelation = new AddAxiom(onto,
-						factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment, rule13_deontic));
-				manager.applyChange(addRelation);
+				if (json.get("listNoDpiaPublishedToPublic").toString().equals("yes")) {
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
+							SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual,
+							supervisoryAuthorityListNoDPIAIndividual));
+					manager.applyChange(addRelation);
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject,
+							SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual,
+							listWithProcessesThatDoNotNeedDpiaIndividual));
+					manager.applyChange(addRelation);
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb,
+							SupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessmentIndividual,
+							publishes));
+					manager.applyChange(addRelation);
+					addRelation = new AddAxiom(onto,
+							factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment, rule13_deontic));
+					manager.applyChange(addRelation);
+				}
 			}
 
 			if (json.get("listNoDpiaPublishedToPublic").toString().equals("yes")) {
@@ -2124,7 +2127,9 @@ public class Process {
 					manager.applyChange(addRelation);
 				}
 
+				System.out.println("fhfhfhfhfhfhfhf");
 				if (!json.get("riskRelatedToContent").toString().isEmpty()) {
+					System.out.println("fhfhfhfhfhfhfhf");
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, ContextOfProcessing_Has_RiskIndividual,
 							contextOfProcessingIndividual));
 					manager.applyChange(addRelation);
@@ -2157,7 +2162,8 @@ public class Process {
 				}
 
 				if (!json.get("monitoringBehaviorInMemberstate").toString().isEmpty()) {
-					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
+					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, // TODO which condition really
+																											// shall be used here??????
 							ContextOfProcessing_Involves_MonitoringOfDataInMemberstateIndividual,
 							contextOfProcessingIndividual));
 					manager.applyChange(addRelation);
@@ -2262,7 +2268,9 @@ public class Process {
 						factory.getOWLEquivalentClassesAxiom(processing_Has_PurposeOfProcessing, rule26_Condition8));
 				manager.applyChange(addRelation);
 
+				System.out.println("fhfhfhfhfhfhfhf");
 				if (!json.get("riskRelatedToPurpose").toString().isEmpty()) {
+					System.out.println("fhfhfhfhfhfhfhf");
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, PurposeOfProcessing_Has_RiskIndividual,
 							purposeOfProcessingIndividual));
 					manager.applyChange(addRelation);
@@ -2311,7 +2319,9 @@ public class Process {
 						factory.getOWLEquivalentClassesAxiom(processing_Has_Scope, rule26_Condition3));
 				manager.applyChange(addRelation);
 
+				System.out.println("fhfhfhfhfhfhfhf");
 				if (!json.get("riskRelatedToScope").toString().isEmpty()) {
+					System.out.println("fhfhfhfhfhfhfhf");
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject, Scope_Has_RiskIndividual, scopeIndividual));
 					manager.applyChange(addRelation);
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasObject, Scope_Has_RiskIndividual, riskOfScopeIndividual));

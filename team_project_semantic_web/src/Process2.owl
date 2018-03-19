@@ -1436,7 +1436,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View">
-        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule24_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule241_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7969,7 +7969,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H](NaturalPerson) Max Miller -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H](NaturalPerson) Max Miller"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H](NaturalPerson) Max Miller">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RoGUjtUkbjPuacSSLZKnFE"/>
+    </owl:NamedIndividual>
     
 
 
@@ -9034,7 +9036,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionOfficer_IsDesignated -A financial institution estimates the possibility of personal loans ">
-        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Rule3_Condition1"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8j7TNX1ncFdCPVwCGIFoQS"/>
     </owl:NamedIndividual>
     
@@ -9331,15 +9332,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_CompliesTo_GDPR -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/MeasureToAddressRisk_CompliesTo_GDPR"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights -A financial institution estimates the possibility of personal loans  -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights -A financial institution estimates the possibility of personal loans ">
-        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/MeasureToAddressRisk_TakesIntoAccount_Rights"/>
     </owl:NamedIndividual>
     
 

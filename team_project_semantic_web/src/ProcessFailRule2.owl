@@ -4008,7 +4008,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule2_Deontic">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RC4Wri4hlvv2IisNbqY8TXQ"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -7805,10 +7804,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-14 -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-11 -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-14">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-11">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9u2A7AoxsLC3cfJ84EwIBz"/>
     </owl:NamedIndividual>
     
@@ -8956,9 +8955,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HCreationDate_OccursBefore_FirstProcessingDate -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC4Wri4hlvv2IisNbqY8TXQ"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R86mMcJndHzoTUpE4c4Y2vJ"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-14"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-03-13"/>
     </owl:NamedIndividual>
     
 
