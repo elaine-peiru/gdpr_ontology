@@ -2401,6 +2401,7 @@ public class Process {
 		}
 
 		if (!json.get("nameOfProcessor").toString().isEmpty()) {
+			System.out.println("processorIsThere");
 			for (int i = 0; i < processorIndividuals.size(); i++) {
 				OWLIndividual processorIndividual = processorIndividuals.get(i);
 				OWLIndividual approvedCodeOfConductProcessorIndividual = approvedCodeOfConductProcessorIndividuals.get(i);

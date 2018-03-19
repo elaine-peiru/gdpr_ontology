@@ -1,5 +1,5 @@
 ﻿::
-ID: Id for process(string):ProcessFailRule8
+ID: Id for process(string):ProcessFailRule24
 VersionNumber: to check if this is update:1
 0.:Process(Name):A financial institution estimates the possibility of personal loans 
 1.:Data Protection Impact Assessment (Name): DPIA estimation of personal loans
@@ -71,21 +71,20 @@ personal data can be used for other commercial uses
 11.10:Sex Life: no 
 11.11:Sexual Orientation: no
 11.12:Criminal Convictions: yes
-11.12.1:Name of supervisory authority that checked the related process: Tomas Backer
+11.12.1:Name of supervisory authority that checked the related process: Sarah Miller
 11.13:Criminal Offense:
-11.13.1:Name of supervisory authority that checked the related process: Lily Baumbacher
-12.:View of the natural person could be seeked:
+11.13.1:Name of supervisory authority that checked the related process:
+12.:View of the natural person could be seeked: (NaturalPerson) Persons
 12.1:view has a risk to the public interest:no
-12.2:view has a risk to the commercial interest:yes 
-If the person refuses to share the personal data, we cannot make sure to get the loans back.
+12.2:view has a risk to the commercial interest:yes If the person refuses to share the personal data, we cannot make sure to get the loans back.
 12.3:view has a risk to the security of processing: no
 14.:Data was collected via monitoring a public accessible area(Name of Area): no
 15.:Date when process is firstly processed: 2018-03-14
 16.:Name of the Controller of the process(can also be more, separated by semicolon): Alice White
 16.1:Controller has applied the approved code of conduct(Boolean, one per controller, separated by semicolon):yes
 16.2:Name of supervisory authority that controls process: Personal Information Protection & Control Committee
-17.:Name of the Processor of the process(can also be more, separated by semicolon): Alice White, Bob Hecken
-17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon): no, yes
+17.:Name of the Processor of the process(can also be more, separated by semicolon):
+17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon):
 17.2:Authorization of Processor:
 17.2.1:Authorized by member state law(name):
 17.2.2:Authorized by member union:yes
