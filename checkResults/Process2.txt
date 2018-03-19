@@ -1,2 +1,5 @@
 You need to seek the advice of the Data Protection Officer.
-You have to publish the list of processes that require a DPIA to the European Data Protection Board. Refer to paragraph 4.
+Processor should not seek view of the data subject. Refer to paragraph 9
+Controller should not seek view of the representative of data subject. Refer to paragraph 9
+Supervisory authority needs to check this process. Refer to paragraph 3b
+Processor should not seek view of the representative of data subject. Refer to paragraph 9

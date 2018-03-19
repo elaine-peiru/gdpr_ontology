@@ -109,6 +109,7 @@ public class Process {
 		 * Reference to OWL Class deontic conditions
 		 */
 		OWLClass rule1_deontic = factory.getOWLClass(RuleName.Rule1_Deontic.getPath());
+		OWLClass rule2_deontic = factory.getOWLClass(RuleName.Rule2_Deontic.getPath());
 		OWLClass rule3_deontic = factory.getOWLClass(RuleName.Rule3_Deontic.getPath());
 		OWLClass rule4_deontic = factory.getOWLClass(RuleName.Rule4_Deontic.getPath());
 		OWLClass rule5_deontic = factory.getOWLClass(RuleName.Rule5_Deontic.getPath());
@@ -130,18 +131,12 @@ public class Process {
 		OWLClass rule26_deontic = factory.getOWLClass(RuleName.Rule26_Deontic.getPath());
 		OWLClass rule21_deontic = factory.getOWLClass(RuleName.Rule21_Deontic.getPath());
 		OWLClass rule16_deontic = factory.getOWLClass(RuleName.Rule16_Deontic.getPath());
-		OWLClass rule22_Condition1 = factory.getOWLClass(RuleName.Rule22_Condition1.getPath());
-		OWLClass rule26_Condition1 = factory.getOWLClass(RuleName.Rule26_Condition1.getPath());
-		OWLClass rule26_Condition2 = factory.getOWLClass(RuleName.Rule26_Condition2.getPath());
-		OWLClass rule26_Condition3 = factory.getOWLClass(RuleName.Rule26_Condition3.getPath());
-		OWLClass rule26_Condition4 = factory.getOWLClass(RuleName.Rule26_Condition4.getPath());
-		OWLClass rule26_Condition5 = factory.getOWLClass(RuleName.Rule26_Condition5.getPath());
-		OWLClass rule26_Condition6 = factory.getOWLClass(RuleName.Rule26_Condition6.getPath());
-		OWLClass rule26_Condition7 = factory.getOWLClass(RuleName.Rule26_Condition7.getPath());
-		OWLClass rule26_Condition8 = factory.getOWLClass(RuleName.Rule26_Condition8.getPath());
-		OWLClass rule26_Condition9 = factory.getOWLClass(RuleName.Rule26_Condition9.getPath());
-		OWLClass rule26_Condition10 = factory.getOWLClass(RuleName.Rule26_Condition10.getPath());
-		OWLClass rule26_Condition11 = factory.getOWLClass(RuleName.Rule26_Condition11.getPath());
+
+		OWLClass rule1_condition1 = factory.getOWLClass(RuleName.Rule1_Condition1.getPath());
+		OWLClass rule1_condition2 = factory.getOWLClass(RuleName.Rule1_Condition2.getPath());
+		OWLClass rule1_condition3 = factory.getOWLClass(RuleName.Rule1_Condition3.getPath());
+		OWLClass rule1_condition4 = factory.getOWLClass(RuleName.Rule1_Condition4.getPath());
+		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
 		OWLClass rule4_condition1 = factory.getOWLClass(RuleName.Rule4_Condition1.getPath());
 		OWLClass rule4_condition2 = factory.getOWLClass(RuleName.Rule4_Condition2.getPath());
 		OWLClass rule4_condition3 = factory.getOWLClass(RuleName.Rule4_Condition3.getPath());
@@ -150,6 +145,15 @@ public class Process {
 		OWLClass rule4_condition6 = factory.getOWLClass(RuleName.Rule4_Condition6.getPath());
 		OWLClass rule5_condition1 = factory.getOWLClass(RuleName.Rule5_Condition1.getPath());
 		OWLClass rule5_condition2 = factory.getOWLClass(RuleName.Rule5_Condition2.getPath());
+		OWLClass rule7_condition1 = factory.getOWLClass(RuleName.Rule7_Condition1.getPath());
+		OWLClass rule8_condition1 = factory.getOWLClass(RuleName.Rule8_Condition1.getPath());
+		OWLClass rule9_condition1 = factory.getOWLClass(RuleName.Rule9_Condition1.getPath());
+		OWLClass rule9_condition2 = factory.getOWLClass(RuleName.Rule9_Condition2.getPath());
+		OWLClass rule9_condition3 = factory.getOWLClass(RuleName.Rule9_Condition3.getPath());
+		OWLClass rule10_condition1 = factory.getOWLClass(RuleName.Rule10_Condition1.getPath());
+		OWLClass rule12_condition1 = factory.getOWLClass(RuleName.Rule12_Condition1.getPath());
+		OWLClass rule13_condition1 = factory.getOWLClass(RuleName.Rule13_Condition1.getPath());
+		OWLClass rule15_condition1 = factory.getOWLClass(RuleName.Rule15_Condition1.getPath());
 		OWLClass rule18_condition1 = factory.getOWLClass(RuleName.Rule18_Condition1.getPath());
 		OWLClass rule18_condition2 = factory.getOWLClass(RuleName.Rule18_Condition2.getPath());
 		OWLClass rule18_condition3 = factory.getOWLClass(RuleName.Rule18_Condition3.getPath());
@@ -161,22 +165,29 @@ public class Process {
 		OWLClass rule18_condition9 = factory.getOWLClass(RuleName.Rule18_Condition9.getPath());
 		OWLClass rule18_condition10 = factory.getOWLClass(RuleName.Rule18_Condition10.getPath());
 		OWLClass rule20_condition1 = factory.getOWLClass(RuleName.Rule20_Condition1.getPath());
+		OWLClass rule22_Condition1 = factory.getOWLClass(RuleName.Rule22_Condition1.getPath());
+		OWLClass rule23_condition1 = factory.getOWLClass(RuleName.Rule23_Condition1.getPath());
 		OWLClass rule24_condition1 = factory.getOWLClass(RuleName.Rule24_Condition1.getPath());
 		OWLClass rule24_condition2 = factory.getOWLClass(RuleName.Rule24_Condition2.getPath());
 		OWLClass rule24_condition3 = factory.getOWLClass(RuleName.Rule24_Condition3.getPath());
 		OWLClass rule24_condition4 = factory.getOWLClass(RuleName.Rule24_Condition4.getPath());
-		OWLClass rule12_condition1 = factory.getOWLClass(RuleName.Rule12_Condition1.getPath());
-		OWLClass rule10_condition1 = factory.getOWLClass(RuleName.Rule10_Condition1.getPath());
-		OWLClass rule13_condition1 = factory.getOWLClass(RuleName.Rule13_Condition1.getPath());
-		OWLClass rule15_condition1 = factory.getOWLClass(RuleName.Rule15_Condition1.getPath());
-		OWLClass rule7_condition1 = factory.getOWLClass(RuleName.Rule7_Condition1.getPath());
-		OWLClass rule9_condition1 = factory.getOWLClass(RuleName.Rule9_Condition1.getPath());
-		OWLClass rule9_condition2 = factory.getOWLClass(RuleName.Rule9_Condition2.getPath());
-		OWLClass rule9_condition3 = factory.getOWLClass(RuleName.Rule9_Condition3.getPath());
-		OWLClass rule1_condition1 = factory.getOWLClass(RuleName.Rule1_Condition1.getPath());
-		OWLClass rule1_condition2 = factory.getOWLClass(RuleName.Rule1_Condition2.getPath());
-		OWLClass rule1_condition3 = factory.getOWLClass(RuleName.Rule1_Condition3.getPath());
-		OWLClass rule1_condition4 = factory.getOWLClass(RuleName.Rule1_Condition4.getPath());
+		OWLClass rule241_condition1 = factory.getOWLClass(RuleName.Rule241_Condition1.getPath());
+		OWLClass rule26_Condition1 = factory.getOWLClass(RuleName.Rule26_Condition1.getPath());
+		OWLClass rule26_Condition2 = factory.getOWLClass(RuleName.Rule26_Condition2.getPath());
+		OWLClass rule26_Condition3 = factory.getOWLClass(RuleName.Rule26_Condition3.getPath());
+		OWLClass rule26_Condition4 = factory.getOWLClass(RuleName.Rule26_Condition4.getPath());
+		OWLClass rule26_Condition5 = factory.getOWLClass(RuleName.Rule26_Condition5.getPath());
+		OWLClass rule26_Condition6 = factory.getOWLClass(RuleName.Rule26_Condition6.getPath());
+		OWLClass rule26_Condition7 = factory.getOWLClass(RuleName.Rule26_Condition7.getPath());
+		OWLClass rule26_Condition8 = factory.getOWLClass(RuleName.Rule26_Condition8.getPath());
+		OWLClass rule26_Condition9 = factory.getOWLClass(RuleName.Rule26_Condition9.getPath());
+		OWLClass rule26_Condition10 = factory.getOWLClass(RuleName.Rule26_Condition10.getPath());
+		OWLClass rule26_Condition11 = factory.getOWLClass(RuleName.Rule26_Condition11.getPath());
+		OWLClass rule21_condition1 = factory.getOWLClass(RuleName.Rule21_Condition1.getPath());
+		OWLClass rule21_condition2 = factory.getOWLClass(RuleName.Rule21_Condition2.getPath());
+		OWLClass rule16_condition1 = factory.getOWLClass(RuleName.Rule16_Condition1.getPath());
+		OWLClass rule16_condition2 = factory.getOWLClass(RuleName.Rule16_Condition2.getPath());
+		OWLClass rule16_condition3 = factory.getOWLClass(RuleName.Rule16_Condition3.getPath());
 
 		/**
 		 * reference to OWL Class Verbconcepts
@@ -301,7 +312,6 @@ public class Process {
 				.getOWLClass(VerbConceptNames.EuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment.getPath());
 		OWLClass evaluation_BasesOn_AutomatedProcessing = factory.getOWLClass(VerbConceptNames.Evaluation_BasesOn_AutomatedProcessing.getPath());
 		OWLClass processing_Has_PurposeOfProcessing = factory.getOWLClass(VerbConceptNames.Processing_Has_PurposeOfProcessing.getPath());
-		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
 		/**
 		 * create Individuals of Factors
 		 */
@@ -312,6 +322,9 @@ public class Process {
 			OWLIndividual approvedCodeOfConductIndividual = factory
 					.getOWLNamedIndividual(IRI.create(ontologyIRI + approvedCodeOfCoductInformationProcessor[i]));
 			approvedCodeOfConductProcessorIndividuals.add(approvedCodeOfConductIndividual);
+			AddAxiom add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
+					approvedCodeOfConductIndividual));
+			manager.applyChange(add);
 		}
 
 		String processorString = json.get("nameOfProcessor").toString();
@@ -321,6 +334,8 @@ public class Process {
 			OWLIndividual processorIndividual = factory
 					.getOWLNamedIndividual(IRI.create(ontologyIRI + processorInformation[i]));
 			processorIndividuals.add(processorIndividual);
+			AddAxiom add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(processor, processorIndividual));
+			manager.applyChange(add);
 		}
 
 		OWLIndividual approvedCodeOfConductControllerIndividual = factory
@@ -423,8 +438,6 @@ public class Process {
 		/**
 		 * assert Factor Individuals to OWL Class
 		 */
-		// OWLClassAssertionAxiom classAssertionApprovedCodeOfConduct = factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
-		// approvedCodeOfConductIndividual);
 		AddAxiom add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(approvedCodeOfConduct,
 				approvedCodeOfConductControllerIndividual));
 		manager.applyChange(add);
@@ -506,15 +519,13 @@ public class Process {
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(personalData, personalDataIndividual));
 		manager.applyChange(add);
 		// add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(personalInterest, personalInterestIndividual));
-		// manager.applyChange(add);
+		// manager.applyChange(add); //TODO
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(philosophicalBelief, philosophicalBeliefIndividual));
 		manager.applyChange(add);
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(politicalOpinion, politicalOpinionIndividual));
 		manager.applyChange(add);
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(process, processIndividual));
 		manager.applyChange(add);
-		// add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(processor, processorIndividual));
-		// manager.applyChange(add);
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(profiling, profilingIndividual));
 		manager.applyChange(add);
 		add = new AddAxiom(onto, factory.getOWLClassAssertionAxiom(publicArea, publicAreaIndividual));
@@ -1338,9 +1349,9 @@ public class Process {
 			addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasVerb, CreationDate_OccursBefore_FirstProcessingDateIndividual,
 					occursBefore));
 			manager.applyChange(addRelation);
-			// addRelation = new AddAxiom(onto, factory.getOWLEquivalentClassesAxiom(creationDate_OccursBefore_FirstProcessingDate,
-			// rule2_deontic));
-			// manager.applyChange(addRelation);
+			addRelation = new AddAxiom(onto, factory.getOWLEquivalentClassesAxiom(creationDate_OccursBefore_FirstProcessingDate,
+					rule2_deontic));
+			manager.applyChange(addRelation);
 		}
 
 		if (!json.get("biometricData").toString().isEmpty()) {
