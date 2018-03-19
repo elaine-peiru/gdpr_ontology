@@ -3453,6 +3453,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule24_Condition2">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RYAMId3m3YsCIwwoAGlogM"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3478,6 +3479,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule24_Condition3">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R88vGIiLDzslOeqpFg51Mr9"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3503,6 +3505,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule24_Condition4">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDMHJMow5pg2NwzSKcxzwky"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3565,6 +3568,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule251_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RBZAiFkm99fxKPm2jxMGjUk"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3601,6 +3605,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule25_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RBZAiFkm99fxKPm2jxMGjUk"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4446,6 +4451,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule7_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDDrHslDguIxiM3JMxWuolA"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4482,6 +4488,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule8_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R46gnBMTdGZG6YLbfl4FyD"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -4524,6 +4531,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule8_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDp1eL8jhIeqjk8rcToIzJO"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -7799,6 +7807,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White, Bob Hecken">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBwHXWRoML4VcjKShUzMjCc"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
     </owl:NamedIndividual>
     
 
@@ -7888,7 +7897,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no, yes -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no, yes"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no, yes">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDxjUg9O7jBOmTK1LSMaiw"/>
+    </owl:NamedIndividual>
     
 
 
