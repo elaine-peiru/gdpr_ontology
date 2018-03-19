@@ -124,7 +124,7 @@ public class OurOntology {
 		OWLClass rule1_condition3 = factory.getOWLClass(RuleName.Rule1_Condition3.getPath());
 		OWLClass rule1_condition4 = factory.getOWLClass(RuleName.Rule1_Condition4.getPath());
 		OWLClass rule3_condition1 = factory.getOWLClass(RuleName.Rule3_Condition1.getPath());
-		
+
 		OWLClass rule5_condition1 = factory.getOWLClass(RuleName.Rule5_Condition1.getPath());
 		OWLClass rule5_condition2 = factory.getOWLClass(RuleName.Rule5_Condition2.getPath());
 		OWLClass rule7_condition1 = factory.getOWLClass(RuleName.Rule7_Condition1.getPath());
@@ -198,25 +198,35 @@ public class OurOntology {
 			}
 		}
 
-		if (reasoner.getEquivalentClasses(rule4_condition1).getSize() > 1) {
-			if (reasoner.getEquivalentClasses(rule4_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("No DPIA has been created. Refer to paragraph 3a");
+		if (reasoner.getEquivalentClasses(rule4_condition5).getSize() > 1 && reasoner.getEquivalentClasses(rule4_condition6).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule4_condition5).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule4_condition3).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule1_condition2).getSize() > 1) {
+						if (reasoner.getEquivalentClasses(rule4_condition1).getSize() > 1) {
+							if (reasoner.getEquivalentClasses(rule4_deontic).getSize() == 1) {
+								isCompliant = false;
+								rulesError.add("No DPIA has been created. Refer to paragraph 3a");
 
+							}
+						}
+					}
+				}
 			}
 		}
-		if (reasoner.getEquivalentClasses(rule5_condition1).getSize() > 1) {
-			if (reasoner.getEquivalentClasses(rule5_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("No DPIA has been created. Refer to paragraph 3b");
 
+		if (reasoner.getEquivalentClasses(rule5_condition2).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule5_condition1).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule5_deontic).getSize() == 1) {
+					isCompliant = false;
+					rulesError.add("No DPIA has been created. Refer to paragraph 3b");
+				}
 			}
 		}
+
 		if (reasoner.getEquivalentClasses(rule7_condition1).getSize() > 1) {
 			if (reasoner.getEquivalentClasses(rule7_deontic).getSize() == 1) {
 				isCompliant = false;
 				rulesError.add("Supervisory authority needs to check this process. Refer to paragraph 3b");
-
 			}
 		}
 
@@ -228,13 +238,17 @@ public class OurOntology {
 
 			}
 		}
-		if (reasoner.getEquivalentClasses(rule9_condition1).getSize() > 1) {
-			if (reasoner.getEquivalentClasses(rule9_deontic).getSize() == 1) {
-				isCompliant = false;
-				rulesError.add("No DPIA has been created. Refer to paragraph 3c.");
-
+		if (reasoner.getEquivalentClasses(rule9_condition3).getSize() > 1) {
+			if (reasoner.getEquivalentClasses(rule9_condition2).getSize() > 1) {
+				if (reasoner.getEquivalentClasses(rule9_condition1).getSize() > 1) {
+					if (reasoner.getEquivalentClasses(rule9_deontic).getSize() == 1) {
+						isCompliant = false;
+						rulesError.add("No DPIA has been created. Refer to paragraph 3c.");
+					}
+				}
 			}
 		}
+
 		if (reasoner.getEquivalentClasses(rule10_condition1).getSize() > 1) {
 			if (reasoner.getEquivalentClasses(rule10_deontic).getSize() == 1) {
 				isCompliant = false;
