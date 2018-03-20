@@ -11,7 +11,7 @@ public class TestApplication {
 
 		String userInput = JOptionPane
 				.showInputDialog(
-						"To add a new process type in the name of the process file. To check existing processes type in their names and separate them with a semicolon.");
+						"To add a new process type in the path of the process file. To check existing processes type in their names and separate them with a semicolon.");
 
 		if (userInput != null) {
 			if (userInput.indexOf(".txt") > 0) {
@@ -21,6 +21,7 @@ public class TestApplication {
 				String[] processIds = userInput.split(";");
 
 				for (int i = 0; i < processIds.length; i++) {
+					System.out.println(i);
 					String processId = processIds[i];
 
 					OWLOntology onto = OurOntology.getProcessOntology(processId);
