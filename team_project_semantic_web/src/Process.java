@@ -1855,8 +1855,9 @@ public class Process {
 							factory.getOWLEquivalentClassesAxiom(supervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment, rule10_deontic));
 					manager.applyChange(addRelation);
 				}
-
+				System.out.println(json.get("listDpiaPublishedToEDPB").toString());
 				if (json.get("listDpiaPublishedToEDPB").toString().equals("yes")) {
+					System.out.println("dhfhfhfhfh");
 					addRelation = new AddAxiom(onto, factory.getOWLObjectPropertyAssertionAxiom(hasSubject,
 							EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual,
 							europeanDataProtectionBoardIndividual));
@@ -1870,6 +1871,7 @@ public class Process {
 									EuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessmentIndividual,
 									receives));
 					manager.applyChange(addRelation);
+					System.out.println("dhfhfhfhfh");
 					addRelation = new AddAxiom(onto,
 							factory.getOWLEquivalentClassesAxiom(EuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment, rule12_deontic));
 					manager.applyChange(addRelation);

@@ -1,0 +1,85 @@
+::
+ID::002
+VersionNumber:of Process:1
+0.:Process(Name): Gathering of public social media data for customer oriented advertisements
+1.:Data Protection Impact Assessment (Name): Ensuring data protection of personal data from social media
+2.:Date when the DPIA was created:  2018-03-12
+3.: Data Protection Officer:
+3.1:Is DPO designed:yes
+3.2:Name of Data Protection Officer that reviewed DPIA: Dave Stevens
+4.:Content of DPIA:
+4.1:Systematic Description of Processing: Gathering and combining personal datasets from social media platforms to generate profiles and to target customers with individualized advertisements. Getting information about preferences, activities, online behavior and needs to tailor advertisement placements to the categorized user
+4.2:Purpose of processing: Creating customer profiles to place individualized advertisements
+4.3:Legitimate Interest of Processing: The user gets meaningful ads and the company might increase sales due to higher chances of interest
+4.4:Assessment of necessity of Processing: To provide the user a more customized experience and to increase efficiency/reduce costs in marketing  
+4.5:Assessment of Proportionality of Processing: No other public data about customers available that is freely accessible
+4.6:Assessment of risks to rights and freedoms: Breach of sensitive private data,that has been collected and combined, could lead to a violation of Article 8 (right torespect for private and family life) of the European Convention on Human Rights
+4.7:Measures to address risks: Measures to Address Risks of Process 002
+4.7.1:Safeguard: GDPR and regulations of social media platforms
+4.7.2:Security Measures: Data encryption and regular safety updates
+4.7.3:Mechanisms to ensure protection of data: Responsible role for data security
+4.7.4:Measures to address risks show compliance to gdpr:yes
+4.7.5:Measures to address risks take into account rights:yes
+5.:Processing:Processing description of Process002
+5.1:Content of the processing: Public personal data
+5.1.1:Content is about trading:
+5.1.1.1:Content is about the offering of goods:no
+5.1.1.2:Content is about the offering of services:yes
+5.1.1.3:Content is about the offering of Free Movement of Data:yes
+5.1.1.4:Content monitors the behavior in at least one member state of the EU:yes
+5.1.2:Content leads to risk to rights and freedom of natural person: yes, violation of privacy
+5.2:Purpose of the processing:Creating customer profiles to place individualized advertisements
+5.2.1:Purpose leads to risk to right and freedom of natural person:yes, unprotected private information about the customer
+5.2.1.1: In case of update, risk changed (yes/no): No
+5.3:Scope of the processing: Multiple data sources needed
+5.3.1:Scope leads to risks to right and freedom of natural person: Yes, gathered and combined data from various sources might lead to greater violation of privacy
+5.3.1.1: In case of update, risk changed (yes/no): No
+5.4:Technology used for processing:software, different datasources
+5.4.1:Technology leads to risk to right and freedom of natural person: Yes, by using classification and machine learning algorithms
+5.4.1.1: In case of update, risk changed (yes/no): No
+6.:The Consistency Mechanism:
+6.1:The Consistency Mechanism is applied:yes
+6.2:Name of supervisory authority that applied Consistency Mechanism: DSB
+7.:Processing has an evaluation of the results (Name): Generating profiles of users
+7.1:Evaluation is done via automated processing:yes
+7.2:Evaluation is done via profiling:yes
+7.3:Evaluation leads to a legal effect(Name/Description): Article 8 of the EU convention on human rights that deals with the right to respect private life)
+8.:Process is part of a list with all processes that require a DPIA(Name of list):List with all processes
+8.1:List is published to public:yes
+8.2:List is published to European Data Protection Board:yes
+8.3:Name of supervisory authority that created the list:Dr. Stefan Brink, supervisory authority of Baden-Wuerttemberg
+9.:Process is part of the list that do not require a DPIA(name of list):
+9.1:list is published to public:
+9.2:list is published to European Data Protection Board:
+9.3:Name of supervisory authority that created the list: Dr. Stefan Brink, supervisory authority of Baden-Wuerttemberg
+10.:Data relates to a natural person:yes
+11.:Data that is used for processing: Data used in Process002
+11.1:Racial origin:yes
+11.2:Ethnic origin:no
+11.3:Political Opinion:yes
+11.4:Religious Belief:yes
+11.5:Philosophical Belief:yes
+11.6:Trade Union Membership:yes
+11.7:Genetic Data:no
+11.8:Biometric Data:no
+11.9:Health:yes
+11.10:Sex Life:no
+11.11:Sexual Orientation:yes
+11.12:Criminal Convictions:no
+11.12.1:Name of supervisory authority that checked the related process:DPAU
+11.13:Criminal Offense:no
+11.13.1:Name of supervisory authority that checked the related process:
+12.:View of the natural person  or representative will be seeked:
+12.1:view has a risk to the public interest:no
+12.2:view has a risk to the commercial interest: Yes, lower sales and revenue
+12.3:view has a risk to the security of processing: No
+14.:Data was collected via monitoring a public accessible area (Name of Area): Facebook, Twitter and Instagram
+15.:Date when process is firstly processed: 2018-04-12
+16.:Name of the Controller of the process: Alan Adams
+16.1:Controller has applied the approved code of conduct:yes
+16.2:Name of supervisory authority that controls process: DPAU
+17.:Name of the Processor of the process(can also be more, separated by semicolon): Christopher Dolan; Jennifer Clarkson17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon):yes;yes
+17.2:Authorization of Processor: David Johnson
+17.2.1:Authorized by member state law(name): Data protection Regulation
+17.2.2:Authorized by member union:yes
+18.: In case of update, controller reviewed dpia (yes/no):yes

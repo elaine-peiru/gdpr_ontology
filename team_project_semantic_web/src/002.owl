@@ -4524,6 +4524,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule8_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R46gnBMTdGZG6YLbfl4FyD"/>
         <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R8Uneta3bE6iO1ofIBpIRFL"/>
         <owl:equivalentClass>
             <owl:Class>
@@ -7697,17 +7698,16 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8FXke6BXOU8Mopsyx80KO4"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC5dz44rax7ZXaWvCi5xJXO"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RoGUjtUkbjPuacSSLZKnFE"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]GDPR -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]DPAU -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]GDPR">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDsh0wWuwwDAeRukaeZJBrM"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]DPAU">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
     </owl:NamedIndividual>
     
 
@@ -7752,18 +7752,13 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no">
-        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/personal_interest"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R3pBcoor1cfHOqX0pEXUTh"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8RMtrdN8Uqn6ZD3L1oVm9M"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R72pti74999jHETlS61mwiU"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8o94DvsiiXleVQMATPN8zH"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R963XSX9VoI7UsEdeQnYbKP"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9bCmQn6y9W6WcXK3BgKH8B"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB1yPwI2TCqyIn68x02rKDr"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8vE7USFs4IRRd5OqfTEaf4"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8yPPUXESiNKkzdwObVgeFO"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBFcJ0yTVluewRxkFOkfGSn"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBu1In1jtr022BqRPwL9Pmy"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RCKrLSyY8yqxSBtYSWMTWXI"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RHSlGqrdcaldgovWMDWRAe"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RVxgpgZuXN0jBPxCKiaAYU"/>
     </owl:NamedIndividual>
     
@@ -7802,277 +7797,342 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/monitoring_of_data_in_memberstate"/>
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/offering_of_service"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R72pti74999jHETlS61mwiU"/>
+        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/personal_interest"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R88wT6b8j5JiZH6v1IsLBr8"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8vE7USFs4IRRd5OqfTEaf4"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8yPPUXESiNKkzdwObVgeFO"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8RMtrdN8Uqn6ZD3L1oVm9M"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9vBFmc05KKintZdAq7hC5v"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB1yPwI2TCqyIn68x02rKDr"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBRrxOZQzKYu3MHS1k41Az"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBu1In1jtr022BqRPwL9Pmy"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDhsF6OtTdrQPKXxaUWMdgT"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDxjUg9O7jBOmTK1LSMaiw"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RHSlGqrdcaldgovWMDWRAe"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RbkKsMfLj3QxIb26BVNtgl"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/ReonRyBcZTVPrLVQg7YQTa"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-11 -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPAU -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-11">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPAU">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DSB -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DSB">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] No -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] No">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9bCmQn6y9W6WcXK3BgKH8B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]  2018-03-12 -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]  2018-03-12">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R84UxT74Vy6MhMlgGRjraDk"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jim Smith -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-04-12 -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jim Smith">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R70XWJ5223DzZI8FS1LsliS"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Maja Smoltczyk, supervising authority of Berlin -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Maja Smoltczyk, supervising authority of Berlin">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Max Müller -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Max Müller">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBwHXWRoML4VcjKShUzMjCc"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sebastian Wagner -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sebastian Wagner">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-04-11 -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-04-11">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-04-12">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9u2A7AoxsLC3cfJ84EwIBz"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Article 8 of the EU convention on human rights that deals with the right to respect private life -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alan Adams -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Article 8 of the EU convention on human rights that deals with the right to respect private life">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alan Adams">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBwHXWRoML4VcjKShUzMjCc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Article 8 of the EU convention on human rights that deals with the right to respect private life) -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Article 8 of the EU convention on human rights that deals with the right to respect private life)">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R838GNNxWnJGQtnybaNRZGn"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Breach of highly sensitive data, genetic and health data of vulnerable data subjects, could lead to a violation of Article 8 (right to respect for private and family life) of the European Convention on Human Rights -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Breach of sensitive private data, -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Breach of highly sensitive data, genetic and health data of vulnerable data subjects, could lead to a violation of Article 8 (right to respect for private and family life) of the European Convention on Human Rights">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Breach of sensitive private data,">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R7iQxBbiMUlN56nETEIJb5B"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Clinical Decision Support Systems in hospitals         -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Clinical Decision Support Systems in hospitals        ">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R71C84ByVKPGuqQVOY9oA8X"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Data encryption -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Data encryption">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBCyBJylhrBB0lfJWRUld0u"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Decision Support Processes -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Decision Support Processes">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB6DjlWprYEJAnCVCxvWj5T"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDI4HeA0dXYzeg2qRVbaCB3"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Impossible to check the data individually or manually -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Impossible to check the data individually or manually">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8BdYzgbIHULYdazmLULEwj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Maria Stark -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Maria Stark">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]No other reasonable alternative data for this purpose -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data encryption and regular safety updates -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]No other reasonable alternative data for this purpose">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/Ra8FB2f0yboiXI8pI7vHfP"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data encryption and regular safety updates">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBCyBJylhrBB0lfJWRUld0u"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data protection Regulation -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data">
-        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/context_of_processing"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data protection Regulation">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC5dz44rax7ZXaWvCi5xJXO"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Personal Information Protection Committee -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Dave Stevens -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Personal Information Protection Committee">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Dave Stevens">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R70XWJ5223DzZI8FS1LsliS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Dr. Stefan Brink, supervisory authority of  -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Dr. Stefan Brink, supervisory authority of ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB07m8qHKjI9VJMhF6p4iA"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDI4HeA0dXYzeg2qRVbaCB3"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Saving lives and costs by helping physicians with their decisions making process -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Facebook, Twitter and Instagram -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Saving lives and costs by helping physicians with their decisions making process">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R94De8O7hwuQxnGiB6jtdrT"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Facebook, Twitter and Instagram">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R963XSX9VoI7UsEdeQnYbKP"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Storing patient data and generating recommendations or alerts based on the patient entry to help physicians with their decisions -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] GDPR and regulations of social media platforms -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Storing patient data and generating recommendations or alerts based on the patient entry to help physicians with their decisions">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] GDPR and regulations of social media platforms">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDsh0wWuwwDAeRukaeZJBrM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering and combining personal datasets from social media platforms to generate profiles and to target customers with individualized advertisements. Getting information about preferences, activities, online behavior and needs to tailor advertisement placements to the categorized user -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering and combining personal datasets from social media platforms to generate profiles and to target customers with individualized advertisements. Getting information about preferences, activities, online behavior and needs to tailor advertisement placements to the categorized user">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RiKPSUhilzUCQOt8hAWtF9"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Strict authorized access -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Strict authorized access">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RiU3G0wAlGLFeVhobg1LI7"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering of public social media data for customer oriented advertisements">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R71C84ByVKPGuqQVOY9oA8X"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8lEoWBKn7xR8tJhni3bjDb"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB07m8qHKjI9VJMhF6p4iA"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, breach of all private information -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, breach of all private information">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, by using decision support systems -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002 -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, by using decision support systems">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes,violation of privacy -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes,violation of privacy">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R7dhc0OBAu1kVRGn3JRPkFE"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Multiple data sources needed -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Multiple data sources needed">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/Rr4m05mDKis6rLIGn0Fr9I"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example technology -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] No other public data about customers available that is freely accessible -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example technology">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] No other public data about customers available that is freely accessible">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Ra8FB2f0yboiXI8pI7vHfP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data">
+        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/context_of_processing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Responsible role for data security -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Responsible role for data security">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RiU3G0wAlGLFeVhobg1LI7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] The user gets meaningful ads and the company might increase sales due to higher chances of interest -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] The user gets meaningful ads and the company might increase sales due to higher chances of interest">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R94De8O7hwuQxnGiB6jtdrT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] To provide the user a more customized experience and to increase efficiency/reduce costs in marketing   -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] To provide the user a more customized experience and to increase efficiency/reduce costs in marketing  ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8BdYzgbIHULYdazmLULEwj"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, by using classification and machine learning algorithms -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, by using classification and machine learning algorithms">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, gathered and combined data from various sources might lead to greater violation of privacy -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, gathered and combined data from various sources might lead to greater violation of privacy">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, lower sales and revenue -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, lower sales and revenue">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9CjkrQzAxg34Zb2M7ozEQx"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes, violation of privacy -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes, violation of privacy">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8lEoWBKn7xR8tJhni3bjDb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Dr. Stefan Brink, supervisory authority of  -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Dr. Stefan Brink, supervisory authority of ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]List with all processes -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]List with all processes">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB6DjlWprYEJAnCVCxvWj5T"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]software, different datasources -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]software, different datasources">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDqSrHtLR4Di9ma7irtodl2"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes, losing patients and revenue -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes, unprotected private information about the customer -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes, losing patients and revenue">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9CjkrQzAxg34Zb2M7ozEQx"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes, unprotected private information about the customer">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
     </owl:NamedIndividual>
     
 
@@ -8863,10 +8923,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HConsistencyMechanism_IsAppliedTo_Processing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HConsistencyMechanism_IsAppliedTo_Processing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HConsistencyMechanism_IsAppliedTo_Processing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HConsistencyMechanism_IsAppliedTo_Processing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ConsistencyMechanism_IsAppliedTo_Processing"/>
         <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_applied_to"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
@@ -8875,267 +8935,267 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Affects_FreeMovementOfData -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Affects_FreeMovementOfData - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Affects_FreeMovementOfData -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Affects_FreeMovementOfData - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Affects_FreeMovementOfData"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Activity -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Activity - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Activity -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Activity - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Activity"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Risk"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes,violation of privacy"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes, violation of privacy"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_MonitoringOfDataInMemberstate -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_MonitoringOfDataInMemberstate - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_MonitoringOfDataInMemberstate -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_MonitoringOfDataInMemberstate - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_MonitoringOfDataInMemberstate"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfGood -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfGood - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfGood -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfGood - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_OfferingOfGood"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfServices -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfServices - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfServices -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfServices - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_OfferingOfServices"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_IsLikelyToResultIn_Risk"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes,violation of privacy"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes, violation of privacy"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Assesses_PurposeOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Assesses_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Assesses_PurposeOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Assesses_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RzDl3q6FXyjU9SNPeecqbW"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RqNBSia6wh0aAzt0Arji9P"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Max Müller"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alan Adams"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_CarriesOut_Review -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_CarriesOut_Review - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_CarriesOut_Review -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_CarriesOut_Review - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RWw8FJPJmtw19tJ7abNcJC"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Creates_DataProtectionImpactAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Creates_DataProtectionImpactAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Creates_DataProtectionImpactAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Creates_DataProtectionImpactAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC5TffFpbysBH9qThlVi1L3"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Max Müller"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alan Adams"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_IsCompliantWith_ApprovedCodeOfConduct -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_IsCompliantWith_ApprovedCodeOfConduct - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_IsCompliantWith_ApprovedCodeOfConduct -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_IsCompliantWith_ApprovedCodeOfConduct - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RTEMK3G3JZr8Zb67anxaed"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Max Müller"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alan Adams"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksAdviceOf_DataProtectionOfficer -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksAdviceOf_DataProtectionOfficer - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksAdviceOf_DataProtectionOfficer -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksAdviceOf_DataProtectionOfficer - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Rule3_Deontic"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R7A2eSUb8q33ErNY8KrqKsy"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RRtBczGxkl8IyzzoK7bmKd"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jim Smith"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Max Müller"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Dave Stevens"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alan Adams"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_DataSubject -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_DataSubject - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_DataSubject -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_DataSubject - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDIHlvOtj8sCa5jle6Zvsas"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_RepresentativeOfDataSubject -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_RepresentativeOfDataSubject - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_RepresentativeOfDataSubject -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_RepresentativeOfDataSubject - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDmHsf9xzn6oUMNnCJ9XULN"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HCreationDate_OccursBefore_FirstProcessingDate -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HCreationDate_OccursBefore_FirstProcessingDate - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HCreationDate_OccursBefore_FirstProcessingDate -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HCreationDate_OccursBefore_FirstProcessingDate - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC4Wri4hlvv2IisNbqY8TXQ"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R86mMcJndHzoTUpE4c4Y2vJ"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-04-11"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-11"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-04-12"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]  2018-03-12"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Impossible to check the data individually or manually"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] To provide the user a more customized experience and to increase efficiency/reduce costs in marketing  "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]No other reasonable alternative data for this purpose"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] No other public data about customers available that is freely accessible"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RCRRWI52DFNrphyNoF5XrqA"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Breach of highly sensitive data, genetic and health data of vulnerable data subjects, could lead to a violation of Article 8 (right to respect for private and family life) of the European Convention on Human Rights"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Breach of sensitive private data,"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Saving lives and costs by helping physicians with their decisions making process"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] The user gets meaningful ads and the company might increase sales due to higher chances of interest"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_MeasureToAddressRisks -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_MeasureToAddressRisks - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_MeasureToAddressRisks -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_MeasureToAddressRisks - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_PurposeOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_PurposeOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDUAhgOchdhNRCHCMEoKUuM"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Storing patient data and generating recommendations or alerts based on the patient entry to help physicians with their decisions"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Ensuring data protection for patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering and combining personal datasets from social media platforms to generate profiles and to target customers with individualized advertisements. Getting information about preferences, activities, online behavior and needs to tailor advertisement placements to the categorized user"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Ensuring data protection of personal data from social media"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionOfficer_IsDesignated -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionOfficer_IsDesignated - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionOfficer_IsDesignated -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionOfficer_IsDesignated - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8j7TNX1ncFdCPVwCGIFoQS"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RV7kczTIRtjPdaLFeqbJio"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
@@ -9143,79 +9203,79 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_BiometricData -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_BiometricData - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_BiometricData -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_BiometricData - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RUNNm57Ybl1j2yX11wj8lI"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_GeneticData -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_GeneticData - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_GeneticData -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Contains_GeneticData - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RJCiCTeU8CQOZ4DKymvzHs"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Has_Monitoring -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Has_Monitoring - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Has_Monitoring -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_Has_Monitoring - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_Has_Monitoring"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Facebook, Twitter and Instagram"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsMonitoredIn_PublicArea -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsMonitoredIn_PublicArea - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsMonitoredIn_PublicArea -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsMonitoredIn_PublicArea - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_IsMonitoredIn_PublicArea"/>
         <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_monitored_in"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Facebook, Twitter and Instagram"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsPartOf_Evaluation -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsPartOf_Evaluation - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsPartOf_Evaluation -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_IsPartOf_Evaluation - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_IsPartOf_Evaluation"/>
         <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_part_of"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalConviction -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalConviction - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalConviction -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalConviction - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDILph149siB525wLgwEQyy"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
@@ -9224,10 +9284,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalOffense -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalOffense - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalOffense -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_CriminalOffense - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R981VKpiQCH3tIEXGoxLCRE"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
@@ -9236,10 +9296,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_DataSubject -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_DataSubject - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_DataSubject -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_DataSubject - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PersonalData_RelatesTo_DataSubject"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
@@ -9248,22 +9308,22 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_SecurityMeasure -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_SecurityMeasure - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_SecurityMeasure -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_SecurityMeasure - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDN8KU2b232QrMj6CFajaqL"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Data encryption"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data encryption and regular safety updates"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_EthnicOrigin -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_EthnicOrigin - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_EthnicOrigin -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_EthnicOrigin - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9gpZaRGbtcPi2R2VAUCSJa"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
@@ -9272,10 +9332,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_Health -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_Health - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_Health -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_Health - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_Health"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
@@ -9284,34 +9344,34 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PhilosophicalBelief -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PhilosophicalBelief - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PhilosophicalBelief -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PhilosophicalBelief - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBolrIj5Vp43qNexDSn0Go4"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PoliticalOpinion -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PoliticalOpinion - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PoliticalOpinion -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_PoliticalOpinion - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RYvrajW4BIwv1GxJWNdAeR"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_RacialOrigin -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_RacialOrigin - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_RacialOrigin -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_RacialOrigin - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RmwjxgkyjXmM0b10oiNWGo"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
@@ -9320,23 +9380,11 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_ReligiousBelief -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_ReligiousBelief - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_ReligiousBelief -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_ReligiousBelief - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9peWME9Yxv6X0xK3ePLa7n"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexLife -Clinical Decision Support Systems in hospitals         -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexLife -Clinical Decision Support Systems in hospitals        ">
-        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_SexLife"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
@@ -9344,10 +9392,22 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexualOrientation -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexLife - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexualOrientation -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexLife - Gathering of public social media data for customer oriented advertisements">
+        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_SexLife"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexualOrientation - Gathering of public social media data for customer oriented advertisements -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_SexualOrientation - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Data_RevealsInformationAbout_SexualOrientation"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
@@ -9356,22 +9416,22 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_TradeUnionMembership -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_TradeUnionMembership - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_TradeUnionMembership -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_TradeUnionMembership - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8ty1cYJADbCOMi1RIJ7lNG"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDrzllKbXZZLIDsAxvKzdxw"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R87t7dgn6sgWrizmrIVVss6"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
@@ -9380,471 +9440,475 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatRequireAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9KIwIlUZtDYTzy73MHkZCe"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_AutomatedProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_AutomatedProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_AutomatedProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_AutomatedProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Evaluation_BasesOn_AutomatedProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RicP6oSkrmhtRFrztSkOt"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_Profiling -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_Profiling - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_Profiling -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_BasesOn_Profiling - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Evaluation_BasesOn_Profiling"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RicP6oSkrmhtRFrztSkOt"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_Produces_LegalEffect -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_Produces_LegalEffect - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_Produces_LegalEffect -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEvaluation_Produces_LegalEffect - Gathering of public social media data for customer oriented advertisements">
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBjc6dioKfLQXvdY6AOWJrg"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Article 8 of the EU convention on human rights that deals with the right to respect private life"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Article 8 of the EU convention on human rights that deals with the right to respect private life)"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HLegalEffect_Concerns_DataSubject -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HLegalEffect_Concerns_DataSubject - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HLegalEffect_Concerns_DataSubject -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HLegalEffect_Concerns_DataSubject - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDo7l0OEvV6CW29XejZAeRN"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RC1BTLj1hUpMHhqJcTjKqzm"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Article 8 of the EU convention on human rights that deals with the right to respect private life"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Article 8 of the EU convention on human rights that deals with the right to respect private life)"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_CompliesTo_GDPR -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_CompliesTo_GDPR - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_CompliesTo_GDPR -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_CompliesTo_GDPR - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/MeasureToAddressRisk_CompliesTo_GDPR"/>
         <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/complies_to"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]gdprIndividual"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights - Gathering of public social media data for customer oriented advertisements">
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBG7sVWc5jZZhT4N0sEdYTs"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]rightsIndividual"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfData -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfData - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfData -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_MechanismToEnsureProtectionOfData - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9ZM1UG9ZC4UnRJ4BXEYQCv"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Strict authorized access"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Responsible role for data security"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_Safeguard -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_Safeguard - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_Safeguard -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_Safeguard - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDMaFO4l3dlUJpC2WwDAmPP"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]GDPR"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] GDPR and regulations of social media platforms"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_SecurityMeasure -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_SecurityMeasure - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_SecurityMeasure -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisks_Contains_SecurityMeasure - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="MeasureToAddressRisks_Contains_SecurityMeasure"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Data encryption"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example measures"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data encryption and regular safety updates"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Measures to Address Risks of Process 002"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPersonalData_IsPartOf_Evaluation -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPersonalData_IsPartOf_Evaluation - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPersonalData_IsPartOf_Evaluation -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPersonalData_IsPartOf_Evaluation - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PersonalData_IsPartOf_Evaluation"/>
         <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_part_of"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Predicting diseases based on patient data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Generating profiles of users"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]personalData"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Data -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Data - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Data -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Data - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_Data"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Clinical Decision Support Systems in hospitals        "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering of public social media data for customer oriented advertisements"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_DataProtectionImpactAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_DataProtectionImpactAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_DataProtectionImpactAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_DataProtectionImpactAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_DataProtectionImpactAssessment"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Processing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Processing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Processing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Processing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_Processing"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Clinical Decision Support Systems in hospitals        "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering of public social media data for customer oriented advertisements"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_IsPerformedAccordingTo_DataProtectionImpactAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_IsPerformedAccordingTo_DataProtectionImpactAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_IsPerformedAccordingTo_DataProtectionImpactAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_IsPerformedAccordingTo_DataProtectionImpactAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R85FgEtFaACMFSsT9B6XVMs"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_ContextOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_ContextOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_ContextOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_ContextOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Processing_Has_ContextOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Patient Data"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Public personal data"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_PurposeOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_PurposeOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_PurposeOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Scope -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Scope - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Scope -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Scope - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Processing_Has_Scope"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Multiple data sources needed"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Technology -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Technology - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Technology -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Technology - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Processing_Has_Technology"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example technology"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]software, different datasources"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Assesses_PurposeOfProcessing -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Assesses_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Assesses_PurposeOfProcessing -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Assesses_PurposeOfProcessing - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RCkFCSugzxI710ToTQriJsU"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sebastian Wagner"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Maria Stark"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Controls_Process -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Controls_Process - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Controls_Process -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Controls_Process - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDp1eL8jhIeqjk8rcToIzJO"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Clinical Decision Support Systems in hospitals        "/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sebastian Wagner"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Maria Stark"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering of public social media data for customer oriented advertisements"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_MemberStatelaw -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_MemberStatelaw - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_MemberStatelaw -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_MemberStatelaw - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R46gnBMTdGZG6YLbfl4FyD"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Data protection Regulation"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_Unionlaw -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_Unionlaw - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_Unionlaw -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_Unionlaw - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8Uneta3bE6iO1ofIBpIRFL"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2"/>
         <hasObject rdf:resource="http://purl.org/net/team_project_semantic_web/Unionlaw"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sebastian Wagner"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Maria Stark"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsCompliantWith_ApprovedCodeOfConduct -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsCompliantWith_ApprovedCodeOfConduct - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsCompliantWith_ApprovedCodeOfConduct -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsCompliantWith_ApprovedCodeOfConduct - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBpuCG4EugpZPT2QLJPjl8I"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sebastian Wagner"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Maria Stark"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Christopher Dolan"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Jennifer Clarkson"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_DataSubject -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_DataSubject - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_DataSubject -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_DataSubject - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBZAiFkm99fxKPm2jxMGjUk"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_RepresentativeOfDataSubject -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_RepresentativeOfDataSubject - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_RepresentativeOfDataSubject -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_RepresentativeOfDataSubject - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9lR3I6QnDMhEsYDYY0fJBH"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_Has_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_Has_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_Has_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_Has_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_Has_Risk"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes, unprotected private information about the customer"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_IsLikelyToResultIn_Risk"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]To prevent and discover hidden diseases"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes, unprotected private information about the customer"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Creating customer profiles to place individualized advertisements"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HReview_Checks_Process -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HReview_Checks_Process - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HReview_Checks_Process -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HReview_Checks_Process - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R788aFQPm1XRZ9jz0v7BMhY"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HRisk_Changes -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HRisk_Changes - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HRisk_Changes -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HRisk_Changes - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RD3UeNw8F5TNnsJUipY1l5a"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScopeOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScopeOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScopeOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScopeOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ScopeOfProcessing_IsLikelyToResultIn_Risk"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, breach of all private information"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, gathered and combined data from various sources might lead to greater violation of privacy"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Multiple data sources needed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScope_Has_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScope_Has_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScope_Has_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScope_Has_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Scope_Has_Risk"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, breach of all private information"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, gathered and combined data from various sources might lead to greater violation of privacy"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Multiple data sources needed"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Applies_ConsistencyMechanism -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Applies_ConsistencyMechanism - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Applies_ConsistencyMechanism -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Applies_ConsistencyMechanism - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8k5ryegotZfkPNEkeQV7Fw"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCf1IsHQ3nlxgPdbFez7gY1"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]consistencyMechanism"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Personal Information Protection Committee"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DSB"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Controls_Process -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Controls_Process - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Controls_Process -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Controls_Process - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDDrHslDguIxiM3JMxWuolA"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Clinical Decision Support Systems in hospitals        "/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Personal Information Protection Committee"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Gathering of public social media data for customer oriented advertisements"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPAU"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatDoNotRequireAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/ReMwzEtbe8yKWeC1V9SYAH"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8uC7ulLIqMs2f8e1wEcWmb"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Decision Support Processes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Maja Smoltczyk, supervising authority of Berlin"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]List with all processes"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Dr. Stefan Brink, supervisory authority of "/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatDoNotRequireAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8VP1yqi5sVIbEaZH9fMZO"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBcIfCdaLMk6v9L6Ww3w23G"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCdSDoXDS1NWnqJuIxLCAp4"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Maja Smoltczyk, supervising authority of Berlin"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Dr. Stefan Brink, supervisory authority of "/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnologyOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnologyOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnologyOfProcessing_IsLikelyToResultIn_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnologyOfProcessing_IsLikelyToResultIn_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/TechnologyOfProcessing_IsLikelyToResultIn_Risk"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Yes, by using decision support systems"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example technology"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Yes, by using classification and machine learning algorithms"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]software, different datasources"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnology_Has_Risk -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnology_Has_Risk - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnology_Has_Risk -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnology_Has_Risk - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Technology_Has_Risk"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_CommercialInterest -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_CommercialInterest - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_CommercialInterest -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_CommercialInterest - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R88vGIiLDzslOeqpFg51Mr9"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_PublicInterest -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_PublicInterest - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_PublicInterest -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_PublicInterest - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RYAMId3m3YsCIwwoAGlogM"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_SecurityOfProcessingOperation -Clinical Decision Support Systems in hospitals         -->
+    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_SecurityOfProcessingOperation - Gathering of public social media data for customer oriented advertisements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_SecurityOfProcessingOperation -Clinical Decision Support Systems in hospitals        ">
+    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HView_Respects_SecurityOfProcessingOperation - Gathering of public social media data for customer oriented advertisements">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDMHJMow5pg2NwzSKcxzwky"/>
     </owl:NamedIndividual>
     

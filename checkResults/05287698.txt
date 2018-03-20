@@ -1,3 +1,1 @@
-Controller should not seek view of the representative of data subject. Refer to paragraph 9
-You need to seek the advice of the Data Protection Officer. Refer to Paragraph 2 of Article35.
-Supervisory authority needs to check this process. Refer to paragraph 3b
+The process 05287698 is compliant to Article 35 of GDPR.
