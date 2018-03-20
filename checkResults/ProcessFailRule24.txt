@@ -1,2 +1,1 @@
 Controller should not seek view of the representative of data subject. Refer to paragraph 9
-Processor should not seek view of the representative of data subject. Refer to paragraph 9

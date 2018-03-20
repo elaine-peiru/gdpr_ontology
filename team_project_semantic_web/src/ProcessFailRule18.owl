@@ -1097,6 +1097,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/ConsistencyMechanism_IsAppliedTo_Processing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule16_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1153,6 +1154,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Activity">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule16_Condition3"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition9"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1181,6 +1184,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Risk">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition4"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition11"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1350,7 +1355,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing">
-        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule18_Condition3"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1437,6 +1441,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule241_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule24_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1732,7 +1738,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/MeasureToAddressRisk_TakesIntoAccount_Rights">
-        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule21_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1911,6 +1916,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Process_Has_Processing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition2"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition2"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1939,6 +1946,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Process_Has_PurposeOfProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition3"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition8"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1967,6 +1976,9 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Processing_Has_ContextOfProcessing">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule16_Condition2"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition3"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition10"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1995,6 +2007,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Processing_Has_Scope">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition3"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition3"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2023,6 +2037,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Processing_Has_Technology">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition3"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule26_Condition6"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2051,6 +2067,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_Has_Risk">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule1_Condition4"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2107,6 +2124,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule10_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R8uC7ulLIqMs2f8e1wEcWmb"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2132,6 +2150,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule10_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RBcIfCdaLMk6v9L6Ww3w23G"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2168,6 +2187,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule12_Condition1">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R8uC7ulLIqMs2f8e1wEcWmb"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2193,6 +2213,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule12_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9KIwIlUZtDYTzy73MHkZCe"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2436,6 +2457,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule16_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R8k5ryegotZfkPNEkeQV7Fw"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2573,7 +2595,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition4">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RCRRWI52DFNrphyNoF5XrqA"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2624,7 +2645,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule18_Condition6">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2956,6 +2976,8 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule1_Condition4">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Scope_Has_Risk"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Technology_Has_Risk"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -3061,7 +3083,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule20_Condition1">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3173,7 +3194,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule21_Deontic">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3386,6 +3406,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule241_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDmHsf9xzn6oUMNnCJ9XULN"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3575,6 +3596,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule251_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RBZAiFkm99fxKPm2jxMGjUk"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3813,6 +3835,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule26_Condition4">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Scope_Has_Risk"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3894,6 +3917,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule26_Condition7">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Technology_Has_Risk"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -4495,7 +4519,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule8_Condition1">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R46gnBMTdGZG6YLbfl4FyD"/>
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R8Uneta3bE6iO1ofIBpIRFL"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -7666,14 +7690,13 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]">
-        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/context_of_processing"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7dhc0OBAu1kVRGn3JRPkFE"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7iQxBbiMUlN56nETEIJb5B"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8FXke6BXOU8Mopsyx80KO4"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB6DjlWprYEJAnCVCxvWj5T"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDqSrHtLR4Di9ma7irtodl2"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC5dz44rax7ZXaWvCi5xJXO"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RVxgpgZuXN0jBPxCKiaAYU"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RoGUjtUkbjPuacSSLZKnFE"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/Rr4m05mDKis6rLIGn0Fr9I"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Ra8FB2f0yboiXI8pI7vHfP"/>
     </owl:NamedIndividual>
     
 
@@ -7728,6 +7751,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R3pBcoor1cfHOqX0pEXUTh"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9CjkrQzAxg34Zb2M7ozEQx"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9bCmQn6y9W6WcXK3BgKH8B"/>
     </owl:NamedIndividual>
     
 
@@ -7763,6 +7788,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9vBFmc05KKintZdAq7hC5v"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDhsF6OtTdrQPKXxaUWMdgT"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDxjUg9O7jBOmTK1LSMaiw"/>
     </owl:NamedIndividual>
@@ -7773,7 +7799,16 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] ">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC5dz44rax7ZXaWvCi5xJXO"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8BdYzgbIHULYdazmLULEwj"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] ListWithProcesses -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] ListWithProcesses">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RB6DjlWprYEJAnCVCxvWj5T"/>
     </owl:NamedIndividual>
     
 
@@ -7789,8 +7824,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8o94DvsiiXleVQMATPN8zH"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8yPPUXESiNKkzdwObVgeFO"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R963XSX9VoI7UsEdeQnYbKP"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9bCmQn6y9W6WcXK3BgKH8B"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9vBFmc05KKintZdAq7hC5v"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RB1yPwI2TCqyIn68x02rKDr"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBFcJ0yTVluewRxkFOkfGSn"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBu1In1jtr022BqRPwL9Pmy"/>
@@ -7813,6 +7846,15 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RoGUjtUkbjPuacSSLZKnFE"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-14 -->
 
 
@@ -7827,16 +7869,15 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBwHXWRoML4VcjKShUzMjCc"/>
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Bob Hecken -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Bob Hecken">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDI4HeA0dXYzeg2qRVbaCB3"/>
     </owl:NamedIndividual>
     
 
@@ -7850,20 +7891,20 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Institution can get more profits from loaning. Person who has good credits can get loan. -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Institution can get more profits from loaning.  -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Institution can get more profits from loaning. Person who has good credits can get loan.">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Institution can get more profits from loaning. ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R94De8O7hwuQxnGiB6jtdrT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Lily Baumbacher -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Lily Baumbacher">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC83dtNi8h5SojdqUaXbQDV"/>
     </owl:NamedIndividual>
     
 
@@ -7887,20 +7928,20 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sarah Miller -->
+
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Sarah Miller">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] The law of EU convention on human rights that deals with the right to private life.  -->
 
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] The law of EU convention on human rights that deals with the right to private life. ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R838GNNxWnJGQtnybaNRZGn"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Tomas Backer -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Tomas Backer">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC01STh4wzApj9FwSjBIj2t"/>
     </owl:NamedIndividual>
     
 
@@ -7914,20 +7955,21 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] check if the person has the qualify to get the loan from the financial institution -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] check if the person has the qualify to get the loan from the financial institution">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope">
+        <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/context_of_processing"/>
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8lEoWBKn7xR8tJhni3bjDb"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1 -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example technology -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7dhc0OBAu1kVRGn3JRPkFE"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example technology">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDqSrHtLR4Di9ma7irtodl2"/>
     </owl:NamedIndividual>
     
 
@@ -7946,24 +7988,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] put a strong firewall, install anti-virus protection,">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RiU3G0wAlGLFeVhobg1LI7"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] to avoid the person is not capable to return the loan -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] to avoid the person is not capable to return the loan">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8BdYzgbIHULYdazmLULEwj"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes Person cannot decide the proportion of the data to be processed -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes Person cannot decide the proportion of the data to be processed">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
     </owl:NamedIndividual>
     
 
@@ -7995,10 +8019,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-03-13 -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-02-12 -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-03-13">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-02-12">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R84UxT74Vy6MhMlgGRjraDk"/>
     </owl:NamedIndividual>
     
@@ -8013,38 +8037,20 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decsion of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing. -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decision of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing. -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decsion of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing.">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decision of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing.">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RiKPSUhilzUCQOt8hAWtF9"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]check this specific person who wants to loan -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]check this specific person who wants to loan">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/Ra8FB2f0yboiXI8pI7vHfP"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDI4HeA0dXYzeg2qRVbaCB3"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]personal data can be used for other commercial uses -->
-
-
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]personal data can be used for other commercial uses">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7iQxBbiMUlN56nETEIJb5B"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Rr4m05mDKis6rLIGn0Fr9I"/>
     </owl:NamedIndividual>
     
 
@@ -8058,11 +8064,11 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes  -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes Person cannot decide the proportion of the data to be processed -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes ">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9CjkrQzAxg34Zb2M7ozEQx"/>
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes Person cannot decide the proportion of the data to be processed">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBKyz3I1R6k0lB5BlhcZhQC"/>
     </owl:NamedIndividual>
     
 
@@ -8858,6 +8864,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HConsistencyMechanism_IsAppliedTo_Processing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ConsistencyMechanism_IsAppliedTo_Processing"/>
+        <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/is_applied_to"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]consistencyMechanism"/>
     </owl:NamedIndividual>
     
 
@@ -8867,6 +8876,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Affects_FreeMovementOfData -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Affects_FreeMovementOfData"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8876,6 +8888,11 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Activity -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Activity"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8eQKJJJZMxsZi9rQkgqq2a"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8885,6 +8902,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Has_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Has_Risk"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes The data which considers to be private are used "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8894,6 +8915,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_MonitoringOfDataInMemberstate -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_MonitoringOfDataInMemberstate"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8903,6 +8925,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfGood -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_OfferingOfGood"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8912,6 +8937,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_Involves_OfferingOfServices -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_Involves_OfferingOfServices"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7RGx7PWPnG0sR6wGg3AXcH"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8921,6 +8949,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HContextOfProcessing_IsLikelyToResultIn_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ContextOfProcessing_IsLikelyToResultIn_Risk"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes The data which considers to be private are used "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -8931,7 +8962,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Assesses_PurposeOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RzDl3q6FXyjU9SNPeecqbW"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RqNBSia6wh0aAzt0Arji9P"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] check if the person has the qualify to get the loan from the financial institution"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
     </owl:NamedIndividual>
     
@@ -8952,7 +8983,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_Creates_DataProtectionImpactAssessment -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC5TffFpbysBH9qThlVi1L3"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
     </owl:NamedIndividual>
     
@@ -8997,6 +9028,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_RepresentativeOfDataSubject -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDmHsf9xzn6oUMNnCJ9XULN"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
     </owl:NamedIndividual>
     
 
@@ -9008,7 +9042,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RC4Wri4hlvv2IisNbqY8TXQ"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R86mMcJndHzoTUpE4c4Y2vJ"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] 2018-03-14"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-03-13"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]2018-02-12"/>
     </owl:NamedIndividual>
     
 
@@ -9019,8 +9053,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfNecessityOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] to avoid the person is not capable to return the loan"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9030,9 +9064,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_AssessmentOfProportionalityOfProcessing"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]check this specific person who wants to loan"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9042,9 +9073,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_AssessmentOfRisksToRightsAndFreedoms -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RCRRWI52DFNrphyNoF5XrqA"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]personal data can be used for other commercial uses"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9055,8 +9083,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_LegitimateInterestOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Institution can get more profits from loaning. Person who has good credits can get loan."/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Institution can get more profits from loaning. "/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9066,9 +9094,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_MeasureToAddressRisks -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9zmCwmU3TwJ9WAsHxnNi2l"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9079,8 +9104,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_PurposeOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDUAhgOchdhNRCHCMEoKUuM"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] check if the person has the qualify to get the loan from the financial institution"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9091,8 +9116,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataProtectionImpactAssessment_Contains_SystematicDescriptionOfProcessing"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decsion of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing."/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]checking evaluation of data protection for personal loans"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decision of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing."/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] DPIA estimation of personal loans"/>
     </owl:NamedIndividual>
     
 
@@ -9113,6 +9138,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons"/>
     </owl:NamedIndividual>
     
 
@@ -9273,7 +9300,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RevealsInformationAbout_RacialOrigin -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RmwjxgkyjXmM0b10oiNWGo"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R9eNRBPdXpdJL7m4aG4ItLK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
         <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
@@ -9332,6 +9359,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HEuropeanDataProtectionBoard_Receives_ListOfProcessesThatDoNotRequireAssessment -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDrzllKbXZZLIDsAxvKzdxw"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R87t7dgn6sgWrizmrIVVss6"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
+        <hasSubject rdf:resource="http://purl.org/net/team_project_semantic_web/European_Data_Protection_Board"/>
     </owl:NamedIndividual>
     
 
@@ -9399,18 +9429,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/MeasureToAddressRisk_CompliesTo_GDPR"/>
         <hasFactor rdf:resource="http://purl.org/net/team_project_semantic_web/complies_to"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]gdprIndividual"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights -A financial institution estimates the possibility of personal loans  -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HMeasureToAddressRisk_TakesIntoAccount_Rights -A financial institution estimates the possibility of personal loans ">
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBG7sVWc5jZZhT4N0sEdYTs"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]rightsIndividual"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
     </owl:NamedIndividual>
     
 
@@ -9422,7 +9441,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9ZM1UG9ZC4UnRJ4BXEYQCv"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] put a strong firewall, install anti-virus protection,"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
     </owl:NamedIndividual>
     
 
@@ -9434,7 +9453,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDMaFO4l3dlUJpC2WwDAmPP"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]to avoid the personal data is used for other purposes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
     </owl:NamedIndividual>
     
 
@@ -9446,7 +9465,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="MeasureToAddressRisks_Contains_SecurityMeasure"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RBZ8tfMQZ9DFl31P8ahuruf"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] backup regularly, limit the access to the server"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] measures to address risks of Process1"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
     </owl:NamedIndividual>
     
 
@@ -9489,6 +9508,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcess_Has_Processing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_Processing"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]A financial institution estimates the possibility of personal loans "/>
     </owl:NamedIndividual>
     
 
@@ -9507,6 +9528,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_ContextOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Processing_Has_ContextOfProcessing"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
@@ -9516,6 +9540,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_PurposeOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Process_Has_PurposeOfProcessing"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
@@ -9525,6 +9552,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Scope -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Processing_Has_Scope"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
@@ -9534,6 +9563,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessing_Has_Technology -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Processing_Has_Technology"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example technology"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]processing"/>
     </owl:NamedIndividual>
     
 
@@ -9543,9 +9574,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_Assesses_PurposeOfProcessing -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RCkFCSugzxI710ToTQriJsU"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] check if the person has the qualify to get the loan from the financial institution"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Bob Hecken"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield"/>
     </owl:NamedIndividual>
     
 
@@ -9557,8 +9587,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDp1eL8jhIeqjk8rcToIzJO"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCqaHkvYZRIAUX1AvBgtdlL"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]A financial institution estimates the possibility of personal loans "/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Bob Hecken"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield"/>
     </owl:NamedIndividual>
     
 
@@ -9568,10 +9597,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_MemberStatelaw -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R46gnBMTdGZG6YLbfl4FyD"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] "/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Bob Hecken"/>
     </owl:NamedIndividual>
     
 
@@ -9581,6 +9606,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsAuthorizedBy_Unionlaw -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8Uneta3bE6iO1ofIBpIRFL"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R7xC20eAzvGgT0bncekMlN2"/>
+        <hasObject rdf:resource="http://purl.org/net/team_project_semantic_web/Unionlaw"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield"/>
     </owl:NamedIndividual>
     
 
@@ -9592,8 +9620,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBpuCG4EugpZPT2QLJPjl8I"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Bob Hecken"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield"/>
     </owl:NamedIndividual>
     
 
@@ -9612,6 +9639,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_SeeksViewOf_RepresentativeOfDataSubject -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R9lR3I6QnDMhEsYDYY0fJBH"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Norman Shield"/>
     </owl:NamedIndividual>
     
 
@@ -9621,6 +9651,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_Has_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_Has_Risk"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes The person has no right to refuse the data processing."/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -9630,6 +9663,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HPurposeOfProcessing_IsLikelyToResultIn_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PurposeOfProcessing_IsLikelyToResultIn_Risk"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes The person has no right to refuse the data processing."/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example scope"/>
     </owl:NamedIndividual>
     
 
@@ -9657,6 +9693,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScopeOfProcessing_IsLikelyToResultIn_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/ScopeOfProcessing_IsLikelyToResultIn_Risk"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes Person cannot decide the proportion of the data to be processed"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope"/>
     </owl:NamedIndividual>
     
 
@@ -9666,6 +9704,8 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HScope_Has_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/Scope_Has_Risk"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes Person cannot decide the proportion of the data to be processed"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]example scope"/>
     </owl:NamedIndividual>
     
 
@@ -9675,6 +9715,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Applies_ConsistencyMechanism -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8k5ryegotZfkPNEkeQV7Fw"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RCf1IsHQ3nlxgPdbFez7gY1"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]consistencyMechanism"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Personal Information Protection Committee "/>
     </owl:NamedIndividual>
     
 
@@ -9705,6 +9748,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Creates_ListOfProcessesThatRequireAssessment -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R8uC7ulLIqMs2f8e1wEcWmb"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RDUw9NjJehTigZ1ubbFTyb7"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] ListWithProcesses"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] German Supervise"/>
     </owl:NamedIndividual>
     
 
@@ -9723,6 +9769,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HSupervisoryAuthority_Publishes_ListOfProcessesThatRequireAssessment -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBcIfCdaLMk6v9L6Ww3w23G"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RCdSDoXDS1NWnqJuIxLCAp4"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] German Supervise"/>
     </owl:NamedIndividual>
     
 
@@ -9732,6 +9781,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HTechnologyOfProcessing_IsLikelyToResultIn_Risk -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/TechnologyOfProcessing_IsLikelyToResultIn_Risk"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBqX2wThottIIaw32D2aa3d"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] yes Personal data leakage."/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] example technology"/>
     </owl:NamedIndividual>
     
 

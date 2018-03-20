@@ -8,17 +8,13 @@ VersionNumber: to check if this is update:1
 3.1:Is DPO designed:yes
 3.2:Name of Data Protection Officer that reviewed DPIA:Mike
 4.:Content of DPIA:
-4.1:Systematic Description of Processing:Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decision of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing.
+4.1:Systematic Description of Processing:Prospecting. Prospecting is identifying the right customer/borrower who is in need of a loan is the first phase of the loan process.Pre-approval and documentation. Sales team will be assessing the applicant details, to check whether it is meeting the basic requirements and he/she is eligible for a loan. Documentation includes loan applications, KYC documents, income documents, employment documents, residential details and other supporting documents as per the lender’s requirements.Loan processing. In processing stage, the applicant details will be confirmed, the risk team will be checking the authenticity of documents submitted, residential, employment and reference verification will be completed. Credit report CIBIL request to check credit history, internal and external verification will be completed before sending the file for credit appraisal.Credit appraisal. Loan officer/credit officer will evaluate the applicant documents based on 5C’s on credit and render a decsion of approval or rejection with valid reason.Disbursal. Once the loan is approved by credit officer, the operations teams prepares the final documents and this document goes through the verification process. Then the loan amount on agreed basis is disbursed to the customer.Post disbursal evaluation, Auditing and post disbursal evaluation will be conducted through the centralized system to verify all the systems, process, documentation and other policy related aspects are covered under each stage of loan processing.
 4.2:Purpose of processing: check if the person has the qualify to get the loan from the financial institution
-4.3:Legitimate Interest of Processing: Institution can get more profits from loaning. 
-Person who has good credits can get loan.
-4.4:Assessment of necessity of Processing: 
-to avoid the person is not capable to return the loan
-4.5:Assessment of Proportionality of Processing:
-check this specific person who wants to loan
-4.6:Assessment of risks to rights and freedoms:
-personal data can be used for other commercial uses
-4.7:Measures to address risks:
+4.3:Legitimate Interest of Processing: Institution can get more profits from loaning. Person who has good credits can get loan.
+4.4:Assessment of necessity of Processing: to avoid the person is not capable to return the loan
+4.5:Assessment of Proportionality of Processing:check this specific person who wants to loan
+4.6:Assessment of risks to rights and freedoms:personal data can be used for other commercial uses
+4.7:Measures to address risks: measures to address risks of Process1
 4.7.1:Safeguard:to avoid the personal data is used for other purposes
 4.7.2:Security Measures: backup regularly, limit the access to the server
 4.7.3:Mechanisms to ensure protection of data: put a strong firewall, install anti-virus protection,
@@ -33,7 +29,7 @@ personal data can be used for other commercial uses
 5.1.1.4:Content monitors the behavior in at least one member state of the EU: yes
 5.1.2:Content leads to risk to rights and freedom of natural person: yes The data which considers to be private are used 
 5.1.2.1: In case of update, risk changed (yes/no): yes
-5.2:Purpose of the processing:
+5.2:Purpose of the processing: check if the person has the qualify to get the loan from the financial institution
 5.2.1:Purpose leads to risk to right and freedom of natural person: yes The person has no right to refuse the data processing.
 5.2.1.1: In case of update, risk changed (yes/no): yes
 5.3:Scope of the processing:
@@ -81,11 +77,11 @@ If the person refuses to share the personal data, we cannot make sure to get the
 12.3:view has a risk to the security of processing: no
 14.:Data was collected via monitoring a public accessible area(Name of Area): no
 15.:Date when process is firstly processed: 2018-03-14
-16.:Name of the Controller of the process(can also be more, separated by semicolon): Alice White, Bob Hecken
-16.1:Controller has applied the approved code of conduct(Boolean, one per controller, separated by semicolon): yes, no
+16.:Name of the Controller of the process(can also be more, separated by semicolon): Alice White
+16.1:Controller has applied the approved code of conduct(Boolean, one per controller, separated by semicolon):yes
 16.2:Name of supervisory authority that controls process: Personal Information Protection & Control Committee
-17.:Name of the Processor of the process(can also be more, separated by semicolon): Alice White, Bob Hecken
-17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon): no, yes
+17.:Name of the Processor of the process(can also be more, separated by semicolon): Alice White; Bob Hecken
+17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon):yes;yes
 17.2:Authorization of Processor:
 17.2.1:Authorized by member state law(name): 
 17.2.2:Authorized by member union: yes

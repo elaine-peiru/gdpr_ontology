@@ -1,0 +1,3 @@
+Controller not compliant with Approved Code of Conduct. Refer to Paragraph 8.
+Controller should not seek view of the representative of data subject. Refer to paragraph 9
+Processor should not seek view of the representative of data subject. Refer to paragraph 9

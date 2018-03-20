@@ -1,0 +1,2 @@
+Processor should not seek view of the data subject. Refer to paragraph 9
+Controller should not seek view of the data subject. Refer to paragraph 9

@@ -1815,6 +1815,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/PersonalData_RelatesTo_DataSubject">
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule4_Condition5"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9176,6 +9177,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HData_RelatesTo_DataSubject -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/PersonalData_RelatesTo_DataSubject"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/R8DRZGUkQJfvrF8Jrmx7sS"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]data"/>
     </owl:NamedIndividual>
     
 
@@ -9549,9 +9553,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HProcessor_IsCompliantWith_ApprovedCodeOfConduct -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RBpuCG4EugpZPT2QLJPjl8I"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RDgobhFnBfMJ0Si0IWDXkFV"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no, yes"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White, Bob Hecken"/>
     </owl:NamedIndividual>
     
 

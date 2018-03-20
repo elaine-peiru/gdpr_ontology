@@ -1,9 +1,9 @@
 ﻿::
-ID: Id for process(string):ProcessFailRule1
+ID: Id for process(string):ProcessFailRule241
 VersionNumber: to check if this is update:1
 0.:Process(Name):A financial institution estimates the possibility of personal loans 
-1.:Data Protection Impact Assessment (Name):
-2.:Date when the DPIA was created:
+1.:Data Protection Impact Assessment (Name): DPIA estimation of personal loans
+2.:Date when the DPIA was created:2018-02-12
 3.:Data Protection officer
 3.1:Is DPO designed:yes
 3.2:Name of Data Protection Officer that reviewed DPIA:Mike
@@ -49,15 +49,15 @@ personal data can be used for other commercial uses
 7.1:Evaluation is done via automated processing: yes
 7.2:Evaluation is done via profilig: yes
 7.3:Evaluation leads to a legal effect(Name/Description): The law of EU convention on human rights that deals with the right to private life. 
-8.:Process is part of a list with all processes that require a DPIA(Name of list):
-8.1:List is published to public: no
-8.2:List is published to European Data Protection Board: yes
+8.:Process is part of a list with all processes that require a DPIA(Name of list): ListWithProcesses
+8.1:List is published to public:yes
+8.2:List is published to European Data Protection Board:yes
 8.3:Name of supervisory authority that created the list: German Supervise
 9.:Process is part of the list that do not require a DPIA(name of list):
 9.1:list is published to public: 
 9.2:list is published to European Data Protection Board: 
 9.3:Name of supervisory authority that created the list:
-10.:Data relates to a natural person:yes
+10.:Data relates to a natural person: yes
 11.:Data that is used for processing is about: data for processing
 11.1:Racial origin:yes
 11.2:Ethnic origin: no
@@ -71,22 +71,21 @@ personal data can be used for other commercial uses
 11.10:Sex Life: no 
 11.11:Sexual Orientation: no
 11.12:Criminal Convictions: yes
-11.12.1:Name of supervisory authority that checked the related process: Tomas Backer
+11.12.1:Name of supervisory authority that checked the related process: Sarah Miller
 11.13:Criminal Offense:
-11.13.1:Name of supervisory authority that checked the related process: Lily Baumbacher
-12.:View of the natural person could be seeked:
+11.13.1:Name of supervisory authority that checked the related process:
+12.:View of the natural person could be seeked: (Representative) Persons
 12.1:view has a risk to the public interest:no
-12.2:view has a risk to the commercial interest:yes 
-If the person refuses to share the personal data, we cannot make sure to get the loans back.
+12.2:view has a risk to the commercial interest:yes If the person refuses to share the personal data, we cannot make sure to get the loans back.
 12.3:view has a risk to the security of processing: no
 14.:Data was collected via monitoring a public accessible area(Name of Area): no
 15.:Date when process is firstly processed: 2018-03-14
 16.:Name of the Controller of the process(can also be more, separated by semicolon): Alice White
 16.1:Controller has applied the approved code of conduct(Boolean, one per controller, separated by semicolon):yes
 16.2:Name of supervisory authority that controls process: Personal Information Protection & Control Committee
-17.:Name of the Processor of the process(can also be more, separated by semicolon): Alice White, Bob Hecken
-17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon): no, yes
+17.:Name of the Processor of the process(can also be more, separated by semicolon):
+17.1:Processor has applied the approved code of conduct(Boolean, one per processor, separated by semicolon):
 17.2:Authorization of Processor:
-17.2.1:Authorized by member state law(name): 
-17.2.2:Authorized by member union: yes
+17.2.1:Authorized by member state law(name):
+17.2.2:Authorized by member union:yes
 18.: In case of update, controller reviewed dpia (yes/no):yes

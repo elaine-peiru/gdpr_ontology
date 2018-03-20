@@ -1441,6 +1441,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View">
         <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule241_Condition1"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/net/team_project_semantic_web/Rule24_Condition1"/>
         <rdfs:subClassOf rdf:resource="http://www.GRCTC.com/Ontologies/FIRO/FIRO-H#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3400,6 +3401,7 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule241_Deontic">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDmHsf9xzn6oUMNnCJ9XULN"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3556,7 +3558,6 @@ FIRO is a series of interlinked Ontologies based on industry standards to captur
 
 
     <owl:Class rdf:about="http://purl.org/net/team_project_semantic_web/Rule24_Deontic">
-        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RDIHlvOtj8sCa5jle6Zvsas"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -7841,10 +7842,10 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     
 
 
-    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Persons -->
+    <!-- Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons -->
 
 
-    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Persons">
+    <owl:NamedIndividual rdf:about="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RoGUjtUkbjPuacSSLZKnFE"/>
     </owl:NamedIndividual>
     
@@ -9011,9 +9012,6 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_DataSubject -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDIHlvOtj8sCa5jle6Zvsas"/>
-        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
     </owl:NamedIndividual>
     
 
@@ -9023,6 +9021,9 @@ The content of a normative text, either with or without legal value.</rdfs:comme
 
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HController_SeeksViewOf_RepresentativeOfDataSubject -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDmHsf9xzn6oUMNnCJ9XULN"/>
+        <hasFactor rdf:resource="http://webprotege.stanford.edu/RBTt5tSKFKMnmTF7KJT6H6A"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]dataSubject"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] Alice White"/>
     </owl:NamedIndividual>
     
 
@@ -9131,7 +9132,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
     <owl:NamedIndividual rdf:about="http://www.GRCTC.com/Ontologies/FIRO/FIRO-HDataSubject_Has_View -A financial institution estimates the possibility of personal loans ">
         <rdf:type rdf:resource="http://purl.org/net/team_project_semantic_web/DataSubject_Has_View"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/R8h4rVC26XxU97HIqrnyBpK"/>
-        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Persons"/>
+        <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons"/>
     </owl:NamedIndividual>
     
 
@@ -9776,7 +9777,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/R88vGIiLDzslOeqpFg51Mr9"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]yes If the person refuses to share the personal data, we cannot make sure to get the loans back."/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Persons"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons"/>
     </owl:NamedIndividual>
     
 
@@ -9788,7 +9789,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RYAMId3m3YsCIwwoAGlogM"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H]no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Persons"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons"/>
     </owl:NamedIndividual>
     
 
@@ -9800,7 +9801,7 @@ The content of a normative text, either with or without legal value.</rdfs:comme
         <rdf:type rdf:resource="http://webprotege.stanford.edu/RDMHJMow5pg2NwzSKcxzwky"/>
         <hasFactor rdf:resource="http://webprotege.stanford.edu/RCKEQ0Zh74CtDnUT3oC7PIU"/>
         <hasObject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] no"/>
-        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (NaturalPerson) Persons"/>
+        <hasSubject rdf:resource="Optional[http://www.GRCTC.com/Ontologies/FIRO/FIRO-H] (Representative) Persons"/>
     </owl:NamedIndividual>
     
 
