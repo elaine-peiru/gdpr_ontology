@@ -1,0 +1,4 @@
+Processor should not seek view of the data subject. Refer to paragraph 9 of Article 35.
+You have to publish the list of processes that require a DPIA. Refer to paragraph 4 of Article 35.
+You need to seek the advice of the Data Protection Officer. Refer to Paragraph 2 of Article 35.
+Controller should not seek view of the data subject. Refer to paragraph 9 of Article 35.
